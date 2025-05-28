@@ -20,7 +20,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
             <div className="content-footer flex gap-[3rem]">
               <div>
@@ -63,7 +63,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
           <div className="content-image flex-1">

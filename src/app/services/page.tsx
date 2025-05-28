@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Dépannage",
   description:
-    "Leconte Multiservices, dépannage d'urgence plomberie, électricité, électroménager sur Paris et l'Ile de France",
+    "Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager sur Paris et l&apos;Ile de France",
 };
 
 export default function page() {
@@ -86,7 +80,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
             <div className="content-footer flex gap-[3rem]">
               <div>
@@ -121,7 +115,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
           <div className="content-image flex-1">
@@ -154,7 +148,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
         </div>

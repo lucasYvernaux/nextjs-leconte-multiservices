@@ -1,4 +1,3 @@
-import { CTACall } from "@/components/BtnBeRecalled";
 import {
   Card,
   CardContent,
@@ -15,10 +14,10 @@ export default function Home() {
       <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-[3rem] md:p-0">
         <div className="content flex flex-col gap-[4rem] items-center justify-center max-w-full w-full">
           <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
-            Dépannage à Paris et dans toute l'Ile de France
+            Dépannage à Paris et dans toute l&apos;Ile de France
           </h1>
           <p className="fadein-left text-3xl">
-            Dépannage d'urgence, réparation, installation ou maintenance.
+            Dépannage d&apos;urgence, réparation, installation ou maintenance.
           </p>
           <div className="fadein-left">
             <Link
@@ -51,9 +50,10 @@ export default function Home() {
                   Dépannage Général
                 </CardTitle>
                 <CardContent className="p-0">
-                  Nous intervenons rapidement dans toute l'Île-de-France pour
-                  toutes types de réparation. Que ce soit de l'électroménager,
-                  de l'électricité ou de la plomberie.
+                  Nous intervenons rapidement dans toute l&apos;Île-de-France
+                  pour toutes types de réparation. Que ce soit de
+                  l&apos;électroménager, de l&apos;électricité ou de la
+                  plomberie.
                 </CardContent>
               </CardHeader>
 
@@ -110,7 +110,7 @@ export default function Home() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
             <div className="content-footer flex gap-[3rem]">
               <div>
