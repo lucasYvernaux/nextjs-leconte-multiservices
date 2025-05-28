@@ -1,103 +1,139 @@
+import { CTACall } from "@/components/BtnBeRecalled";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-[3rem] md:p-0">
+        <div className="content flex flex-col gap-[4rem] items-center justify-center max-w-full w-full">
+          <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
+            Dépannage à Paris et dans toute l'Ile de France
+          </h1>
+          <p className="fadein-left text-3xl">
+            Dépannage d'urgence, réparation, installation ou maintenance.
+          </p>
+          <div className="fadein-left">
+            <Link
+              className="text-2xl rounded-full px-[3rem] py-[0.5rem] bg-leconte-primary"
+              type="button"
+              rel=""
+              href="tel:0640141937"
+              data-page-id="Home"
+            >
+              Appelez-moi
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="section-home-services flex p-[3rem] md:p-0">
+        <div className="content flex flex-col gap-[2rem] items-center justify-center max-w-full w-full">
+          <h2 className="text-4xl font-bold text-leconte-primary mt-[3rem]">
+            Services de dépannage
+          </h2>
+          <p className="text-2xl md:mb-[2rem]">
+            Dépannage électroménager, électricité, plomberie, installation,
+            maintenance.
+          </p>
+
+          <div className="content-card flex gap-[3rem] md:w-3/4 flex-col md:flex-row">
+            <Card className="fs-5 bg-leconte-secondary rounded-none text-start p-0 flex-1">
+              <CardHeader className="flex-1">
+                <CardTitle className="pt-5 font-bold mb-3">
+                  Dépannage Général
+                </CardTitle>
+                <CardContent className="p-0">
+                  Nous intervenons rapidement dans toute l'Île-de-France pour
+                  toutes types de réparation. Que ce soit de l'électroménager,
+                  de l'électricité ou de la plomberie.
+                </CardContent>
+              </CardHeader>
+
+              <CardDescription className="flex-1">
+                <Image
+                  className="fluid"
+                  src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
+                  alt="photo d'une personne réparant un aspirateur"
+                  width={300}
+                  height={200}
+                />
+              </CardDescription>
+            </Card>
+            <Card className="fs-5 bg-leconte-secondary rounded-none text-start p-0 flex-1">
+              <CardHeader className="flex-1">
+                <CardTitle className="pt-5 font-bold mb-3">
+                  Rénovation Complète
+                </CardTitle>
+                <CardContent className="p-0">
+                  Rénovation appartement ou maison que vous soyez particulier ou
+                  professionnel. Nous vous accompagnons du début à la fin de
+                  votre projet et le tout avec un seul et unique interlocuteur.
+                </CardContent>
+              </CardHeader>
+              <CardDescription>
+                <Image
+                  className="fluid h-50"
+                  src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
+                  alt="photo d'une personne réparant un aspirateur"
+                  width={300}
+                  height={200}
+                />
+              </CardDescription>
+            </Card>
+          </div>
+
+          <Link
+            className="text-xl rounded-full px-[3rem] py-[0.5rem] bg-leconte-primary"
+            style={{ width: "fit-content" }}
+            href="/services"
+          >
+            Voir tous les services
+          </Link>
+        </div>
+      </section>
+
+      <section className="section-home-electro flex flex-col p-[3rem]">
+        <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary text-center">
+          Votre expert en dépannage électroménager
+        </h2>
+        <div className="content flex  gap-[4rem] flex-col md:mx-[4rem] md:flex-row">
+          <div className="content-text text-start text-2xl fade-in flex-1">
+            <p className="mb-[1rem]">
+              Votre appareil électroménager est tombé en panne ? Ne le jetez
+              pas, il suffit parfois de remplacer une pièce pour qu’il continue
+              à vivre très longtemps. Vous pouvez faire confiance à mon
+              expertise, avec mes 36 ans d'expérience chez Darty.
+            </p>
+            <div className="content-footer flex gap-[3rem]">
+              <div>
+                <h3 className="text-3xl">150+</h3>
+                <p className="text-base">Partenaire Proxiconfort</p>
+              </div>
+              <div>
+                <h3 className="text-3xl">36 ans</h3>
+                <p className="text-base">Expérience et fiabilité</p>
+              </div>
+            </div>
+          </div>
+          <div className="content-image flex-1">
+            <Image
+              className="fluid"
+              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
+              alt="photo d'une personne réparant un aspirateur"
+              width={300}
+              height={200}
+            />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
