@@ -3,8 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../assets/LECONTE-MULTISERVICES-v2-removebg-preview.png";
-
 import { useEffect, useState } from "react";
 import {
   Collapsible,
@@ -48,7 +46,13 @@ export function Header() {
           className="text-xl flex gap-4 items-center font-bold leading-none w-1/2"
           href="/"
         >
-          <Image src={logo} alt="logo" className="w-[50px] h-[50px]" />
+          <Image
+            src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
+            alt="logo"
+            width={50}
+            height={50}
+            className="w-[50px] h-[50px]"
+          />
           <span>Leconte Multiservices</span>
         </Link>
         <div className="w-1/2 px-4 flex justify-end">
@@ -74,8 +78,10 @@ export function Header() {
                         href="/"
                       >
                         <Image
-                          src={logo}
+                          src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
                           alt="logo"
+                          width={50}
+                          height={50}
                           className="w-[50px] h-[50px]"
                         />
                       </Link>
