@@ -98,13 +98,13 @@ export default function page() {
             <p className="mb-[1rem]">
               Votre salle de bain est vieillissante ou plus du tout adaptée à
               vos besoins ? Vous souhaitez la rendre plus moderne ou plus
-              fonctionnelle ? De l'installation de plomberie au remplacement du
-              carrelage, en passant par les finitions haut de gamme, notre
-              équipe d'artisans tout corps de métier qualifiés assure un travail
-              soigné et conforme aux normes actuelles. Nous vous proposons des
-              solutions adaptées comme l'installation de douche à l'italienne,
-              de baignoire, de toilette, de bidet ou de meuble ergonomique
-              parfaitement adapté à votre salle de bain.
+              fonctionnelle ? De l&apos;installation de plomberie au
+              remplacement du carrelage, en passant par les finitions haut de
+              gamme, notre équipe d&apos;artisans tout corps de métier qualifiés
+              assure un travail soigné et conforme aux normes actuelles. Nous
+              vous proposons des solutions adaptées comme l&apos;installation de
+              douche à l&apos;italienne, de baignoire, de toilette, de bidet ou
+              de meuble ergonomique parfaitement adapté à votre salle de bain.
             </p>
           </div>
         </div>
@@ -119,12 +119,12 @@ export default function page() {
             <p className="mb-[1rem]">
               Que vous souhaitiez rénover votre cuisine ou la créer, nous vous
               proposons des solutions adaptées. Allant du simple montage de
-              meubles de cuisine en kit à la réalisation d'une cuisine sur
+              meubles de cuisine en kit à la réalisation d&apos;une cuisine sur
               mesure avec raccordement à la plomberie, électricité et gaz. Le
               tout toujours avec le respect de votre budget, de vos délais et de
-              l'environnement. Et nous vous accompagnons du début à la fin de
-              votre projet, à chaque étape du processus. De la prise de mesure à
-              la mise en service de l'électroménager.
+              l&apos;environnement. Et nous vous accompagnons du début à la fin
+              de votre projet, à chaque étape du processus. De la prise de
+              mesure à la mise en service de l&apos;électroménager.
             </p>
           </div>
           <div className="content-image flex-1">

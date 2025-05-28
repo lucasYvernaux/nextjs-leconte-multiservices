@@ -40,7 +40,7 @@ export function Header() {
   });
 
   return (
-    <header className="sticky top-0 h-auto w-screen z-3 px-4 py-4 bg-leconte-primary">
+    <header className="sticky top-0 h-auto w-screen z-0 px-4 py-4 bg-leconte-primary">
       <nav className="flex items-center">
         <Link
           className="text-xl flex gap-4 items-center font-bold leading-none w-1/2"
