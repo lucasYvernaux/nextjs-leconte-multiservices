@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { FacebookIcon } from "lucide-react";
 
 export function Footer() {
   return (
