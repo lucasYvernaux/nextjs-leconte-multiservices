@@ -11,8 +11,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-[3rem] md:p-0">
-        <div className="content flex flex-col gap-[4rem] items-center justify-center max-w-full w-full">
+      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-12 md:p-0">
+        <div className="content flex flex-col gap-16 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
             Dépannage à Paris et dans toute l&apos;Ile de France
           </h1>
@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           <div className="fadein-left">
             <Link
-              className="text-2xl rounded-full px-[3rem] py-[0.5rem] bg-leconte-primary"
+              className="text-2xl rounded-full px-12 py-2 bg-leconte-primary"
               type="button"
               rel=""
               href="tel:0640141937"
@@ -33,17 +33,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-home-services flex p-[3rem] md:p-0">
-        <div className="content flex flex-col gap-[2rem] items-center justify-center max-w-full w-full">
-          <h2 className="text-4xl font-bold text-leconte-primary mt-[3rem]">
+      <section className="section-home-services flex p-12 md:p-0">
+        <div className="content flex flex-col gap-8 items-center justify-center max-w-full w-full">
+          <h2 className="text-4xl font-bold text-leconte-primary mt-12">
             Services de dépannage
           </h2>
-          <p className="text-2xl md:mb-[2rem]">
+          <p className="text-2xl md:mb-8">
             Dépannage électroménager, électricité, plomberie, installation,
             maintenance.
           </p>
 
-          <div className="content-card flex gap-[3rem] md:w-3/4 flex-col md:flex-row">
+          <div className="content-card flex gap-12 md:w-3/4 flex-col md:flex-row">
             <Card className="fs-5 bg-leconte-secondary rounded-none text-start p-0 flex-1">
               <CardHeader className="flex-1">
                 <CardTitle className="pt-5 font-bold mb-3">
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           <Link
-            className="text-xl rounded-full px-[3rem] py-[0.5rem] bg-leconte-primary"
+            className="text-xl rounded-full px-8 py-2 bg-leconte-primary"
             style={{ width: "fit-content" }}
             href="/services"
           >
@@ -100,19 +100,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-home-electro flex flex-col p-[3rem]">
-        <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary text-center">
+      <section className="section-home-electro flex flex-col p-12">
+        <h2 className="text-4xl my-12 font-bold text-leconte-primary text-center">
           Votre expert en dépannage électroménager
         </h2>
-        <div className="content flex  gap-[4rem] flex-col md:mx-[4rem] md:flex-row">
+        <div className="content flex gap-16 flex-col md:mx-16 md:flex-row">
           <div className="content-text text-start text-2xl fade-in flex-1">
-            <p className="mb-[1rem]">
+            <p className="mb-4">
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
               expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
-            <div className="content-footer flex gap-[3rem]">
+            <div className="content-footer flex gap-12">
               <div>
                 <h3 className="text-3xl">150+</h3>
                 <p className="text-base">Partenaire Proxiconfort</p>
