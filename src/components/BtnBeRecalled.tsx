@@ -34,7 +34,7 @@ export function CTACall() {
       .matches(phoneRegex, "Le téléphone n'est pas valide"),
   });
 
-  const onSubmitToast = (values: any) => {
+  const onSubmitToast = () => {
     toast.success("L'Email a bien été envoyé", {
       description: "Je vous rappelle d'ici 24h",
     });
@@ -154,6 +154,7 @@ const TextInputLiveFeedback = (propsPedr: {
           {propsPedr.label}
         </Label>
         <Input
+          aria-checked={didFocus}
           {...propsPedr}
           {...field}
           onFocus={handleFocus}
