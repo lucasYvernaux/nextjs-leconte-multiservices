@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Rénov",
   description:
-    "Chez Leconte Multiservices, vous avez comme projet de rénover.Rénovation appartement maison intérieur extéireur dans toutes l'ile de france y compris Paris",
+    "Chez Leconte Multiservices, vous avez comme projet de rénover.Rénovation appartement maison intérieur extéireur dans toutes l&apos;ile de france y compris Paris",
 };
 
 export default function page() {
@@ -23,13 +23,13 @@ export default function page() {
               opportunité de mettre en valeur votre chez vous. Elle doit faire
               le lien entre la modernité et son authenticité. Tout cela doit
               être articulé de manière intelligente et réfléchis. Nous avons
-              pour mission d'embellir votre chez vous tout en s'adapdant à votre
-              budget. Nous avons la même motivation pour toutes les rénovations
-              qu’elles soient de petite ou grande envergure. Nous avons une
-              équipe spécialiste tous corps de métiers. Vous aurez l’assurance
-              d’un accompagnement et d’une expertise efficace tout au long de
-              votre projet et le tout sans passer par des dizaines
-              d'interlocuteurs.
+              pour mission d&apos;embellir votre chez vous tout en
+              s&apos;adapdant à votre budget. Nous avons la même motivation pour
+              toutes les rénovations qu’elles soient de petite ou grande
+              envergure. Nous avons une équipe spécialiste tous corps de
+              métiers. Vous aurez l’assurance d’un accompagnement et d’une
+              expertise efficace tout au long de votre projet et le tout sans
+              passer par des dizaines d&apos;interlocuteurs.
             </p>
 
             <Link
@@ -63,7 +63,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
             <div className="content-footer flex gap-[3rem]">
               <div>
@@ -106,7 +106,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d'expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
           </div>
           <div className="content-image flex-1">
