@@ -33,7 +33,7 @@ export default function page() {
             </Link>
           </div>
           <div className="content-card flex flex-col gap-4 md:flex-row md:px-12">
-            <Card className="bg-leconte-secondary rounded-4xl py-12">
+            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
               <CardHeader>
                 <CardTitle className="text-center capitalize text-[28px] font-medium">
                   électroménager
@@ -44,26 +44,25 @@ export default function page() {
                 écologique.
               </CardContent>
             </Card>
-            <Card className="bg-leconte-secondary rounded-4xl py-12">
+            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
               <CardHeader>
                 <CardTitle className="text-center capitalize text-[28px] font-medium">
-                  électroménager
+                  électricité
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-2xl">
-                Optez pour une réparation professionnelle, économique et
-                écologique.
+                Services d&apos;électricité pour vos besoins domestiques
+                urgents.
               </CardContent>
             </Card>
-            <Card className="bg-leconte-secondary rounded-4xl py-12">
+            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
               <CardHeader>
                 <CardTitle className="text-center capitalize text-[28px] font-medium">
-                  électroménager
+                  plomberie
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-2xl">
-                Optez pour une réparation professionnelle, économique et
-                écologique.
+                Interventions rapides pour tous vos problèmes de plomberie.
               </CardContent>
             </Card>
           </div>
@@ -80,7 +79,16 @@ export default function page() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
               à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
+              expertise, avec mes 36 ans d&apos;expérience chez Darty et mon
+              partenariat avec{" "}
+              <Link
+                href={"https://www.proxiconfort.fr"}
+                className="underline"
+                target="_blank"
+              >
+                Proxiconfort
+              </Link>
+              .
             </p>
             <div className="content-footer flex gap-[3rem]">
               <div>
@@ -109,13 +117,16 @@ export default function page() {
         <div className="content flex gap-[4rem] flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
             <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
-              Dépannage Electricité
+              Dépannage en électricité
             </h2>
             <p className="mb-[1rem]">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
+              Votre sécurité est ma priorité. Je propose des solutions adaptées
+              pour tous vos besoins électriques : pannes de courant,
+              remplacements de tableaux électriques, ajout de prises ou encore
+              installation d’éclairage. Je vous garantis une intervention rapide
+              et efficace. Je propose des solutions adaptées pour tous vos
+              besoins électriques : pannes de courant, remplacements de tableaux
+              électriques, ajout de prises ou encore installation d’éclairage
             </p>
           </div>
           <div className="content-image flex-1">
@@ -142,13 +153,15 @@ export default function page() {
           </div>
           <div className="content-text  text-start text-2xl fade-in flex-1">
             <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
-              Dépannage Plomberie
+              Dépannage en Plomberie
             </h2>
             <p className="mb-[1rem]">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
+              Une fuite d&apos;eau ? Une canalisation bouchée ? Ne laissez pas
+              ces problèmes perturber votre quotidien. Je suis équipé pour
+              intervenir rapidement et assurer des réparations durables. De la
+              réparation d’urgence à l’installation complète de votre plomberie,
+              je propose des solutions adaptées et durables pour régler vos
+              soucis de plomberie, qu’ils soient petits ou complexes.
             </p>
           </div>
         </div>
