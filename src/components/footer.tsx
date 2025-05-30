@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-leconte-primary p-8">
       <section className="footer gap-4 flex flex-col md:flex-row md:pd-12">
-        <div className="flex flex-1">
+        <Link href="/" className="flex flex-1">
           <Image
             src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
             alt="logo footer"
@@ -13,7 +14,7 @@ export function Footer() {
             width={400}
             height={400}
           />
-        </div>
+        </Link>
         <div className="flex flex-col gap-4 flex-1">
           <h2 className="text-3xl">Services</h2>
           <p className="text-xl">
@@ -76,14 +77,14 @@ export function Footer() {
 
           <a
             href="tel:0640141937"
-            className="text-lg underline underline-offset-4 font-bold md:text-xl"
+            className="text-lg underline underline-offset-4 font-medium decoration-2 md:text-xl"
           >
-            +33 6 40 14 19 37
+            06 40 14 19 37
           </a>
 
           <a
             href="mailto:leconte.multiservices.idf@gmail.com"
-            className="text-lg underline underline-offset-4 font-medium md:text-xl"
+            className="text-lg underline underline-offset-4 font-medium decoration-2 md:text-xl"
           >
             leconte.multiservices.idf@gmail.com
           </a>
@@ -91,7 +92,7 @@ export function Footer() {
       </section>
       <div className="mt-8 bg-leconte-primary flex justify-center text-center">
         <p className="flex flex-col  md:flex-row">
-          <span className="flex items-center">
+          <span className="flex items-center italic">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

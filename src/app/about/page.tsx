@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Leconte Multiservices - A Propos",
@@ -17,25 +18,17 @@ export default function page() {
               Notre histoire
             </h2>
             <p className="mb-[1rem]">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
+              Depuis 1976, la plomberie est un lien familial fort. Chez Leconte
+              Multiservices, nous gérons vos projets de manière assidu et
+              efficace. Nous pouvons répondre à tous les besoins de votre
+              projet, peu importe ça taille. Nous vous proposons un choix et des
+              solutions fonctionnelles, afin de répondre à vos besoins et le
+              tout avec un prix raisonnable.
             </p>
-            <div className="content-footer flex gap-[3rem]">
-              <div>
-                <h3 className="text-3xl">150+</h3>
-                <p className="text-base">Partenaire Proxiconfort</p>
-              </div>
-              <div>
-                <h3 className="text-3xl">36 ans</h3>
-                <p className="text-base">Expérience et fiabilité</p>
-              </div>
-            </div>
           </div>
           <div className="content-image flex-1">
             <Image
-              className="fluid rounded-xl"
+              className="fluid rounded-full"
               src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
               alt="photo d'une personne réparant un aspirateur"
               width={300}
@@ -55,41 +48,27 @@ export default function page() {
               height={200}
             />
           </div>
-          <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
-              Expert renov depan
+          <div className="content-text text-start text-2xl flex flex-col gap-12 fade-in flex-1">
+            <h2 className="text-4xl font-bold text-leconte-primary">
+              Des conseils de qualité
             </h2>
-            <p className="mb-[1rem]">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
+            <p>
+              Nous sommes fiers de satisfaire les besoins de nos clients. Nous
+              pouvons également vous recommander des solutions alternatives
+              moins coûteuses et plus rapides à mettre en œuvre, sans
+              compromettre la qualité de vos projets et investissements.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-about-tips flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
-          <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
-              Conseil
-            </h2>
-            <p className="mb-[1rem]">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
-            </p>
-          </div>
-          <div className="content-image flex-1">
-            <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
-            />
+            <div className="content-btn flex justify-center w-full">
+              <Link
+                className="text-2xl rounded-full px-8 py-2 bg-leconte-primary"
+                type="button"
+                rel=""
+                href="/contact"
+                data-page-id="About"
+              >
+                Demander un devis
+              </Link>
+            </div>
           </div>
         </div>
       </section>

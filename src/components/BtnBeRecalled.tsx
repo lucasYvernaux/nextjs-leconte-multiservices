@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+
 import {
   Collapsible,
   CollapsibleContent,
@@ -9,13 +10,12 @@ import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./ui/button";
-
 import { toast, Toaster } from "sonner";
-
-import { Cross, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 import { Form, Formik, useField } from "formik";
 import * as yup from "yup";
+import Image from "next/image";
 
 export function CTACall() {
   const [open, setOpen] = useState(false);
@@ -43,23 +43,29 @@ export function CTACall() {
   return (
     <>
       <Collapsible
-        className="fixed top-1/5 end-0 flex "
+        className="fixed top-1/5 end-1 z-10 flex "
         open={open}
         onOpenChange={setOpen}
       >
-        <CollapsibleTrigger className="bg-leconte-primary rounded-md px-4 py-2 text-white h-fit">
+        <CollapsibleTrigger className="bg-leconte-primary rounded-md px-4 py-2 text-white h-fit cursor-pointer rounded-e-none">
           {open ? (
-            <Cross className="rotate-45" />
+            <Image
+              alt="bouton close"
+              width={20}
+              height={20}
+              className="text-white"
+              src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+            />
           ) : (
             <div
               className={`bg-leconte-primary capitalize ${
                 open ? "rotate-90" : "rotate-0"
-              } text- font-medium flex gap-2 `}
+              }  font-medium flex gap-2 justify-center items-center`}
               style={{
                 writingMode: open ? "inherit" : "vertical-rl",
               }}
             >
-              <span className=" rotate-90">
+              <span className="rotate-90">
                 <Phone />
               </span>
               être rappelé
@@ -67,7 +73,7 @@ export function CTACall() {
           )}
         </CollapsibleTrigger>
         <CollapsibleContent>
-          <Card className="w-3xs md:w-sm">
+          <Card className="w-3xs pt-2 sm:w-sm rounded-ss-none">
             <CardContent className="px-2 md:px-6">
               <Formik
                 validationSchema={schema}
@@ -111,11 +117,11 @@ export function CTACall() {
                       type="email"
                       value={values.email}
                     />
-                    <div>
+                    <div className="flex justify-center">
                       <Button
                         type="submit"
-                        variant="destructive"
-                        className="w-fit m-auto"
+                        variant="default"
+                        className="bg-leconte-primary hover:bg-leconte-primary hover:opacity-50"
                       >
                         Submit
                       </Button>
@@ -170,7 +176,7 @@ const TextInputLiveFeedback = (propsPedr: {
         <div
           id={`${propsPedr.id}-feedback`}
           aria-live="polite"
-          className="feedback text-sm ms-16 -mt-2 text-red-500"
+          className="feedback text-sm ms-12 sm:ms-16 -mt-2 text-red-500"
         >
           {meta.error}
         </div>
