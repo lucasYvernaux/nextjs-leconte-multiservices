@@ -16,6 +16,14 @@ export function Header() {
   useEffect(() => {
     const navLink = document.querySelectorAll("nav li a");
 
+    // const overlay = document.querySelectorAll(".nav-overlay");
+
+    // if (overlay.length != 0) {
+    //   overlay.forEach((element) => {
+    //     element.addEventListener("click", () => {});
+    //   });
+    // }
+
     if (navLink.length != 0) {
       navLink.forEach((link) => {
         if (link.getAttribute("href") == document.location.pathname)
@@ -40,25 +48,27 @@ export function Header() {
   });
 
   return (
-    <header className="sticky top-0 h-auto w-screen z-0 px-4 py-4 bg-leconte-primary">
-      <nav className="flex items-center">
-        <Link
-          className="text-xl flex gap-4 items-center font-bold leading-none w-1/2"
-          href="/"
-        >
-          <Image
-            src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
-            alt="logo"
-            width={50}
-            height={50}
-            className="w-[50px] h-[50px]"
-          />
-          <span>Leconte Multiservices</span>
-        </Link>
-        <div className="w-1/2 px-4 flex justify-end">
+    <header className="sticky top-0 h-auto w-screen z-10 px-4 py-4 bg-leconte-primary">
+      <nav className="flex relative w-full items-center">
+        <div className="nav-logo flex-1">
+          <Link
+            className="text-xl flex gap-4 items-center font-bold leading-none w-fit"
+            href="/"
+          >
+            <Image
+              src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
+              alt="logo"
+              width={50}
+              height={50}
+              className="w-[50px] h-[50px]"
+            />
+            <span>Leconte Multiservices</span>
+          </Link>
+        </div>
+        <div className="me-4 flex-1">
           <div className="lg:hidden">
             <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-              <CollapsibleTrigger className="flex items-center text-leconte-secondary p-3">
+              <CollapsibleTrigger className="float-right cursor-pointer p-3">
                 <svg
                   className="block h-4 w-4 fill-current"
                   viewBox="0 0 20 20"
@@ -70,11 +80,13 @@ export function Header() {
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <div className="relative z-50">
-                  <div className="fixed inset-0 bg-gray-800 opacity-25"></div>
+                  <CollapsibleTrigger>
+                    <div className="nav-overlay fixed inset-0 bg-gray-800 opacity-80"></div>
+                  </CollapsibleTrigger>
                   <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                     <div className="flex items-center mb-8">
                       <Link
-                        className="mr-auto text-3xl font-bold leading-none"
+                        className="text-lg flex flex-1 items-center gap-4 font-bold leading-none"
                         href="/"
                       >
                         <Image
@@ -82,10 +94,10 @@ export function Header() {
                           alt="logo"
                           width={50}
                           height={50}
-                          className="w-[50px] h-[50px]"
                         />
+                        <span>Leconte Multiservices</span>
                       </Link>
-                      <CollapsibleTrigger>
+                      <CollapsibleTrigger className="flex justify-end">
                         <svg
                           className="h-6 w-6  cursor-pointer hover:text-leconte-gray"
                           xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +117,7 @@ export function Header() {
                               className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
                               href="/"
                             >
-                              Accueil mobile collapse
+                              Accueil
                             </Link>
                           </CollapsibleTrigger>
                         </li>
@@ -156,7 +168,7 @@ export function Header() {
               </CollapsibleContent>
             </Collapsible>
           </div>
-          <ul className="hidden text-white float-right top-1/2 justify-end lg:flex lg:flex lg:items-center lg:space-x-6">
+          <ul className="hidden text-white justify-end lg:flex items-center space-x-6">
             <li>
               <Link className="text-base hover:text-leconte-gray" href="/">
                 Accueil

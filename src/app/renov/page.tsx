@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <section className="section-rennov flex flex-col p-12 w-3/4 m-auto">
+      <section className="section-renov flex flex-col p-12 md:w-3/4 m-auto">
         <div className="content flex flex-col gap-12">
           <div className="content-text text-2xl">
             <h1 className="text-4xl text-center mb-12 font-bold text-leconte-primary">
@@ -19,27 +19,27 @@ export default function page() {
             </h1>
 
             <p className="mb-4">
-              La rénovation qu’elles soit intérieure ou extérieure, est une
+              La rénovation qu&apos;elles soit intérieure ou extérieure, est une
               opportunité de mettre en valeur votre chez vous. Elle doit faire
               le lien entre la modernité et son authenticité. Tout cela doit
               être articulé de manière intelligente et réfléchis. Nous avons
               pour mission d&apos;embellir votre chez vous tout en
               s&apos;adapdant à votre budget. Nous avons la même motivation pour
-              toutes les rénovations qu’elles soient de petite ou grande
+              toutes les rénovations qu&apos;elles soient de petite ou grande
               envergure. Nous avons une équipe spécialiste tous corps de
-              métiers. Vous aurez l’assurance d’un accompagnement et d’une
-              expertise efficace tout au long de votre projet et le tout sans
-              passer par des dizaines d&apos;interlocuteurs.
+              métiers. Vous aurez l&apos;assurance d&apos;un accompagnement et
+              d&apos;une expertise efficace tout au long de votre projet et le
+              tout sans passer par des dizaines d&apos;interlocuteurs.
             </p>
 
             <Link
               className="text-2xl block w-fit mx-auto mt-12 rounded-full px-8 py-2 bg-leconte-primary"
               type="button"
               rel=""
-              href="tel:0640141937"
-              data-page-id="Home"
+              href="/renov"
+              data-page-id="Renov"
             >
-              Demander votre devis
+              Demande de devis
             </Link>
           </div>
           <div className="content-img m-auto">
@@ -53,7 +53,8 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="section-about flex flex-col p-12">
+
+      <section className="section-renov-apparte flex flex-col p-12">
         <div className="content flex gap-[4rem] flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
             <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
@@ -61,12 +62,12 @@ export default function page() {
             </h2>
             <p className="mb-[1rem]">
               Vous avez un petit espace ou un appartement plus grand ? Rénover
-              votre appartement, c’est souvent repenser l’organisation des
-              espaces, planter un nouveau décor, mais aussi remettre les
+              votre appartement, c&apos;est souvent repenser l&apos;organisation
+              des espaces, planter un nouveau décor, mais aussi remettre les
               installations aux normes. Vous ne savez pas par où commencer ?
-              L’entreprise Leconte Multiservices vous propose de prendre en main
-              les travaux de rénovation de votre appartement avec des solutions
-              adaptées à vos besoins et votre budget.
+              L&apos;entreprise Leconte Multiservices vous propose de prendre en
+              main les travaux de rénovation de votre appartement avec des
+              solutions adaptées à vos besoins et votre budget.
             </p>
           </div>
           <div className="content-image flex-1">
@@ -80,7 +81,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="section-about-renov flex flex-col p-12">
+      <section className="section-renov-sdb flex flex-col p-12">
         <div className="content flex gap-[4rem] flex-col md:flex-row">
           <div className="content-image flex-1">
             <Image
@@ -110,7 +111,7 @@ export default function page() {
         </div>
       </section>
 
-      <section className="section-about-tips flex flex-col p-12">
+      <section className="section-renov-cuisine flex flex-col p-12">
         <div className="content flex gap-[4rem] flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
             <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
