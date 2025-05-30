@@ -126,9 +126,11 @@
 
 /*Custom Csss*/
 header nav li a.active {
-  padding-bottom: 8px;
-  border-bottom: 2px solid white;
-  @media screen and (max-width: 800px) {
-    border-bottom: 2px solid red;
+  text-decoration: underline solid white;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 1rem;
+
+  @media (width < 64rem) {
+    text-decoration-color: black;
   }
 }
