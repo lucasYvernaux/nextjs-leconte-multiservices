@@ -3,9 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Leconte Multiservices - A Propos",
+  title:
+    "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
   description:
-    "Chez Leconte Multiservices, nous gérons vos projets de manière assidu et efficace.",
+    "Découvrez Leconte Multiservices : entreprise familiale spécialisée en rénovation et dépannage à Paris. 36 ans d'expérience, artisans certifiés, engagements qualité et satisfaction client.",
+  keywords:
+    "entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
+  openGraph: {
+    title:
+      "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
+    description:
+      "entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
+    url: "https://nextjs-leconte-multiservices.vercel.app/about",
+  },
 };
 
 export default function page() {
@@ -28,11 +38,11 @@ export default function page() {
           </div>
           <div className="content-image flex-1">
             <Image
-              className="fluid rounded-full"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
+              className="w-full h-full rounded-[50%]"
+              src="/images/photo-famille-leconte.jpg"
               alt="photo d'une personne réparant un aspirateur"
               width={300}
-              height={200}
+              height={300}
             />
           </div>
         </div>

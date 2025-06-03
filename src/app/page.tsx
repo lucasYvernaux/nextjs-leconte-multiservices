@@ -2,7 +2,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
@@ -11,13 +10,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-12 md:p-0">
+      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-12 md:p-4">
         <div className="content flex flex-col gap-16 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
-            Dépannage à Paris et dans toute l&apos;Ile de France
+            Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
           </h1>
-          <p className="fadein-left text-3xl">
-            Dépannage d&apos;urgence, réparation, installation ou maintenance.
+          <p className="fadein-left text-3xl md:w-3/4">
+            De la rénovation complète aux urgences, nos artisans qualifiés
+            interviennent rapidement pour tous vos projets.
           </p>
           <div className="fadein-left">
             <Link
@@ -44,56 +44,55 @@ export default function Home() {
           </p>
 
           <div className="content-card flex gap-12 md:w-3/4 flex-col md:flex-row">
-            <Card className="fs-5 bg-leconte-secondary rounded-none text-start p-0 flex-1">
-              <CardHeader className="flex-1">
-                <CardTitle className="pt-5 font-bold mb-3">
-                  Dépannage Général
+            <Card className="bg-leconte-secondary rounded-none text-xl text-start gap-0 p-0 flex-1">
+              <CardContent className="h-1/2 gap-0 py-4">
+                <CardTitle className="font-bold mb-4 ">
+                  Dépannage Électroménager
                 </CardTitle>
-                <CardContent className="p-0">
-                  Nous intervenons rapidement dans toute l&apos;Île-de-France
-                  pour toutes types de réparation. Que ce soit de
-                  l&apos;électroménager, de l&apos;électricité ou de la
-                  plomberie.
-                </CardContent>
-              </CardHeader>
-
-              <CardDescription className="flex-1">
+                <p className="p-0">
+                  Intervention urgente pour dépannage électroménager à Paris et
+                  en Île-de-France. Techniciens qualifiés, réparation express à
+                  domicile. 36 ans d&apos;expertise, chez Darty, au services de
+                  particuliers et de professionnel
+                </p>
+              </CardContent>
+              <CardDescription className="h-1/2">
                 <Image
-                  className="fluid"
-                  src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-                  alt="photo d'une personne réparant un aspirateur"
-                  width={300}
-                  height={200}
+                  className="h-full"
+                  src="/images/travaux.jpg"
+                  alt="photo d'un appartement en travaux"
+                  width={1920}
+                  height={1080}
                 />
               </CardDescription>
             </Card>
-            <Card className="fs-5 bg-leconte-secondary rounded-none text-start p-0 flex-1">
-              <CardHeader className="flex-1">
-                <CardTitle className="pt-5 font-bold mb-3">
-                  Rénovation Complète
+            <Card className="bg-leconte-secondary rounded-none text-xl text-start gap-0 p-0 flex-1">
+              <CardContent className="h-1/2 gap-0 py-4">
+                <CardTitle className="font-bold mb-4 ">
+                  Dépannage Travaux
                 </CardTitle>
-                <CardContent className="p-0">
-                  Rénovation appartement ou maison que vous soyez particulier ou
-                  professionnel. Nous vous accompagnons du début à la fin de
-                  votre projet et le tout avec un seul et unique interlocuteur.
-                </CardContent>
-              </CardHeader>
-              <CardDescription>
+                <p className="p-0">
+                  Une fuite d&apos;eau, une coupure intempestive ? Ne laissez
+                  pas ces problèmes perturber votre quotidien. On est là pour
+                  vous apportez conseil et intervenir rapidement dans tout Paris
+                  et toutes l&apos;Île de France.
+                </p>
+              </CardContent>
+              <CardDescription className="h-1/2">
                 <Image
-                  className="fluid h-50"
-                  src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-                  alt="photo d'une personne réparant un aspirateur"
-                  width={300}
-                  height={200}
+                  className="h-full"
+                  src="/images/travaux.jpg"
+                  alt="photo d'un appartement en travaux"
+                  width={1920}
+                  height={1080}
                 />
               </CardDescription>
             </Card>
           </div>
 
           <Link
-            className="text-xl rounded-full px-8 py-2 bg-leconte-primary"
-            style={{ width: "fit-content" }}
-            href="/services"
+            className="text-xl rounded-full px-8 py-2 bg-leconte-primary w-fit"
+            href="/depannage"
           >
             Voir tous les services
           </Link>
@@ -101,7 +100,7 @@ export default function Home() {
       </section>
 
       <section className="section-home-electro flex flex-col p-12">
-        <h2 className="text-4xl my-12 font-bold text-leconte-primary text-center">
+        <h2 className="text-4xl mb-12 font-bold text-leconte-primary text-center">
           Votre expert en dépannage électroménager
         </h2>
         <div className="content flex gap-16 flex-col md:mx-16 md:flex-row">
@@ -112,24 +111,14 @@ export default function Home() {
               à vivre très longtemps. Vous pouvez faire confiance à mon
               expertise, avec mes 36 ans d&apos;expérience chez Darty.
             </p>
-            <div className="content-footer flex gap-12">
-              <div>
-                <h3 className="text-3xl">150+</h3>
-                <p className="text-base">Partenaire Proxiconfort</p>
-              </div>
-              <div>
-                <h3 className="text-3xl">36 ans</h3>
-                <p className="text-base">Expérience et fiabilité</p>
-              </div>
-            </div>
           </div>
           <div className="content-image flex-1">
             <Image
-              className="fluid"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
+              className="rounded-4xl"
+              src="/images/travaux.jpg"
+              alt="photo d'un appartement en travaux"
+              width={1920}
+              height={1080}
             />
           </div>
         </div>

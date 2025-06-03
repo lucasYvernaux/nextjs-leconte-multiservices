@@ -3,15 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Leconte Multiservices - Rénov",
+  title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
   description:
-    "Chez Leconte Multiservices, vous avez comme projet de rénover.Rénovation appartement maison intérieur extéireur dans toutes l&apos;ile de france y compris Paris",
+    "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
+  keywords:
+    "rénovation Paris, rénovation Île-de-France, rénovation appartement, rénovation maison, entreprise rénovation, artisan rénovation, devis rénovation, rénovation intérieure, rénovation complète, rénovation globale, rénovation cuisine, rénovation salle de bain",
+  openGraph: {
+    title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
+    description:
+      "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
+    url: "https://nextjs-leconte-multiservices.vercel.app/renovation",
+  },
 };
 
 export default function page() {
   return (
     <>
-      <section className="section-renov flex flex-col p-12 md:w-3/4 m-auto">
+      <section className="section-renov flex flex-col min-h-screen p-12 md:w-3/4 m-auto">
         <div className="content flex flex-col gap-12">
           <div className="content-text text-2xl">
             <h1 className="text-4xl text-center mb-12 font-bold text-leconte-primary">
@@ -34,21 +42,20 @@ export default function page() {
 
             <Link
               className="text-2xl block w-fit mx-auto mt-12 rounded-full px-8 py-2 bg-leconte-primary"
-              type="button"
               rel=""
-              href="/renov"
+              href="/contact"
               data-page-id="Renov"
             >
               Demande de devis
             </Link>
           </div>
-          <div className="content-img m-auto">
+          <div className="content-img">
             <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
+              className="rounded-4xl"
+              src="/images/travaux.jpg"
+              alt="photo d'un appartement en travaux"
+              width={1920}
+              height={1080}
             />
           </div>
         </div>
@@ -70,26 +77,26 @@ export default function page() {
               solutions adaptées à vos besoins et votre budget.
             </p>
           </div>
-          <div className="content-image flex-1">
+          <div className="content-image flex flex-1 items-center">
             <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
+              className="rounded-4xl"
+              src="/images/travaux.jpg"
+              alt="photo d'un appartement en travaux"
+              width={1920}
+              height={1080}
             />
           </div>
         </div>
       </section>
       <section className="section-renov-sdb flex flex-col p-12">
         <div className="content flex gap-[4rem] flex-col md:flex-row">
-          <div className="content-image flex-1">
+          <div className="content-image flex flex-1 items-center">
             <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
+              className="rounded-4xl"
+              src="/images/travaux.jpg"
+              alt="photo d'un appartement en travaux"
+              width={1920}
+              height={1080}
             />
           </div>
           <div className="content-text  text-start text-2xl fade-in flex-1">
@@ -128,13 +135,13 @@ export default function page() {
               mesure à la mise en service de l&apos;électroménager.
             </p>
           </div>
-          <div className="content-image flex-1">
+          <div className="content-image flex flex-1 items-center">
             <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
+              className="rounded-4xl"
+              src="/images/travaux.jpg"
+              alt="photo d'un appartement en travaux"
+              width={1920}
+              height={1080}
             />
           </div>
         </div>

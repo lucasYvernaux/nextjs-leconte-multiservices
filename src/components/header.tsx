@@ -3,49 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Collapsible,
   CollapsibleTrigger,
   CollapsibleContent,
 } from "./ui/collapsible";
+import { usePathname } from "next/navigation";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const navLink = document.querySelectorAll("nav li a");
-
-    // const overlay = document.querySelectorAll(".nav-overlay");
-
-    // if (overlay.length != 0) {
-    //   overlay.forEach((element) => {
-    //     element.addEventListener("click", () => {});
-    //   });
-    // }
-
-    if (navLink.length != 0) {
-      navLink.forEach((link) => {
-        if (link.getAttribute("href") == document.location.pathname)
-          link.classList.add("active");
-        else link.classList.remove("active");
-
-        link.addEventListener("click", function (e: Event) {
-          navLink.forEach((activeLink) => {
-            if (
-              activeLink.getAttribute("href") ==
-              "/" +
-                String(e.target).split("/")[
-                  String(e.target).split("/").length - 1
-                ]
-            )
-              activeLink.classList.add("active");
-            else activeLink.classList.remove("active");
-          });
-        });
-      });
-    }
-  });
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 h-auto w-screen z-10 px-4 py-4 bg-leconte-primary">
@@ -109,60 +77,69 @@ export function Header() {
                         </svg>
                       </CollapsibleTrigger>
                     </div>
-                    <div>
-                      <ul>
-                        <li className="mb-1">
-                          <CollapsibleTrigger asChild>
-                            <Link
-                              className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
-                              href="/"
-                            >
-                              Accueil
-                            </Link>
-                          </CollapsibleTrigger>
-                        </li>
-                        <li className="mb-1">
-                          <CollapsibleTrigger asChild>
-                            <Link
-                              className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
-                              href="/services"
-                            >
-                              Dépannage
-                            </Link>
-                          </CollapsibleTrigger>
-                        </li>
-                        <li className="mb-1">
-                          <CollapsibleTrigger asChild>
-                            <Link
-                              className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
-                              href="/renov"
-                            >
-                              Rénovation
-                            </Link>
-                          </CollapsibleTrigger>
-                        </li>
-                        <li className="mb-1">
-                          <CollapsibleTrigger asChild>
-                            <Link
-                              className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
-                              href="/about"
-                            >
-                              A Propos
-                            </Link>
-                          </CollapsibleTrigger>
-                        </li>
-                        <li className="mb-1">
-                          <CollapsibleTrigger asChild>
-                            <Link
-                              className="block p-4 text-base font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded"
-                              href="/contact"
-                            >
-                              Contact
-                            </Link>
-                          </CollapsibleTrigger>
-                        </li>
-                      </ul>
-                    </div>
+
+                    <ul className="flex flex-col gap-4">
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
+                            ${pathname == "/" ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/"
+                          >
+                            Accueil
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
+                            ${pathname == "/depannage" ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/depannage"
+                          >
+                            Dépannage
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
+                            ${pathname == "/renovation" ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/renovation"
+                          >
+                            Rénovation
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
+                            ${pathname == "/about" ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/about"
+                          >
+                            A Propos
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
+                            ${pathname == "/contact" ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/contact"
+                          >
+                            Contact
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                    </ul>
                   </nav>
                 </div>
               </CollapsibleContent>
@@ -170,15 +147,22 @@ export function Header() {
           </div>
           <ul className="hidden text-white justify-end lg:flex items-center space-x-6">
             <li>
-              <Link className="text-base hover:text-leconte-gray" href="/">
+              <Link
+                className={`text-base ${
+                  pathname == "/" ? "active" : ""
+                } hover:text-leconte-gray`}
+                href="/"
+              >
                 Accueil
               </Link>
             </li>
 
             <li>
               <Link
-                className="text-base hover:text-leconte-gray"
-                href="/services"
+                className={`text-base ${
+                  pathname == "/depannage" ? "active" : ""
+                } hover:text-leconte-gray`}
+                href="/depannage"
               >
                 Dépannage
               </Link>
@@ -186,8 +170,10 @@ export function Header() {
 
             <li>
               <Link
-                className="text-base  hover:text-leconte-gray"
-                href="/renov"
+                className={`text-base ${
+                  pathname == "/renovation" ? "active" : ""
+                } hover:text-leconte-gray`}
+                href="/renovation"
               >
                 Rénovation
               </Link>
@@ -195,7 +181,9 @@ export function Header() {
 
             <li>
               <Link
-                className="text-base  hover:text-leconte-gray"
+                className={`text-base ${
+                  pathname == "/about" ? "active" : ""
+                } hover:text-leconte-gray`}
                 href="/about"
               >
                 A Propos
@@ -204,7 +192,9 @@ export function Header() {
 
             <li>
               <Link
-                className="text-base hover:text-leconte-gray"
+                className={`text-base ${
+                  pathname == "/contact" ? "active" : ""
+                } hover:text-leconte-gray`}
                 href="/contact"
               >
                 Contact
