@@ -1,5 +1,18 @@
+import { Metadata } from "next";
 import { cookies } from "next/headers";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Leconte Multiservices - Mentions Légales",
+  description:
+    "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
+  openGraph: {
+    title: "Leconte Multiservices - Mentions Légales",
+    description:
+      "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
+    url: "https://nextjs-leconte-multiservices.vercel.app/mentions-legales",
+  },
+};
 
 export default async function page() {
   const myHost = process.env.HOST ?? "example.leconte-multiservices.fr";
@@ -87,7 +100,7 @@ export default async function page() {
               personnelles peuvent être transférées à des entreprises tierces.
             </p>
           </div>
-          {cookielength > 1 && (
+          {cookielength > 0 && (
             <div className="content-rgpd flex flex-col gap-4 mb-8">
               <h2 className="text-leconte-primary text-3xl">Cookies</h2>
               <p>
@@ -159,21 +172,23 @@ export default async function page() {
               d&apos;interruption de la mise en ligne du site, notamment pour
               des problématiques informatiques. L&apos;entreprise
               s&apos;efforcera d&apos;informer au plus vite les utilisateurs de
-              l&apos;incident rencontré. Le site
-              {myHost} peut contenir des liens hypertextes pouvant renvoyer sur
-              d&apos;autres sites internet (partenaire, produit, article de
-              presse, réseaux sociaux, etc). Leconte Multiservices ne se porte
-              pas garant et ne valide pas leur contenu. Leconte Multiservices ne
-              pourra être tenu responsable des contenus proposés par ces mêmes
-              sites internet qui seraient contraires à la réglementation et
-              législation en vigueur. Leconte Multiservices pourra mettre à mise
-              à disposition sur le site un blog et/ou un espace
-              d&apos;expression de l&apos;utilisateur comme par exemple un
-              endroit pour laisser un avis sur une de nos prestations ou
-              produits. En cas de propos injurieux, raciste, diffamatoire ou
-              pornographique, Leconte Multiservices pourra supprimer le
-              commentaire de l&apos;utilisateur en question et entamer une
-              procédure contre cette personne auprès des Autorités Compétentes.
+              l&apos;incident rencontré.
+              <br />
+              Le site {myHost} peut contenir des liens hypertextes pouvant
+              renvoyer sur d&apos;autres sites internet (partenaire, produit,
+              article de presse, réseaux sociaux, etc). Leconte Multiservices ne
+              se porte pas garant et ne valide pas leur contenu. Leconte
+              Multiservices ne pourra être tenu responsable des contenus
+              proposés par ces mêmes sites internet qui seraient contraires à la
+              réglementation et législation en vigueur. <br />
+              Leconte Multiservices pourra mettre à disposition sur le site un
+              blog et/ou un espace d&apos;expression de l&apos;utilisateur comme
+              par exemple un endroit pour laisser un avis sur l&apos;une de nos
+              prestations ou produits. En cas de propos injurieux, racistes,
+              diffamatoires ou pornographiques, Leconte Multiservices pourra
+              supprimer le commentaire de l&apos;utilisateur en question et
+              entamer une procédure contre cette personne auprès des Autorités
+              Compétentes.
             </p>
           </div>
         </div>
