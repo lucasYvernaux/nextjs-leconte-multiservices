@@ -16,19 +16,20 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 h-auto w-screen z-10 px-4 py-4 bg-leconte-primary">
-      <nav className="flex relative w-full items-center">
-        <div className="nav-logo flex-1">
+    <header className="sticky top-0 h-28 w-lvw z-10 px-4 py-4 bg-leconte-primary">
+      <nav className="flex w-full h-full items-center">
+        <div className="nav-logo flex-1 h-full">
           <Link
-            className="text-xl flex gap-4 items-center font-bold leading-none w-fit"
+            className="text-xl flex gap-4 items-center font-bold leading-none w-fit h-full"
             href="/"
+            title="Retour à l'accueil"
           >
             <Image
               src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
               alt="logo"
-              width={50}
-              height={50}
-              className="w-[50px] h-[50px]"
+              width={1920}
+              height={1080}
+              className="h-full w-auto aspect-square"
             />
             <span>Leconte Multiservices</span>
           </Link>
@@ -145,10 +146,10 @@ export function Header() {
               </CollapsibleContent>
             </Collapsible>
           </div>
-          <ul className="hidden text-white justify-end lg:flex items-center space-x-6">
+          <ul className="hidden text-lg font-medium justify-end lg:flex items-center space-x-6">
             <li>
               <Link
-                className={`text-base ${
+                className={` ${
                   pathname == "/" ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/"
@@ -159,7 +160,7 @@ export function Header() {
 
             <li>
               <Link
-                className={`text-base ${
+                className={` ${
                   pathname == "/depannage" ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/depannage"
@@ -170,7 +171,7 @@ export function Header() {
 
             <li>
               <Link
-                className={`text-base ${
+                className={` ${
                   pathname == "/renovation" ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/renovation"
@@ -181,7 +182,7 @@ export function Header() {
 
             <li>
               <Link
-                className={`text-base ${
+                className={` ${
                   pathname == "/about" ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/about"
@@ -192,7 +193,7 @@ export function Header() {
 
             <li>
               <Link
-                className={`text-base ${
+                className={` ${
                   pathname == "/contact" ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/contact"

@@ -46,12 +46,12 @@ export default function page() {
               href="/contact"
               data-page-id="Renov"
             >
-              Demande de devis
+              Demandez un devis
             </Link>
           </div>
           <div className="content-img">
             <Image
-              className="rounded-4xl"
+              className="rounded-4xl w-full"
               src="/images/travaux.jpg"
               alt="photo d'un appartement en travaux"
               width={1920}
@@ -62,12 +62,12 @@ export default function page() {
       </section>
 
       <section className="section-renov-apparte flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
+        <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
+            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation appartement à Paris
             </h2>
-            <p className="mb-[1rem]">
+            <p>
               Vous avez un petit espace ou un appartement plus grand ? Rénover
               votre appartement, c&apos;est souvent repenser l&apos;organisation
               des espaces, planter un nouveau décor, mais aussi remettre les
@@ -79,9 +79,9 @@ export default function page() {
           </div>
           <div className="content-image flex flex-1 items-center">
             <Image
-              className="rounded-4xl"
-              src="/images/travaux.jpg"
-              alt="photo d'un appartement en travaux"
+              className="rounded-4xl w-full"
+              src="/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp"
+              alt="gif d'un appartement sous les combles travaux fini"
               width={1920}
               height={1080}
             />
@@ -89,21 +89,21 @@ export default function page() {
         </div>
       </section>
       <section className="section-renov-sdb flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
+        <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-image flex flex-1 items-center">
             <Image
-              className="rounded-4xl"
-              src="/images/travaux.jpg"
-              alt="photo d'un appartement en travaux"
+              className="rounded-4xl w-full"
+              src="/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif"
+              alt="gif d'une salle de bain apres travaux"
               width={1920}
               height={1080}
             />
           </div>
           <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
+            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation salle de bain
             </h2>
-            <p className="mb-[1rem]">
+            <p>
               Votre salle de bain est vieillissante ou plus du tout adaptée à
               vos besoins ? Vous souhaitez la rendre plus moderne ou plus
               fonctionnelle ? De l&apos;installation de plomberie au
@@ -119,12 +119,12 @@ export default function page() {
       </section>
 
       <section className="section-renov-cuisine flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
+        <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
+            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation cuisine à Paris
             </h2>
-            <p className="mb-[1rem]">
+            <p>
               Que vous souhaitiez rénover votre cuisine ou la créer, nous vous
               proposons des solutions adaptées. Allant du simple montage de
               meubles de cuisine en kit à la réalisation d&apos;une cuisine sur
@@ -137,9 +137,9 @@ export default function page() {
           </div>
           <div className="content-image flex flex-1 items-center">
             <Image
-              className="rounded-4xl"
-              src="/images/travaux.jpg"
-              alt="photo d'un appartement en travaux"
+              className="rounded-4xl w-full"
+              src="/images/video-cuisine-avant-apres.gif"
+              alt="gif d'une cuisine rénové avant / après"
               width={1920}
               height={1080}
             />

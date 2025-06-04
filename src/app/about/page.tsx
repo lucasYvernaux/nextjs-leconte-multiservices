@@ -22,12 +22,12 @@ export default function page() {
   return (
     <>
       <section className="section-about flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
-          <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-[3rem] font-bold text-leconte-primary">
+        <div className="content flex gap-16 flex-col md:flex-row">
+          <div className="content-text text-start text-2xl fade-in flex-1">
+            <h2 className="text-4xl my-12 font-bold text-leconte-primary">
               Notre histoire
             </h2>
-            <p className="mb-[1rem]">
+            <p>
               Depuis 1976, la plomberie est un lien familial fort. Chez Leconte
               Multiservices, nous gérons vos projets de manière assidu et
               efficace. Nous pouvons répondre à tous les besoins de votre
@@ -36,13 +36,13 @@ export default function page() {
               tout avec un prix raisonnable.
             </p>
           </div>
-          <div className="content-image flex-1">
+          <div className="content-image flex-1 flex items-center justify-center">
             <Image
-              className="w-full h-full rounded-[50%]"
+              className="w-ful w-3/4 aspect-square rounded-full "
               src="/images/photo-famille-leconte.jpg"
               alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={300}
+              width={1920}
+              height={1080}
             />
           </div>
         </div>
@@ -51,8 +51,8 @@ export default function page() {
         <div className="content flex gap-[4rem] flex-col md:flex-row">
           <div className="content-image flex-1">
             <Image
-              className="fluid rounded-xl"
-              src="https://www.darty.com/darty-et-vous/sites/default/files/2022-10/une-reparSEB-494x326.jpg"
+              className="rounded-xl w-full"
+              src="/images/travaux.jpg"
               alt="photo d'une personne réparant un aspirateur"
               width={300}
               height={200}
