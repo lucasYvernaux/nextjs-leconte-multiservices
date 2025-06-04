@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-12 md:p-4">
         <div className="content flex flex-col gap-16 items-center justify-center max-w-full w-full">
-          <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
+          <h1 className="text-4xl text-center mx-auto font-bold uppercase fadein-left">
             Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
           </h1>
           <p className="fadein-left text-3xl md:w-3/4">
@@ -43,9 +43,9 @@ export default function Home() {
             maintenance.
           </p>
 
-          <div className="content-card flex gap-12 md:w-3/4 flex-col md:flex-row">
-            <Card className="bg-leconte-secondary rounded-none text-xl text-start gap-0 p-0 flex-1">
-              <CardContent className="h-1/2 gap-0 py-4">
+          <div className="content-card flex gap-12 text-lg md:text-xl md:w-3/4 flex-col md:flex-row">
+            <Card className="bg-leconte-secondary rounded-none text-start gap-0 p-0 flex-1">
+              <CardContent className="md:h-1/2 gap-0 py-4">
                 <CardTitle className="font-bold mb-4 ">
                   Dépannage Électroménager
                 </CardTitle>
@@ -56,7 +56,7 @@ export default function Home() {
                   particuliers et de professionnel
                 </p>
               </CardContent>
-              <CardDescription className="h-1/2">
+              <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
                   src="/images/travaux.jpg"
@@ -66,8 +66,8 @@ export default function Home() {
                 />
               </CardDescription>
             </Card>
-            <Card className="bg-leconte-secondary rounded-none text-xl text-start gap-0 p-0 flex-1">
-              <CardContent className="h-1/2 gap-0 py-4">
+            <Card className="bg-leconte-secondary rounded-none text-start gap-0 p-0 flex-1">
+              <CardContent className="md:h-1/2 gap-0 py-4">
                 <CardTitle className="font-bold mb-4 ">
                   Dépannage Travaux
                 </CardTitle>
@@ -78,7 +78,7 @@ export default function Home() {
                   et toutes l&apos;Île de France.
                 </p>
               </CardContent>
-              <CardDescription className="h-1/2">
+              <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
                   src="/images/travaux.jpg"
