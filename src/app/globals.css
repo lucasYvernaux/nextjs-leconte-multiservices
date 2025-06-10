@@ -125,6 +125,50 @@
 }
 
 /*Custom Csss*/
+/* animatioin */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.fade-in {
+  opacity: 0.5;
+  scale: 0.4;
+  animation-name: fadeIn;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: 50px 30%;
+}
+
+.fadein-left {
+  animation-name: fadein-left;
+  animation-duration: 1s;
+}
+@keyframes fadein-left {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.fadein-right {
+  animation-name: fadein-right;
+  animation-duration: 1s;
+}
+@keyframes fadein-right {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+/* component */
 header nav li a.active {
   text-decoration: underline solid black;
   text-decoration-thickness: 3px;

@@ -118,9 +118,9 @@ export default function page() {
         </div>
       </section>
 
-      <section className="section-renov-cuisine flex flex-col p-12">
-        <div className="content flex gap-16 flex-col md:flex-row">
-          <div className="content-text  text-start text-2xl fade-in flex-1">
+      <section className="section-renov-cuisine max-h-screen flex flex-col px-12">
+        <div className="content flex gap-16 flex-col h-fit md:flex-row">
+          <div className="content-text  text-start text-2xl fade-in flex-1 h-fit">
             <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation cuisine à Paris
             </h2>
@@ -135,9 +135,9 @@ export default function page() {
               mesure à la mise en service de l&apos;électroménager.
             </p>
           </div>
-          <div className="content-image flex flex-1 items-center">
+          <div className="content-image flex flex-1 items-center h-fit">
             <Image
-              className="rounded-4xl w-full"
+              className="rounded-4xl h-fit"
               src="/images/video-cuisine-avant-apres.gif"
               alt="gif d'une cuisine rénové avant / après"
               width={1920}
