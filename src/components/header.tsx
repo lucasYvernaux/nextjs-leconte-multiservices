@@ -16,7 +16,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 h-28 w-lvw z-10 px-4 py-4 bg-leconte-primary">
+    <header className="sticky top-0 h-28 w-full z-10 px-4 py-4 bg-leconte-primary">
       <nav className="flex w-full h-full items-center">
         <div className="nav-logo flex-1 h-full">
           <Link
@@ -68,7 +68,7 @@ export function Header() {
                       </Link>
                       <CollapsibleTrigger className="flex justify-end">
                         <svg
-                          className="h-6 w-6  cursor-pointer hover:text-leconte-gray"
+                          className="h-6 w-6 cursor-pointer hover:text-leconte-gray"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
