@@ -1,3 +1,4 @@
+import { AvisGoogle } from "@/components/avisGoogle";
 import {
   Card,
   CardContent,
@@ -10,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home flex bg-linear-to-r from-leconte-primary to-leconte-secondary h-screen p-12 md:p-4">
+      <section className="section-home bg-no-repeat bg-center bg-cover bg-[url(/images/travaux.jpg)] flex h-screen p-12 md:p-4">
         <div className="content flex flex-col gap-16 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl text-center mx-auto font-bold uppercase fadein-left">
             Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
@@ -104,7 +105,7 @@ export default function Home() {
           Votre expert en dépannage électroménager
         </h2>
         <div className="content flex gap-16 flex-col md:mx-16 md:flex-row">
-          <div className="content-text text-start text-2xl fade-in flex-1">
+          <div className="content-text text-start text-2xl fade-pedro flex-1">
             <p className="mb-4">
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu’il continue
@@ -122,6 +123,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+      <section className="w-full h-screen p-12">
+        <AvisGoogle />
       </section>
     </>
   );
