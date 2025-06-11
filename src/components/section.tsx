@@ -5,7 +5,7 @@ export function Section(props: {
   name: string;
   idPage: string;
   class?: string;
-  image?: { position: string; src: string; alt: string };
+  image?: { position: string; src: string; alt: string; type?: boolean };
   title: string;
   first?: boolean;
   children: ReactNode;
@@ -18,31 +18,54 @@ export function Section(props: {
     >
       <div className="content flex gap-16 flex-col md:flex-row ">
         {props.image?.position == "left" && (
-          <div className="content-image flex flex-1 items-center">
-            <Image
-              className="rounded-4xl w-full"
-              src={props.image.src}
-              alt={props.image.alt}
-              width={1920}
-              height={1080}
-            />
+          <div className="content-image flex items-center md:flex-1">
+            {!props.image?.type ? (
+              <Image
+                className="rounded-4xl w-full"
+                src={props.image.src}
+                alt={props.image.alt}
+                width={1920}
+                height={1080}
+              />
+            ) : (
+              <iframe
+                src={props.image.src}
+                className="size-full min-h-[50vh]"
+                loading="lazy"
+                title={props.image.alt}
+              />
+            )}
           </div>
         )}
-        <div className="content-text text-start text-2xl fade-in flex-1">
-          <h2 className="text-4xl my-12 font-bold text-leconte-primary">
+
+        <div className="content-text text-start text-2xl fade-in md:flex-1">
+          <h2
+            className={`text-4xl my-12 font-bold text-leconte-primary ${
+              props.first && "text-center mt-0"
+            }`}
+          >
             {props.title}
           </h2>
           {props.children}
         </div>
         {props.image?.position == "right" && (
-          <div className="content-image flex flex-1 items-center">
-            <Image
-              className="rounded-4xl"
-              src={props.image.src}
-              alt={props.image.alt}
-              width={1920}
-              height={1080}
-            />
+          <div className="content-image flex items-center max-h-screen md:flex-1">
+            {!props.image?.type ? (
+              <Image
+                className="rounded-4xl w-full"
+                src={props.image.src}
+                alt={props.image.alt}
+                width={1920}
+                height={1080}
+              />
+            ) : (
+              <iframe
+                src={props.image.src}
+                className="size-full min-h-[50vh]"
+                loading="lazy"
+                title={props.image.alt}
+              />
+            )}
           </div>
         )}
       </div>

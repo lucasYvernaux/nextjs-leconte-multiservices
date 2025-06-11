@@ -1,4 +1,5 @@
 import { AvisGoogle } from "@/components/avisGoogle";
+import { Map } from "@/components/Map";
 import {
   Card,
   CardContent,
@@ -124,9 +125,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-screen p-12">
+      <section className="w-screen h-[70vh] p-12">
         <AvisGoogle />
       </section>
+      <Map idPage="home" />
     </>
   );
 }

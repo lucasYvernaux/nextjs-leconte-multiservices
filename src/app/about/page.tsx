@@ -1,3 +1,4 @@
+import { Map } from "@/components/Map";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,7 +59,7 @@ export default function page() {
               height={200}
             />
           </div>
-          <div className="content-text text-start text-2xl flex flex-col gap-12 fade-in flex-1">
+          <div className="content-text text-start text-2xl flex flex-col gap-12 flex-1">
             <h2 className="text-4xl font-bold text-leconte-primary">
               Des conseils de qualité
             </h2>
@@ -82,6 +83,7 @@ export default function page() {
           </div>
         </div>
       </section>
+      <Map idPage="about" />
     </>
   );
 }
