@@ -1,3 +1,4 @@
+import { Section } from "@/components/section";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -117,7 +118,7 @@ export default function page() {
           </div>
         </div>
       </section>
-
+      {/* 
       <section className="section-renov-cuisine max-h-screen flex flex-col px-12">
         <div className="content flex gap-16 flex-col h-fit md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1 h-fit">
@@ -145,7 +146,29 @@ export default function page() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
+      <Section
+        idPage="renovation"
+        name="cuisine"
+        image={{
+          alt: "gif d'une cuisine rénové avant / après",
+          position: "right",
+          src: "/images/video-cuisine-avant-apres.gif",
+          top: true,
+        }}
+        title="Rénovation cuisine à Paris"
+      >
+        <p>
+          Que vous souhaitiez rénover votre cuisine ou la créer, nous vous
+          proposons des solutions adaptées. Allant du simple montage de meubles
+          de cuisine en kit à la réalisation d&apos;une cuisine sur mesure avec
+          raccordement à la plomberie, électricité et gaz. Le tout toujours avec
+          le respect de votre budget, de vos délais et de l&apos;environnement.
+          Et nous vous accompagnons du début à la fin de votre projet, à chaque
+          étape du processus. De la prise de mesure à la mise en service de
+          l&apos;électroménager.
+        </p>
+      </Section>
     </>
   );
 }
