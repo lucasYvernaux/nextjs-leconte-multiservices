@@ -95,7 +95,7 @@ export default function Page() {
           {({ handleSubmit, values }) => (
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4 m-auto md:px-16 md:gap-12"
+              className="flex flex-col gap-4 m-auto md:w-3/4 md:px-16 md:gap-12"
             >
               <div className="flex flex-col gap-4 md:flex-row md:gap-8">
                 <div className="md:w-1/2">
@@ -273,7 +273,7 @@ const TextInputLiveFeedback = (propsInput: {
               showFeedback && !meta.error && "text-green-600"
             } ${
               showFeedback && meta.error && "text-red-600"
-            } duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto`}
+            } duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto`}
           >
             {propsInput.label}
           </Label>

@@ -45,7 +45,7 @@ export default function Home() {
             maintenance.
           </p>
 
-          <div className="content-card flex gap-12 text-lg md:text-xl md:w-3/4 flex-col md:flex-row">
+          <div className="content-card flex gap-6 text-lg md:text-xl md:w-3/4 flex-col md:flex-row">
             <Card className="bg-leconte-secondary rounded-none text-start gap-0 p-0 flex-1">
               <CardContent className="md:h-1/2 gap-0 py-4">
                 <CardTitle className="font-bold mb-4 ">
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen h-[70vh] p-12">
+      <section className="w-full h-[70vh] p-12">
         <AvisGoogle />
       </section>
       <Map idPage="home" />
