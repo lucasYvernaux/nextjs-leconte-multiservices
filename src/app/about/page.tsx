@@ -1,4 +1,5 @@
 import { Map } from "@/components/Map";
+import { Section } from "@/components/section";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -48,41 +49,34 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="section-about-renov flex flex-col p-12">
-        <div className="content flex gap-[4rem] flex-col md:flex-row">
-          <div className="content-image flex-1">
-            <Image
-              className="rounded-xl w-full"
-              src="/images/travaux.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={300}
-              height={200}
-            />
-          </div>
-          <div className="content-text text-start text-2xl flex flex-col gap-12 flex-1">
-            <h2 className="text-4xl font-bold text-leconte-primary">
-              Des conseils de qualité
-            </h2>
-            <p>
-              Nous sommes fiers de satisfaire les besoins de nos clients. Nous
-              pouvons également vous recommander des solutions alternatives
-              moins coûteuses et plus rapides à mettre en œuvre, sans
-              compromettre la qualité de vos projets et investissements.
-            </p>
-            <div className="content-btn flex justify-center w-full">
-              <Link
-                className="text-2xl rounded-full px-8 py-2 bg-leconte-primary"
-                type="button"
-                rel=""
-                href="/contact"
-                data-page-id="About"
-              >
-                Demander un devis
-              </Link>
-            </div>
-          </div>
+      <Section
+        title="Des Conseils de qualité"
+        idPage="about"
+        name="conseils"
+        image={{
+          alt: "photo d'un appartement en travaux",
+          position: "left",
+          src: "/images/travaux.jpg",
+        }}
+      >
+        <p>
+          Nous sommes fiers de satisfaire les besoins de nos clients. Nous
+          pouvons également vous recommander des solutions alternatives moins
+          coûteuses et plus rapides à mettre en œuvre, sans compromettre la
+          qualité de vos projets et investissements.
+        </p>
+        <div className="content-btn flex justify-center w-full">
+          <Link
+            className="text-2xl rounded-full px-8 py-2 mt-12 bg-leconte-primary"
+            type="button"
+            rel=""
+            href="/contact"
+            data-page-id="About"
+          >
+            Demander un devis
+          </Link>
         </div>
-      </section>
+      </Section>
       <Map idPage="about" />
     </>
   );
