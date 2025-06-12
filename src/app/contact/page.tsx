@@ -9,6 +9,7 @@ import { toast, Toaster } from "sonner";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
+import { useFormStatus } from "react-dom";
 
 interface ContactFormState {
   [key: string]: unknown;
@@ -20,8 +21,9 @@ interface ContactFormState {
   message: string;
 }
 
-export default function page() {
+export default function Page() {
   const phoneRegex = RegExp("^0[0-9]{8}[0-9]$");
+  const { pending } = useFormStatus();
 
   const initialValues: ContactFormState = {
     firstName: "",
@@ -48,14 +50,14 @@ export default function page() {
   });
 
   function onSubmit(result: ContactFormState) {
-    console.log("onsubmit");
-    console.log(result);
-
+    result.lastName = result.lastName.toUpperCase();
+    result.firstName =
+      result.firstName.charAt(0).toUpperCase() + result.firstName.slice(1);
     try {
       emailjs
         .send(
-          "service_y15rv6s", //serviceID
-          "template_k5nglaw", //TemplateID
+          "service_k61gxzh", //serviceID
+          "template_g4nk9pw", //TemplateID
           result,
           "tdeeaKm62sv5davM8" //Public Key
         )
@@ -156,9 +158,10 @@ export default function page() {
                   type="submit"
                   title="Enoyer le formulaire"
                   variant="default"
+                  disabled={pending}
                   className="bg-leconte-primary text-base hover:bg-leconte-primary hover:opacity-50"
                 >
-                  Envoyer
+                  {pending ? "Envoie. . ." : "Envoyer"}
                 </Button>
               </div>
             </form>
