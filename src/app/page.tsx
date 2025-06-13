@@ -12,8 +12,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home bg-no-repeat bg-center bg-cover bg-[url(/images/travaux.jpg)] flex h-screen p-12 md:p-4">
-        <div className="content flex flex-col gap-16 items-center justify-center max-w-full w-full">
+      <section className="section-home shrink text-white bg-no-repeat bg-center bg-cover bg-[url(/images/reparation-aspirateur-electromenager.webp)] flex h-screen p-12 md:p-4">
+        <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl text-center mx-auto font-bold uppercase fadein-left">
             Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
           </h1>
@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <div className="fadein-left">
             <Link
-              className="text-2xl rounded-full px-12 py-2 bg-leconte-primary"
+              className="text-2xl text-white rounded-full px-12 py-2 bg-leconte-primary"
               type="button"
               rel=""
               href="tel:0640141937"
@@ -61,8 +61,8 @@ export default function Home() {
               <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
-                  src="/images/travaux.jpg"
-                  alt="photo d'un appartement en travaux"
+                  src="/images/reparation-aspirateur.jpg"
+                  alt="photo d'un homme réparant un aspirateur"
                   width={1920}
                   height={1080}
                 />
@@ -117,8 +117,8 @@ export default function Home() {
           <div className="content-image flex-1">
             <Image
               className="rounded-4xl"
-              src="/images/travaux.jpg"
-              alt="photo d'un appartement en travaux"
+              src="/images/reparation-aspirateur.jpg"
+              alt="photo d'un homme réparant un aspirateur"
               width={1920}
               height={1080}
             />

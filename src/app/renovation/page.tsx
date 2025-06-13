@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <>
+    <main className="relative">
       <section className="section-renov flex flex-col min-h-screen p-12 md:w-3/4 m-auto">
         <div className="content flex flex-col gap-12">
           <div className="content-text text-2xl">
@@ -52,8 +52,8 @@ export default function page() {
           </div>
           <div className="content-img">
             <Image
-              className="rounded-4xl w-full"
-              src="/images/travaux.jpg"
+              className="rounded-4xl"
+              src="/images/services-travaux.jpg"
               alt="photo d'un appartement en travaux"
               width={1920}
               height={1080}
@@ -169,6 +169,6 @@ export default function page() {
           l&apos;électroménager.
         </p>
       </Section>
-    </>
+    </main>
   );
 }
