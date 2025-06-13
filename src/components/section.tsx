@@ -21,22 +21,23 @@ export function Section(props: {
     <section
       className={`section-${props.idPage}-${
         props.name
-      } flex flex-col p-12 md:max-h-screen ${props.class ? props.class : ""} ${
-        props.first ? "md:h-screen" : ""
-      }`}
+      } flex flex-col p-12 w-full h-fit md:max-h-screen overflow-hidden ${
+        props.class ? props.class : ""
+      } ${props.first ? "md:h-screen" : ""}`}
     >
-      <div className="content flex gap-16 flex-col md:flex-row ">
+      <div className="content flex gap-16 flex-col size-full md:max-h-full md:flex-row ">
         {props.image?.position == "left" && (
           <div
-            className={`content-image flex ${
+            className={`content-image size-full ${
               props.image.top ? "" : "items-center"
             } md:flex-1`}
           >
             {!props.image?.type ? (
               <Image
-                className="rounded-4xl w-full"
+                className="rounded-4xl h-full w-fit object-contain"
                 src={props.image.src}
                 alt={props.image.alt}
+                loading="lazy"
                 width={1920}
                 height={1080}
               />
@@ -67,15 +68,16 @@ export function Section(props: {
         </div>
         {props.image?.position == "right" && (
           <div
-            className={`content-image flex ${
+            className={`content-image max-h-full h-full ${
               props.image.top ? "" : "items-center"
             } md:flex-1`}
           >
             {!props.image?.type ? (
               <Image
-                className="rounded-4xl w-full"
+                className="rounded-4xl h-full w-fit object-contain"
                 src={props.image.src}
                 alt={props.image.alt}
+                loading="lazy"
                 width={1920}
                 height={1080}
               />

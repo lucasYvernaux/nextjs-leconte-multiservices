@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <section className="section-services flex bg-linear-to-r from-leconte-primary to-leconte-secondary p-12 md:p-0 md:h-screen">
+      <section className="section-services flex bg-gradient-to-r from-leconte-primary to-leconte-secondary p-12 md:p-0 md:h-screen">
         <div className="content flex flex-col gap-12 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
             Dépannage à domicile rapide et professionnel
@@ -135,7 +135,7 @@ export default function page() {
         image={{
           alt: "photo d'une personne réparant un aspirateur",
           position: "left",
-          src: "/images/mise-securite-dune-installation-electrique.jpg",
+          src: "/images/Electricité.jpeg",
         }}
         title="Dépannage en Électricité"
       >
