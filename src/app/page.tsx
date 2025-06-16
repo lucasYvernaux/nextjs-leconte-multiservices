@@ -85,7 +85,7 @@ export default function Home() {
                   et toutes l&apos;Île de France. Dans une maisons il y a
                   toujours des travaux à réaliser. Laissez-nous gérer pour vous
                   petits et gros travaux dans le secteur de la maintenance
-                  générale ou de la rénovation d'habitat.
+                  générale ou de la rénovation d&apos;habitat.
                 </p>
               </CardContent>
               <CardDescription className="md:h-1/2">
@@ -113,16 +113,16 @@ export default function Home() {
         name="electromenager"
         title="votre expert en dépannage electroménager"
         image={{
-          alt: "photo d'un homme réparant un aspirateur",
+          alt: "photo d&apos;un homme réparant un aspirateur",
           position: "right",
           src: "/images/reparation-aspirateur-electromenager.webp",
         }}
       >
         <p className="">
           Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
-          suffit parfois de remplacer une pièce pour qu’il continue à vivre très
-          longtemps. Vous pouvez faire confiance à mon expertise, avec mes 36
-          ans d&apos;expérience chez Darty.
+          suffit parfois de remplacer une pièce pour qu&apos;il continue à vivre
+          très longtemps. Vous pouvez faire confiance à mon expertise, avec mes
+          36 ans d&apos;expérience chez Darty.
         </p>
       </Section>
 
