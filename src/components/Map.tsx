@@ -29,7 +29,7 @@ export function Map(props: { idPage: string }) {
           Essone, Haut de Seine, Paris, Seine Saint Denis, Seine et Marne, Val
           de Marne, Val d&apos;Oise,Yvelines.
         </p>
-        <p>
+        <p className="flex flex-col md:flex-row md:gap-2">
           <b>Horaire : </b>
           Lundi - Samedi : 8h - 18h
         </p>
