@@ -47,7 +47,11 @@ export function CTACall() {
         open={open}
         onOpenChange={setOpen}
       >
-        <CollapsibleTrigger className="bg-leconte-primary rounded-md px-6 md:px-4 py-4 text-white h-fit cursor-pointer rounded-e-none border border-black">
+        <CollapsibleTrigger
+          className={`bg-leconte-primary rounded-md text-white h-fit cursor-pointer rounded-e-none border border-black ${
+            open ? "p-2" : "p-4"
+          }`}
+        >
           {open ? (
             <Image
               alt="bouton close"

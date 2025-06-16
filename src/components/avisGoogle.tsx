@@ -3,7 +3,7 @@ export function AvisGoogle() {
 
   return (
     <iframe
-      className="size-full"
+      className="h-[61vh] w-full"
       src={urlWidget}
       loading="lazy"
       title="Avis Google de Leconte Multiservices"

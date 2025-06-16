@@ -172,10 +172,10 @@
   animation: shrink 10s infinite alternate;
 }
 @keyframes shrink {
-  0% {
-    background-size: 110% 110%;
+  from {
+    background-size: 110% 100%;
   }
-  100% {
+  to {
     background-size: 100% 100%;
   }
 }
@@ -187,6 +187,10 @@ header nav li a.active {
   text-underline-offset: 1rem;
 }
 
+section.section-home {
+  background-size: 150% 100%;
+  background-image: url(/images/reparation-aspirateur-electromenager.webp);
+}
 section.section-home::before {
   content: "";
   position: absolute;

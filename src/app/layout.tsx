@@ -16,13 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leconte Multiservices - Dépannage & Rénov",
+  title: "Leconte Multiservices - Dépannage & Rénov - Paris et Île-de-France",
   description:
-    "Experts en rénovation et dépannage en électroménager, électricité et plomberie dans toute l'Île-de-France. De la rénovation complète aux interventions urgentes, nous répondons à tous vos besoins.",
-  keywords: ["Paris", "Haut de seine", "Val de marne"],
+    "Faites appel à Leconte Multiservices, professionnels du dépannage et de la rénovation pour tous travaux (éléctroménager, électricité, plomberie, salle de bain, cuisine) à Paris.",
+  robots: "index, follow",
   openGraph: {
     title: "Leconte Multiservices - Dépannage & Rénov",
     type: "website",
+    siteName: "Leconte Multiservices",
     url: "https://nextjs-leconte-multiservices.vercel.app/",
     locale: "fr_FR",
     description:
