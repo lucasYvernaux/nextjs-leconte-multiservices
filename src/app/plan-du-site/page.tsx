@@ -1,7 +1,18 @@
-"use client";
-
 import { Section } from "@/components/section";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Leconte Multiservices - Plan du Site",
+  description:
+    "Découvrez le plan du site Leconte Multiservices afin de découvrir toutes les pages et toutes les prestation proposé par l'entreprise",
+  openGraph: {
+    title: "Leconte Multiservices - Mentions Légales",
+    description:
+      "Découvrez le plan du site Leconte Multiservices afin de découvrir toutes les pages et toutes les prestation proposé par l'entreprise",
+    url: "https://nextjs-leconte-multiservices.vercel.app/plan-du-site",
+  },
+};
 
 export default function page() {
   return (

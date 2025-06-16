@@ -21,7 +21,7 @@ export function Section(props: {
     <section
       className={`section-${props.idPage}-${
         props.name
-      } flex flex-col p-12 w-full h-fit md:max-h-screen overflow-hidden ${
+      } flex flex-col p-8 w-full h-fit md:max-h-screen overflow-hidden ${
         props.class ? props.class : ""
       } ${props.first ? "md:h-screen" : ""}`}
     >
@@ -34,7 +34,7 @@ export function Section(props: {
           >
             {!props.image?.type ? (
               <Image
-                className="rounded-4xl h-full w-fit object-contain"
+                className="rounded-4xl h-full w-fit object-contain m-auto"
                 src={props.image.src}
                 alt={props.image.alt}
                 loading="lazy"
@@ -58,13 +58,13 @@ export function Section(props: {
           } md:flex-1`}
         >
           <h2
-            className={`text-4xl mb-12 font-bold text-leconte-primary ${
+            className={`text-4xl mb-12 font-bold capitalize text-leconte-primary ${
               props.first && "text-center mt-0"
             }`}
           >
             {props.title}
           </h2>
-          {props.children}
+          <div className="leading-10 md:text-justify">{props.children}</div>
         </div>
         {props.image?.position == "right" && (
           <div
@@ -74,7 +74,7 @@ export function Section(props: {
           >
             {!props.image?.type ? (
               <Image
-                className="rounded-4xl h-full w-fit object-contain"
+                className="rounded-4xl h-full w-fit object-contain m-auto"
                 src={props.image.src}
                 alt={props.image.alt}
                 loading="lazy"

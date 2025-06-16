@@ -7,8 +7,6 @@ export const metadata: Metadata = {
   title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
   description:
     "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
-  keywords:
-    "rénovation Paris, rénovation Île-de-France, rénovation appartement, rénovation maison, entreprise rénovation, artisan rénovation, devis rénovation, rénovation intérieure, rénovation complète, rénovation globale, rénovation cuisine, rénovation salle de bain",
   openGraph: {
     title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
     description:
@@ -27,7 +25,7 @@ export default function page() {
               Rénovation Intérieure et Extérieure
             </h1>
 
-            <p className="mb-4">
+            <p className="leading-10 mb-4">
               La rénovation qu&apos;elles soit intérieure ou extérieure, est une
               opportunité de mettre en valeur votre chez vous. Elle doit faire
               le lien entre la modernité et son authenticité. Tout cela doit
@@ -68,7 +66,7 @@ export default function page() {
             <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation appartement à Paris
             </h2>
-            <p>
+            <p className="leading-10">
               Vous avez un petit espace ou un appartement plus grand ? Rénover
               votre appartement, c&apos;est souvent repenser l&apos;organisation
               des espaces, planter un nouveau décor, mais aussi remettre les
@@ -91,9 +89,9 @@ export default function page() {
       </section>
       <section className="section-renov-sdb flex flex-col p-12">
         <div className="content flex gap-16 flex-col md:flex-row">
-          <div className="content-image flex flex-1 items-center">
+          <div className="content-image flex flex-1 items-center justify-center">
             <Image
-              className="rounded-4xl w-full"
+              className="rounded-4xl max-w-[30rem]"
               src="/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif"
               alt="gif d'une salle de bain apres travaux"
               width={1920}
@@ -104,7 +102,7 @@ export default function page() {
             <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
               Rénovation salle de bain
             </h2>
-            <p>
+            <p className="leading-10">
               Votre salle de bain est vieillissante ou plus du tout adaptée à
               vos besoins ? Vous souhaitez la rendre plus moderne ou plus
               fonctionnelle ? De l&apos;installation de plomberie au

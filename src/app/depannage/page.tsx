@@ -8,22 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
   description:
-    "Services de dépannage électricité, plomberie et électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
-  keywords: [
-    "dépannage",
-    "réparation",
-    "électricité",
-    "plomberie",
-    "électroménager",
-    "Paris",
-    "Hauts-de-seine",
-    "Essonne",
-    "Val-de-marne",
-    "Yvelines",
-    "Seine-et-Marne",
-    "Seine-Saint-Denis",
-    "Val d'Oise",
-  ],
+    "Dépanneur d'électricité, de plomberie et installateur d'électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
   openGraph: {
     title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
     description:
@@ -117,7 +102,7 @@ export default function page() {
           </Link>
           .
         </p>
-        <div className="content-footer flex">
+        <div className="content-footer flex mt-8">
           <div className="flex-1">
             <h3 className="text-3xl">150k appareils</h3>
             <p className="text-base">catalogue Proxiconfort</p>

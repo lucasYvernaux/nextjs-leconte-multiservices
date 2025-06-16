@@ -1,5 +1,6 @@
 import { AvisGoogle } from "@/components/avisGoogle";
 import { Map } from "@/components/Map";
+import { Section } from "@/components/section";
 import {
   Card,
   CardContent,
@@ -12,7 +13,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home shrink text-white bg-no-repeat bg-center bg-cover bg-[url(/images/reparation-aspirateur-electromenager.webp)] flex h-screen p-12 md:p-4">
+      <section className="section-home md:shrink bg-no-repeat relative text-white flex h-screen p-8 md:p-4">
         <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl text-center mx-auto font-bold uppercase fadein-left">
             Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-home-services flex p-12 md:p-0">
+      <section className="section-home-services flex p-8 md:p-0">
         <div className="content flex flex-col gap-8 items-center justify-center max-w-full w-full">
           <h2 className="text-4xl font-bold text-leconte-primary mt-12">
             Services de dépannage
@@ -51,7 +52,11 @@ export default function Home() {
                 <CardTitle className="font-bold mb-4 ">
                   Dépannage Électroménager
                 </CardTitle>
-                <p className="p-0">
+                <p className="text-justify md:pb-8 md:leading-9">
+                  Qu’il s’agisse de votre machine à laver, de votre
+                  lave-vaisselle, de votre frigo en passant par votre
+                  congélateur ou même votre four à micro-ondes, nous savons que
+                  la moindre panne est capable de bouleverser votre quotidien.
                   Intervention urgente pour dépannage électroménager à Paris et
                   en Île-de-France. Techniciens qualifiés, réparation express à
                   domicile. 36 ans d&apos;expertise, chez Darty, au services de
@@ -61,7 +66,7 @@ export default function Home() {
               <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
-                  src="/images/reparation-aspirateur.jpg"
+                  src="/images/reparation-aspirateur-electromenager.webp"
                   alt="photo d'un homme réparant un aspirateur"
                   width={1920}
                   height={1080}
@@ -73,11 +78,14 @@ export default function Home() {
                 <CardTitle className="font-bold mb-4 ">
                   Dépannage Travaux
                 </CardTitle>
-                <p className="p-0">
+                <p className="text-justify md:pb-8 md:leading-9">
                   Une fuite d&apos;eau, une coupure intempestive ? Ne laissez
                   pas ces problèmes perturber votre quotidien. On est là pour
                   vous apportez conseil et intervenir rapidement dans tout Paris
-                  et toutes l&apos;Île de France.
+                  et toutes l&apos;Île de France. Dans une maisons il y a
+                  toujours des travaux à réaliser. Laissez-nous gérer pour vous
+                  petits et gros travaux dans le secteur de la maintenance
+                  générale ou de la rénovation d'habitat.
                 </p>
               </CardContent>
               <CardDescription className="md:h-1/2">
@@ -100,32 +108,25 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Section
+        idPage="home"
+        name="electromenager"
+        title="votre expert en dépannage electroménager"
+        image={{
+          alt: "photo d'un homme réparant un aspirateur",
+          position: "right",
+          src: "/images/reparation-aspirateur-electromenager.webp",
+        }}
+      >
+        <p className="">
+          Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
+          suffit parfois de remplacer une pièce pour qu’il continue à vivre très
+          longtemps. Vous pouvez faire confiance à mon expertise, avec mes 36
+          ans d&apos;expérience chez Darty.
+        </p>
+      </Section>
 
-      <section className="section-home-electro flex flex-col p-12">
-        <h2 className="text-4xl mb-12 font-bold text-leconte-primary text-center">
-          Votre expert en dépannage électroménager
-        </h2>
-        <div className="content flex gap-16 flex-col md:mx-16 md:flex-row">
-          <div className="content-text text-start text-2xl fade-pedro flex-1">
-            <p className="mb-4">
-              Votre appareil électroménager est tombé en panne ? Ne le jetez
-              pas, il suffit parfois de remplacer une pièce pour qu’il continue
-              à vivre très longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 36 ans d&apos;expérience chez Darty.
-            </p>
-          </div>
-          <div className="content-image flex-1">
-            <Image
-              className="rounded-4xl"
-              src="/images/reparation-aspirateur.jpg"
-              alt="photo d'un homme réparant un aspirateur"
-              width={1920}
-              height={1080}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full h-[70vh] p-12">
+      <section className=" flex items-center p-8 md:h-screen">
         <AvisGoogle />
       </section>
       <Map idPage="home" />

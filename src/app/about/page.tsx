@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
   description:
     "Découvrez Leconte Multiservices : entreprise familiale spécialisée en rénovation et dépannage à Paris. 36 ans d'expérience, artisans certifiés, engagements qualité et satisfaction client.",
-  keywords:
-    "entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
   openGraph: {
     title:
       "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
     description:
-      "entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
+      "Entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
     url: "https://nextjs-leconte-multiservices.vercel.app/about",
   },
 };
@@ -29,7 +27,7 @@ export default function page() {
             <h2 className="text-4xl my-12 font-bold text-leconte-primary">
               Notre histoire
             </h2>
-            <p>
+            <p className="leading-10">
               Depuis 1976, la plomberie est un lien familial fort. Chez Leconte
               Multiservices, nous gérons vos projets de manière assidu et
               efficace. Nous pouvons répondre à tous les besoins de votre
@@ -56,7 +54,7 @@ export default function page() {
         image={{
           alt: "photo d'un appartement en travaux",
           position: "left",
-          src: "/images/travaux.jpg",
+          src: "/images/travaux-mezzanine.jpg",
         }}
       >
         <p>
