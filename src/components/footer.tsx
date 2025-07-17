@@ -26,7 +26,7 @@ export function Footer() {
           <p className="text-xl">
             Dépannage électroménager, électricité, plomberie et Rénovation.
           </p>
-          <div className="flex gap-12 text-white">
+          <div className="flex gap-12 text-white justify-center md:justify-start">
             <a
               href="https://www.facebook.com/lecontemultiservices"
               target="_blank"

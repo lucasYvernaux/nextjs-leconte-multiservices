@@ -37,6 +37,7 @@ export function Map(props: { idPage: string }) {
           <b>Mail : </b>
           <a
             href="mailto:leconte.multiservices.idf@gmail.com"
+            title="Envoyer un mail à Leconte Multiservices"
             className="text-leconte-primary underline"
           >
             leconte.multiservices.idf@gmail.com
@@ -44,7 +45,11 @@ export function Map(props: { idPage: string }) {
         </p>
         <p className="flex flex-col md:flex-row md:gap-2">
           <b>Téléphone : </b>
-          <a className="underline" href="tel:0640141937">
+          <a
+            className="underline"
+            href="tel:0640141937"
+            title="Appeler Leconte Multiservices"
+          >
             +33 6 40 14 19 37
           </a>
         </p>
