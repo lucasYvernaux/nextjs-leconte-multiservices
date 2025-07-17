@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Mentions Légales",
     description:
       "Découvrez le plan du site Leconte Multiservices afin de découvrir toutes les pages et toutes les prestation proposé par l'entreprise",
-    url: "https://nextjs-leconte-multiservices.vercel.app/plan-du-site",
+    url: "https://leconte-multiservices.vercel.app/plan-du-site",
   },
 };
 
