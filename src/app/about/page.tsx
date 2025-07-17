@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
     description:
       "Entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
-    url: "https://nextjs-leconte-multiservices.vercel.app/about",
+    url: "https://leconte-multiservices.vercel.app/about",
   },
 };
 

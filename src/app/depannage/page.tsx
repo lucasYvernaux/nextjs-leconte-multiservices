@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
     description:
       "Services de dépannage électricité, plomberie et électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
-    url: "https://nextjs-leconte-multiservices.vercel.app/depannage",
+    url: "https://leconte-multiservices.vercel.app/depannage",
   },
 };
 

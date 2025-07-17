@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
     description:
       "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
-    url: "https://nextjs-leconte-multiservices.vercel.app/renovation",
+    url: "https://leconte-multiservices.vercel.app/renovation",
   },
 };
 
