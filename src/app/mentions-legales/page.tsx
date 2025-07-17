@@ -41,14 +41,12 @@ export default async function page() {
               Hébergement du site
             </h2>
             <p>
-              ENTREPRISE
+              VERCEL INC
               <br />
-              SIRET : 777 777 777 777 77
+              Siege social : 440 N Barranca Avenue #4133 Covina, CA 91723 United
+              States
               <br />
-              RCS : VILLE 111 111 111 11111 <br />
-              Siege social : adresse <br />
-              Téléphone : 01 23 45 67 89 <br />
-              Email : contact@gmail.com
+              Email : privacy@vercel.com
             </p>
           </div>
           <div className="content-real flex flex-col gap-4 mb-8">

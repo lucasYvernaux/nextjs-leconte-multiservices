@@ -38,7 +38,7 @@ export default function page() {
           </div>
           <div className="content-image flex-1 flex items-center justify-center">
             <Image
-              className="w-ful w-3/4 aspect-square rounded-full "
+              className="w-full aspect-square rounded-full md:w-1/2"
               src="/images/photo-famille-leconte.jpg"
               alt="photo d'une personne réparant un aspirateur"
               width={1920}
@@ -61,7 +61,9 @@ export default function page() {
           Nous sommes fiers de satisfaire les besoins de nos clients. Nous
           pouvons également vous recommander des solutions alternatives moins
           coûteuses et plus rapides à mettre en œuvre, sans compromettre la
-          qualité de vos projets et investissements.
+          qualité de vos projets et investissements. Nous nous engageons à
+          respecter vos délais, votre budget et à privilégier des matériaux
+          durables
         </p>
         <div className="content-btn flex justify-center w-full">
           <Link
