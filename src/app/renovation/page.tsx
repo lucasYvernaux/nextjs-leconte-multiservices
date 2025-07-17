@@ -33,11 +33,21 @@ export default function page() {
               pour mission d&apos;embellir votre chez vous tout en
               s&apos;adapdant à votre budget. Nous avons la même motivation pour
               toutes les rénovations qu&apos;elles soient de petite ou grande
-              envergure. Nous avons une équipe spécialiste tous corps de
-              métiers. Vous aurez l&apos;assurance d&apos;un accompagnement et
-              d&apos;une expertise efficace tout au long de votre projet et le
-              tout sans passer par des dizaines d&apos;interlocuteurs.
+              envergure.
+              <br />
             </p>
+            <div className="flex items-center flex-col gap-4">
+              <b className="d-flex justify-center">Pourquoi nous choisir ?</b>
+              <ul className="list-disc list-inside w-3/4 text-start">
+                <li>Expertise locale sur Paris et sa région.</li>
+                <li>Savoir-faire artisanal allié à des solutions modernes.</li>
+                <li>
+                  Un seul interlocuteur pour un projet fluide et sans stress.
+                </li>
+                <li>Un travail soigné et conforme aux normes en vigueur.</li>
+                <li>une équipe de professionnels tout corps de métiers.</li>
+              </ul>
+            </div>
 
             <Link
               className="text-2xl block w-fit mx-auto mt-12 rounded-full px-8 py-2 bg-leconte-primary"
@@ -116,38 +126,10 @@ export default function page() {
           </div>
         </div>
       </section>
-      {/* 
-      <section className="section-renov-cuisine max-h-screen flex flex-col px-12">
-        <div className="content flex gap-16 flex-col h-fit md:flex-row">
-          <div className="content-text  text-start text-2xl fade-in flex-1 h-fit">
-            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
-              Rénovation cuisine à Paris
-            </h2>
-            <p>
-              Que vous souhaitiez rénover votre cuisine ou la créer, nous vous
-              proposons des solutions adaptées. Allant du simple montage de
-              meubles de cuisine en kit à la réalisation d&apos;une cuisine sur
-              mesure avec raccordement à la plomberie, électricité et gaz. Le
-              tout toujours avec le respect de votre budget, de vos délais et de
-              l&apos;environnement. Et nous vous accompagnons du début à la fin
-              de votre projet, à chaque étape du processus. De la prise de
-              mesure à la mise en service de l&apos;électroménager.
-            </p>
-          </div>
-          <div className="content-image flex flex-1 items-center h-fit">
-            <Image
-              className="rounded-4xl h-fit"
-              src="/images/video-cuisine-avant-apres.gif"
-              alt="gif d'une cuisine rénové avant / après"
-              width={1920}
-              height={1080}
-            />
-          </div>
-        </div>
-      </section> */}
       <Section
         idPage="renovation"
         name="cuisine"
+        class="mb-12"
         image={{
           alt: "gif d'une cuisine rénové avant / après",
           position: "right",
@@ -157,15 +139,32 @@ export default function page() {
         title="Rénovation cuisine à Paris"
       >
         <p>
-          Que vous souhaitiez rénover votre cuisine ou la créer, nous vous
-          proposons des solutions adaptées. Allant du simple montage de meubles
-          de cuisine en kit à la réalisation d&apos;une cuisine sur mesure avec
-          raccordement à la plomberie, électricité et gaz. Le tout toujours avec
-          le respect de votre budget, de vos délais et de l&apos;environnement.
-          Et nous vous accompagnons du début à la fin de votre projet, à chaque
-          étape du processus. De la prise de mesure à la mise en service de
-          l&apos;électroménager.
+          Vous envisagez de rénover ou de créer une cuisine à Paris ? Que votre
+          projet soit simple ou complexe, notre équipe d’experts vous propose
+          des solutions adaptées à vos besoins, votre style et votre budget.
+          Allant du simple montage de meubles de cuisine en kit à la réalisation
+          d&apos;une cuisine sur mesure avec raccordement à la plomberie,
+          électricité et gaz. Nous prenons en charges tous les aspects de votre
+          projet pour un résultat parfait. Le tout toujours avec le respect de
+          votre budget, de vos délais et de l&apos;environnement. <br />
+          Nous vous accompagnons à chaque étape du début à la fin de votre
+          projet, avec un suivi personnalisé et pofessionnelle :
         </p>
+        <ul className="list-disc list-inside m-auto w-3/4 text-start">
+          <li>Prise de mesures précises pour optimiser l’espace disponible.</li>
+          <li>
+            Conception sur mesure ou montage de meubles en kit selon vos
+            préférences.
+          </li>
+          <li>
+            Installation et raccordements (plomberie, électricité, gaz)
+            conformes aux normes en vigueur.
+          </li>
+          <li>
+            Mise en service de l’électroménager pour une cuisine prête à
+            l’emploi.
+          </li>
+        </ul>
       </Section>
     </main>
   );
