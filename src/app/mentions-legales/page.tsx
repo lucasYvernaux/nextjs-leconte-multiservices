@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Mentions Légales",
     description:
       "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
-    url: "https://nextjs-leconte-multiservices.vercel.app/mentions-legales",
+    url: "https://leconte-multiservices.vercel.app/mentions-legales",
   },
 };
 
@@ -54,7 +54,7 @@ export default async function page() {
               Réalisation du site
             </h2>
             <p>
-              Yvernaux Web Solution
+              Yvernaux Web Solutions
               <br />
               SIRET : 931 391 478 000 19
               <br />

@@ -12,6 +12,8 @@ import {
 import { usePathname } from "next/navigation";
 
 export function Header() {
+  const urlLogo = "/images/logo/LECONTE_MULTISERVICES_small_logo.png";
+
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -25,7 +27,7 @@ export function Header() {
             title="Retour à l'accueil"
           >
             <Image
-              src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
+              src={urlLogo}
               alt="logo"
               width={1920}
               height={1080}
@@ -59,7 +61,7 @@ export function Header() {
                         href="/"
                       >
                         <Image
-                          src="/images/LECONTE-MULTISERVICES-v2-removebg-preview.png"
+                          src={urlLogo}
                           alt="logo"
                           width={50}
                           height={50}
