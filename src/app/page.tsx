@@ -75,7 +75,7 @@ export default function Home() {
               <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
-                  src="/images/reparation-aspirateur-electromenager.webp"
+                  src="/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg"
                   alt="photo d'un homme réparant un aspirateur"
                   width={1920}
                   height={1080}
