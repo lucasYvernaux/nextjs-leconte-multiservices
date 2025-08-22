@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { CTACall } from "@/components/BtnBeRecalled";
+// import { CTACall } from "@/components/BtnBeRecalled";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,7 +42,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <CTACall />
+        {/* <CTACall /> */}
         {children}
         <Footer />
       </body>
