@@ -28,9 +28,9 @@ export default async function page() {
             <p>
               Le site {myHost} est édité par la société Leconte Multiservices
               dont le siège est situé au : <br />
-              6 RUE DE L EGLISE - 78270 BENNECOURT
+              9 RUE DE L EGLISE - 78270 BENNECOURT
               <br />
-              du lundi au samedi de 8h00 à 19h00
+              du lundi au samedi de 8h00 à 20h00
               <br />
               Mail : leconte.multiservices.idf@gmail.com <br />
               Internet : {myHost}

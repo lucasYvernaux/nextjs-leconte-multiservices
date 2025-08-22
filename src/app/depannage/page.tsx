@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
   description:
-    "Dépanneur d'électricité, de plomberie et installateur d'électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
+    "Dépanneur d&apos;électricité, de plomberie et installateur d&apos;électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
   openGraph: {
     title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
     description:
@@ -84,41 +84,41 @@ export default function page() {
         image={{
           alt: "photo de quelques petit électroménager dans une cuisine",
           position: "right",
-          src: "/images/quel-petit-electromenager-choisir-dans-sa-cuisine-6909-1200-630.jpg",
+          src: "/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg",
         }}
         title="Dépannage en Électroménager"
       >
         <p className="mb-4">
           Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
-          suffit parfois de remplacer une pièce pour qu’il continue à vivre très
-          longtemps. Vous pouvez faire confiance à mon expertise, avec mes 36
-          ans d&apos;expérience chez Darty et mon partenariat avec{" "}
+          suffit parfois de remplacer une pièce pour qu’il continue à vivre plus
+          longtemps. Vous pouvez faire confiance à mon expertise, avec mes 34
+          ans d&apos;expérience chez Darty. Et mon partenariat avec{" "}
           <Link
             href={"https://www.proxiconfort.fr"}
             className="underline"
             target="_blank"
           >
-            Proxiconfort
-          </Link>
-          .
+            Proxiconfort.fr
+          </Link>{" "}
+          pour la vente d&apos;électroménager avec leur catalogue complet.
         </p>
-        <div className="content-footer flex mt-8">
+        {/* <div className="content-footer flex mt-8">
           <div className="flex-1">
             <h3 className="text-3xl">150k appareils</h3>
             <p className="text-base">catalogue Proxiconfort</p>
           </div>
           <div className="flex-1">
-            <h3 className="text-3xl">36 ans</h3>
+            <h3 className="text-3xl">34 ans</h3>
             <p className="text-base">Expérience et fiabilité</p>
           </div>
-        </div>
+        </div> */}
       </Section>
 
       <Section
         idPage="depannage"
         name="elec"
         image={{
-          alt: "photo d'une personne réparant un aspirateur",
+          alt: "photo d&apos;une personne réparant un aspirateur",
           position: "left",
           src: "/images/Electricité.jpeg",
         }}
@@ -128,10 +128,15 @@ export default function page() {
           Votre sécurité est ma priorité. Je propose des solutions adaptées pour
           tous vos besoins électriques : pannes de courant, remplacements de
           tableaux électriques, ajout de prises ou encore installation
-          d’éclairage. Je vous garantis une intervention rapide et efficace. Je
+          d’éclairage. Je vous garantis une intervention rapide et efficace.
+          Notamment la vente, l&apos;installation et le dépannage de chauffe-eau
+          électrique toutes marques.
+          {/* Je
           propose des solutions adaptées pour tous vos besoins électriques :
           pannes de courant, remplacements de tableaux électriques, ajout de
           prises ou encore installation d’éclairage
+
+          Paraphraser cette section*/}
         </p>
       </Section>
 
@@ -139,7 +144,7 @@ export default function page() {
         idPage="depannage"
         name="plomb"
         image={{
-          alt: "photo d'une personne réparant un aspirateur",
+          alt: "photo d&apos;une personne réparant un aspirateur",
           position: "right",
           src: "/images/shutterstock.jpg",
         }}
@@ -151,7 +156,8 @@ export default function page() {
           rapidement et assurer des réparations durables. De la réparation
           d’urgence à l’installation complète de votre plomberie, je propose des
           solutions adaptées et durables pour régler vos soucis de plomberie,
-          qu’ils soient petits ou complexes.
+          qu’ils soient petits ou complexes. Par exemple, changement de
+          robineterie, de sanitaire et de chauffe-eau électrique.
         </p>
       </Section>
     </>
