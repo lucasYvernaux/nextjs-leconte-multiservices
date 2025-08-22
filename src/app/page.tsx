@@ -1,6 +1,6 @@
 import { AvisGoogle } from "@/components/avisGoogle";
 import { Map } from "@/components/Map";
-import { Section } from "@/components/section";
+// import { Section } from "@/components/section";
 import {
   Card,
   CardContent,
@@ -15,12 +15,21 @@ export default function Home() {
     <>
       <section className="section-home md:shrink bg-no-repeat relative text-white flex h-screen p-8 md:p-4">
         <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
-          <h1 className="text-4xl text-center mx-auto font-bold uppercase fadein-left">
-            Rénovation et Dépannage à Paris et dans toute l&apos;Île de France
+          <h1 className="text-5xl font-bold uppercase fadein-left">
+            Dépannage Electroménager, électricité et plomberie
           </h1>
-          <p className="fadein-left text-3xl md:w-3/4">
-            De la rénovation complète aux urgences, nos artisans qualifiés
-            interviennent rapidement pour tous vos projets.
+          <h1 className="text-5xl font-bold uppercase fadein-left">
+            Vente, livraison, installation d&apos;électroménager
+          </h1>
+          <h1 className="text-5xl text-center mx-auto font-bold uppercase fadein-left">
+            Rénovation tout corps de métier
+          </h1>
+          <h1 className="text-5xl font-bold uppercase fadein-left">
+            Paris - Île de France
+          </h1>
+          <p className="fadein-left text-4xl ">
+            De la rénovation complète aux urgences, artisan qualifié intervient
+            rapidement pour tous vos projets.
           </p>
           <div className="fadein-left">
             <Link
@@ -59,7 +68,7 @@ export default function Home() {
                   la moindre panne est capable de bouleverser votre quotidien.
                   Intervention urgente pour dépannage électroménager à Paris et
                   en Île-de-France. Techniciens qualifiés, réparation express à
-                  domicile. 36 ans d&apos;expertise, chez Darty, au services de
+                  domicile. 34 ans d&apos;expertise, chez Darty, au services de
                   particuliers et de professionnel
                 </p>
               </CardContent>
@@ -108,23 +117,52 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Section
+      {/* <Section
         idPage="home"
         name="electromenager"
-        title="votre expert en dépannage electroménager"
+        title="votre expert en electroménager"
         image={{
           alt: "photo d&apos;un homme réparant un aspirateur",
           position: "right",
-          src: "/images/reparation-aspirateur-electromenager.webp",
+          src: "/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg",
         }}
       >
         <p className="">
           Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
           suffit parfois de remplacer une pièce pour qu&apos;il continue à vivre
-          très longtemps. Vous pouvez faire confiance à mon expertise, avec mes
-          36 ans d&apos;expérience chez Darty.
+          plus longtemps. Vous pouvez faire confiance à mon expertise, avec mes
+          34 ans d&apos;expérience chez Darty.
         </p>
-      </Section>
+      </Section> */}
+
+      <section className="section-renov-apparte flex flex-col p-12">
+        <div className="content flex gap-16 flex-col md:flex-row">
+          <div className="content-text  text-start text-2xl fade-in flex-1">
+            <h2 className="text-4xl md:my-4 font-bold text-leconte-primary">
+              Votre expert en electroménager
+            </h2>
+            <h3 className="text-3xl pb-4">
+              Vente, livraison, installation et dépannage
+            </h3>
+            <p className="leading-10">
+              Votre appareil électroménager est tombé en panne ? Ne le jetez
+              pas, il suffit parfois de remplacer une pièce pour qu&apos;il
+              continue à vivre plus longtemps. Vous pouvez faire confiance à mon
+              expertise, avec mes 34 ans d&apos;expérience chez Darty.
+            </p>
+          </div>
+          <div className="content-image flex flex-1 items-center">
+            <Image
+              className="rounded-4xl w-full m-auto"
+              src="/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg"
+              alt="gif d'un appartement sous les combles travaux fini"
+              style={{ maxHeight: 600, width: 500 }}
+              width={1920}
+              height={1080}
+            />
+          </div>
+        </div>
+      </section>
 
       <section className=" flex items-center p-8 md:h-screen">
         <AvisGoogle />

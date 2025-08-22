@@ -15,9 +15,9 @@ export function Map(props: { idPage: string }) {
     >
       <div className="flex flex-col gap-4 md:gap-6">
         <p>
-          Je suis là pour vous <b>dépanner</b>, vous <b>conseiller</b> et vous{" "}
-          <b>guider</b> pour le mieux dans vos projets de travaux ou de
-          rénovation.
+          Je suis là pour vous <b>dépanner</b> en électroménager, en électricité
+          et en plomberie, vous <b>conseiller</b> et vous <b>guider</b> pour le
+          mieux dans vos projets de travaux ou de rénovation.
           <br />
           J&apos;interviens principalement dans <b>Paris Intra Muros</b>, ainsi
           que sa petite et grande couronne pour tous vos dépannages et
@@ -31,7 +31,7 @@ export function Map(props: { idPage: string }) {
         </p>
         <p className="flex flex-col md:flex-row md:gap-2">
           <b>Horaire : </b>
-          Lundi - Samedi : 8h - 18h
+          Lundi - Samedi : 8h - 20h
         </p>
         <p className="flex flex-col truncate md:flex-row md:gap-2">
           <b>Mail : </b>
