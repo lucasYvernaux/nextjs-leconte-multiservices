@@ -43,7 +43,7 @@ export function CTACall() {
   return (
     <>
       <Collapsible
-        className="fixed top-1/5 end-1 z-10 flex "
+        className="fixed top-1/5 end-[2rem] z-10 flex md:end-1"
         open={open}
         onOpenChange={setOpen}
       >
@@ -64,7 +64,7 @@ export function CTACall() {
             <div
               className={`capitalize ${
                 open ? "rotate-90" : "rotate-0"
-              }  font-medium flex gap-2 pe-4 justify-center items-center`}
+              }  font-medium flex gap-2 justify-center items-center`}
               style={{
                 writingMode: open ? "inherit" : "vertical-rl",
               }}
