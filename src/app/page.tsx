@@ -13,21 +13,21 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home md:shrink bg-no-repeat relative text-white flex h-screen p-8 md:p-4">
+      <section className="section-home md:shrink bg-no-repeat text-white md:h-screen flex p-12 relative ">
         <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
-          <h1 className="text-5xl font-bold uppercase fadein-left">
+          <h1 className="text-4xl font-bold uppercase md: md:text-5xl">
             Dépannage Electroménager, électricité et plomberie
           </h1>
-          <h1 className="text-5xl font-bold uppercase fadein-left">
-            Vente, livraison, installation d&apos;électroménager
+          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
+            Vente, livraison, installation électroménager
           </h1>
-          <h1 className="text-5xl text-center mx-auto font-bold uppercase fadein-left">
+          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
             Rénovation tout corps de métier
           </h1>
-          <h1 className="text-5xl font-bold uppercase fadein-left">
+          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
             Paris - Île de France
           </h1>
-          <p className="fadein-left text-4xl ">
+          <p className="fadein-left text-3xl md:text-4xl">
             De la rénovation complète aux urgences, artisan qualifié intervient
             rapidement pour tous vos projets.
           </p>

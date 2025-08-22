@@ -48,7 +48,7 @@ export function CTACall() {
         onOpenChange={setOpen}
       >
         <CollapsibleTrigger
-          className={`bg-leconte-primary rounded-md text-white h-fit cursor-pointer rounded-e-none border border-black ${
+          className={`bg-leconte-primary pt-8 rounded-md text-white h-fit cursor-pointer rounded-e-none border border-black ${
             open ? "p-2" : "p-4"
           }`}
         >
