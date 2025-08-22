@@ -26,7 +26,7 @@ export default function page() {
             </h1>
 
             <p className="leading-10 mb-4">
-              La rénovation qu&apos;elles soit intérieure ou extérieure, est une
+              La rénovation, qu&apos;elle soit intérieure ou extérieure, est une
               opportunité de mettre en valeur votre chez vous. Elle doit faire
               le lien entre la modernité et son authenticité. Tout cela doit
               être articulé de manière intelligente et réfléchis. Nous avons
@@ -122,6 +122,8 @@ export default function page() {
               vous proposons des solutions adaptées comme l&apos;installation de
               douche à l&apos;italienne, de baignoire, de toilette, de bidet ou
               de meuble ergonomique parfaitement adapté à votre salle de bain.
+              Nous faisons également l&apos;installation de tous le matériel
+              pour les Personnes à Mobilité Réduite (PMR)
             </p>
           </div>
         </div>
@@ -140,13 +142,14 @@ export default function page() {
       >
         <p>
           Vous envisagez de rénover ou de créer une cuisine à Paris ? Que votre
-          projet soit simple ou complexe, notre équipe d’experts vous propose
-          des solutions adaptées à vos besoins, votre style et votre budget.
-          Allant du simple montage de meubles de cuisine en kit à la réalisation
-          d&apos;une cuisine sur mesure avec raccordement à la plomberie,
-          électricité et gaz. Nous prenons en charges tous les aspects de votre
-          projet pour un résultat parfait. Le tout toujours avec le respect de
-          votre budget, de vos délais et de l&apos;environnement. <br />
+          projet soit simple ou complexe, notre équipe d&apos;experts vous
+          propose des solutions adaptées à vos besoins, votre style et votre
+          budget. Allant du simple montage de meubles de cuisine en kit à la
+          réalisation d&apos;une cuisine sur mesure avec raccordement à la
+          plomberie et électricité. Nous prenons en charges tous les aspects de
+          votre projet pour un résultat parfait. Le tout toujours avec le
+          respect de votre budget, de vos délais et de l&apos;environnement.{" "}
+          <br />
           Nous vous accompagnons à chaque étape du début à la fin de votre
           projet, avec un suivi personnalisé et pofessionnelle :
         </p>
@@ -157,8 +160,8 @@ export default function page() {
             préférences.
           </li>
           <li>
-            Installation et raccordements (plomberie, électricité, gaz)
-            conformes aux normes en vigueur.
+            Installation et raccordements (plomberie, électricité) conformes aux
+            normes en vigueur.
           </li>
           <li>
             Mise en service de l’électroménager pour une cuisine prête à

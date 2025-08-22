@@ -77,9 +77,10 @@ export function Section(props: {
                 className="rounded-4xl h-full w-fit object-contain m-auto"
                 src={props.image.src}
                 alt={props.image.alt}
+                style={{ maxHeight: 600 }}
                 loading="lazy"
                 width={1920}
-                height={1080}
+                height={300}
               />
             ) : (
               <iframe

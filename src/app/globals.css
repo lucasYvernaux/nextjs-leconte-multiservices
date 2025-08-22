@@ -189,7 +189,7 @@ header nav li a.active {
 
 section.section-home {
   background-size: 150% 100%;
-  background-image: url(/images/reparation-aspirateur-electromenager.webp);
+  background-image: url(/images/pexels-cuisine33512922.jpg);
 }
 section.section-home::before {
   content: "";
