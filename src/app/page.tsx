@@ -1,6 +1,5 @@
 import { AvisGoogle } from "@/components/avisGoogle";
 import { Map } from "@/components/Map";
-// import { Section } from "@/components/section";
 import {
   Card,
   CardContent,
@@ -13,7 +12,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="section-home md:shrink bg-no-repeat text-white md:h-screen flex p-12 relative ">
+      <section className="section-home bg-no-repeat text-white flex py-8 px-4 relative md:h-screen md:p-12">
         <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl font-bold uppercase md: md:text-5xl">
             Dépannage Electroménager, électricité et plomberie
@@ -21,7 +20,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
             Vente, livraison, installation électroménager
           </h1>
-          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
+          <h1 className="text-4xl font-bold uppercase text-start fadein-left md:text-5xl">
             Rénovation tout corps de métier
           </h1>
           <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
@@ -116,23 +115,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      {/* <Section
-        idPage="home"
-        name="electromenager"
-        title="votre expert en electroménager"
-        image={{
-          alt: "photo d&apos;un homme réparant un aspirateur",
-          position: "right",
-          src: "/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg",
-        }}
-      >
-        <p className="">
-          Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
-          suffit parfois de remplacer une pièce pour qu&apos;il continue à vivre
-          plus longtemps. Vous pouvez faire confiance à mon expertise, avec mes
-          34 ans d&apos;expérience chez Darty.
-        </p>
-      </Section> */}
+
       <section className="section-renov-apparte flex flex-col p-12">
         <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
