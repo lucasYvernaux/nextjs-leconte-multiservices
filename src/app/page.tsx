@@ -44,7 +44,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="section-home-services flex p-8 md:p-0">
         <div className="content flex flex-col gap-8 items-center justify-center max-w-full w-full">
           <h2 className="text-4xl font-bold text-leconte-primary mt-12">
@@ -134,7 +133,6 @@ export default function Home() {
           34 ans d&apos;expérience chez Darty.
         </p>
       </Section> */}
-
       <section className="section-renov-apparte flex flex-col p-12">
         <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-text  text-start text-2xl fade-in flex-1">
@@ -164,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" flex items-center p-8 md:h-screen">
+      <section id="Avis" className=" flex items-center p-8 md:h-screen">
         <AvisGoogle />
       </section>
       <Map idPage="home" />
