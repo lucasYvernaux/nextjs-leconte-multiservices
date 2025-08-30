@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Dépannage & Rénov",
     type: "website",
     siteName: "Leconte Multiservices",
-    url: "https://nextjs-leconte-multiservices.vercel.app/",
+    url: "https://leconte-multiservices.fr/",
     locale: "fr_FR",
     description:
       "Faites appel à Leconte Multiservices, pour vos rénovation et vos depannages électroménager, électricité et plomberie d'urgence dans toutes l'ile de France et Paris",

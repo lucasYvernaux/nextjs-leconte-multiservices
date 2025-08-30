@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Leconte Multiservices - Mentions Légales",
     description:
       "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
-    url: "https://leconte-multiservices.vercel.app/mentions-legales",
+    url: "https://leconte-multiservices.fr/mentions-legales",
   },
 };
 
