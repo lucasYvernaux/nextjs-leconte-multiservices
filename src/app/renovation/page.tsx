@@ -69,65 +69,54 @@ export default function page() {
           </div>
         </div>
       </section>
+      <Section
+        idPage="renovation"
+        name="apparte"
+        class="mb-12"
+        image={{
+          alt: "gif d'un appartement sous les combles, travaux fini",
+          position: "right",
+          src: "/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp",
+          top: true,
+        }}
+        title="Rénovation appartement à Paris"
+      >
+        <p className="leading-10">
+          Vous avez un petit espace ou un appartement plus grand ? Rénover votre
+          appartement, c&apos;est souvent repenser l&apos;organisation des
+          espaces, planter un nouveau décor, mais aussi remettre les
+          installations aux normes. Vous ne savez pas par où commencer ?
+          L&apos;entreprise Leconte Multiservices vous propose de prendre en
+          main les travaux de rénovation de votre appartement avec des solutions
+          adaptées à vos besoins et votre budget.
+        </p>
+      </Section>
 
-      <section className="section-renov-apparte flex flex-col p-12">
-        <div className="content flex gap-16 flex-col md:flex-row">
-          <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
-              Rénovation appartement à Paris
-            </h2>
-            <p className="leading-10">
-              Vous avez un petit espace ou un appartement plus grand ? Rénover
-              votre appartement, c&apos;est souvent repenser l&apos;organisation
-              des espaces, planter un nouveau décor, mais aussi remettre les
-              installations aux normes. Vous ne savez pas par où commencer ?
-              L&apos;entreprise Leconte Multiservices vous propose de prendre en
-              main les travaux de rénovation de votre appartement avec des
-              solutions adaptées à vos besoins et votre budget.
-            </p>
-          </div>
-          <div className="content-image flex flex-1 items-center">
-            <Image
-              className="rounded-4xl w-full"
-              src="/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp"
-              alt="gif d'un appartement sous les combles travaux fini"
-              width={1920}
-              height={1080}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="section-renov-sdb flex flex-col p-12">
-        <div className="content flex gap-16 flex-col md:flex-row">
-          <div className="content-image flex flex-1 items-center justify-center">
-            <Image
-              className="rounded-4xl max-w-[30rem]"
-              src="/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif"
-              alt="gif d'une salle de bain apres travaux"
-              width={1920}
-              height={1080}
-            />
-          </div>
-          <div className="content-text  text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl mb-12 md:my-12 font-bold text-leconte-primary">
-              Rénovation salle de bain
-            </h2>
-            <p className="leading-10">
-              Votre salle de bain est vieillissante ou plus du tout adaptée à
-              vos besoins ? Vous souhaitez la rendre plus moderne ou plus
-              fonctionnelle ? De l&apos;installation de plomberie au
-              remplacement du carrelage, en passant par les finitions haut de
-              gamme, notre équipe d&apos;artisans tout corps de métier qualifiés
-              assure un travail soigné et conforme aux normes actuelles. Nous
-              vous proposons des solutions adaptées comme l&apos;installation de
-              douche à l&apos;italienne, de baignoire, de toilette, de bidet ou
-              de meuble ergonomique parfaitement adapté à votre salle de bain.
-              Nous faisons également l&apos;installation de tous le matériel
-              pour les Personnes à Mobilité Réduite (PMR)
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section
+        idPage="renovation"
+        name="sdb"
+        class="mb-12"
+        image={{
+          alt: "gif d'une salle de bain apres travaux",
+          position: "left",
+          src: "/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif",
+          top: true,
+        }}
+        title="Rénovation salle de bain"
+      >
+        <p className="leading-10">
+          Votre salle de bain est vieillissante ou plus du tout adaptée à vos
+          besoins ? Vous souhaitez la rendre plus moderne ou plus fonctionnelle
+          ? De l&apos;installation de plomberie au remplacement du carrelage, en
+          passant par les finitions haut de gamme, notre équipe d&apos;artisans
+          tout corps de métier qualifiés assure un travail soigné et conforme
+          aux normes actuelles. Nous vous proposons des solutions adaptées comme
+          l&apos;installation de douche à l&apos;italienne, de baignoire, de
+          toilette, de bidet ou de meuble ergonomique parfaitement adapté à
+          votre salle de bain. Nous faisons également l&apos;installation de
+          tous le matériel pour les Personnes à Mobilité Réduite (PMR)
+        </p>
+      </Section>
       <Section
         idPage="renovation"
         name="cuisine"
