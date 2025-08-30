@@ -79,7 +79,6 @@ export default function page() {
 
       <Section
         idPage="depannage"
-        class="test"
         name="electro"
         image={{
           alt: "photo de quelques petit électroménager dans une cuisine",
@@ -102,16 +101,6 @@ export default function page() {
           </Link>{" "}
           pour la vente d&apos;électroménager avec leur catalogue complet.
         </p>
-        {/* <div className="content-footer flex mt-8">
-          <div className="flex-1">
-            <h3 className="text-3xl">150k appareils</h3>
-            <p className="text-base">catalogue Proxiconfort</p>
-          </div>
-          <div className="flex-1">
-            <h3 className="text-3xl">34 ans</h3>
-            <p className="text-base">Expérience et fiabilité</p>
-          </div>
-        </div> */}
       </Section>
 
       <Section
@@ -144,7 +133,7 @@ export default function page() {
         idPage="depannage"
         name="plomb"
         image={{
-          alt: "photo d&apos;une personne réparant un aspirateur",
+          alt: "photo d'une personne réparant un aspirateur",
           position: "right",
           src: "/images/shutterstock.jpg",
         }}
