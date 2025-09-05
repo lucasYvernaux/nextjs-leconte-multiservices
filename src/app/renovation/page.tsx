@@ -45,7 +45,7 @@ export default function page() {
                   Un seul interlocuteur pour un projet fluide et sans stress.
                 </li>
                 <li>Un travail soigné et conforme aux normes en vigueur.</li>
-                <li>une équipe de professionnels tout corps de métiers.</li>
+                <li>une équipe de professionnels tous corps d&apos;état.</li>
               </ul>
             </div>
 
@@ -109,7 +109,7 @@ export default function page() {
           besoins ? Vous souhaitez la rendre plus moderne ou plus fonctionnelle
           ? De l&apos;installation de plomberie au remplacement du carrelage, en
           passant par les finitions haut de gamme, notre équipe d&apos;artisans
-          tout corps de métier qualifiés assure un travail soigné et conforme
+          tous corps d&apos;état qualifiés assure un travail soigné et conforme
           aux normes actuelles. Nous vous proposons des solutions adaptées comme
           l&apos;installation de douche à l&apos;italienne, de baignoire, de
           toilette, de bidet ou de meuble ergonomique parfaitement adapté à
@@ -143,7 +143,7 @@ export default function page() {
           projet, avec un suivi personnalisé et pofessionnelle :
         </p>
         <ul className="list-disc list-inside m-auto w-3/4 text-start">
-          <li>Prise de mesures précises pour optimiser l’espace disponible.</li>
+          <li>Prise de mesures précises pour optimiser l&apos;espace disponible.</li>
           <li>
             Conception sur mesure ou montage de meubles en kit selon vos
             préférences.
@@ -153,8 +153,8 @@ export default function page() {
             normes en vigueur.
           </li>
           <li>
-            Mise en service de l’électroménager pour une cuisine prête à
-            l’emploi.
+            Mise en service de l&apos;électroménager pour une cuisine prête à
+            l&apos;emploi.
           </li>
         </ul>
       </Section>

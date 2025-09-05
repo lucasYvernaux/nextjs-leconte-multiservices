@@ -37,7 +37,7 @@ export default function page() {
               href="tel:0640141937"
               data-page-id="Home"
             >
-              Appelez-moi
+              Contactez-moi
             </Link>
           </div>
           <div className="content-card flex flex-col gap-4 md:flex-row md:px-12">
