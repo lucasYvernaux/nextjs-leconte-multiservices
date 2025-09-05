@@ -21,7 +21,7 @@ export default function Home() {
             Vente, livraison, installation électroménager
           </h1>
           <h1 className="text-4xl font-bold uppercase text-start fadein-left md:text-5xl">
-            Rénovation tous corps de d&apos;état
+            Rénovation tous corps d&apos;état
           </h1>
           <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
             Paris - Île de France
