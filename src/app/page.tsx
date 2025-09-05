@@ -21,7 +21,7 @@ export default function Home() {
             Vente, livraison, installation électroménager
           </h1>
           <h1 className="text-4xl font-bold uppercase text-start fadein-left md:text-5xl">
-            Rénovation tout corps de métier
+            Rénovation tous corps de d&apos;état
           </h1>
           <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
             Paris - Île de France
@@ -38,7 +38,7 @@ export default function Home() {
               href="tel:0640141937"
               data-page-id="Home"
             >
-              Appelez-moi
+              Contactez-moi
             </Link>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
             maintenance.
           </p>
 
-          <div className="content-card flex gap-6 text-lg md:text-xl md:w-3/4 flex-col md:flex-row">
+          <div className="content-card flex gap-6 text-lg md:text-xl md:w-3/4 flex-col lg:flex-row">
             <Card className="bg-leconte-secondary rounded-none text-start gap-0 p-0 flex-1">
               <CardContent className="md:h-1/2 gap-0 py-4">
                 <CardTitle className="font-bold mb-4 ">
