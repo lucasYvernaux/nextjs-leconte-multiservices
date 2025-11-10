@@ -5,18 +5,14 @@ import Link from "next/link";
 export function Footer() {
   const urlLogo = "/images/logo/LECONTE_MULTISERVICES_small_logo.png";
   return (
-    <footer className="bg-leconte-primary p-8 w-full md:h-[32vh] flex flex-col md:pd-12">
+    <footer className="bg-leconte-primary p-8 w-full flex flex-col gap-6 md:pd-12">
       <div className="flex gap-8 size-full flex-10 flex-col md:flex-row">
-        <div className="h-full flex-1">
-          <Link
-            href="/"
-            title="Retour à l'accueil"
-            className="contents size-fit m-auto"
-          >
+        <div className="flex items-center justify-center flex-1">
+          <Link href="/" title="Retour à l'accueil">
             <Image
               src={urlLogo}
               alt="logo Leconte Multiservices"
-              className="h-full w-fit object-contain m-auto"
+              className="h-40 w-fit object-contain"
               width={1920}
               height={1080}
             />
