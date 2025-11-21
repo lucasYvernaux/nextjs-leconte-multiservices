@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { object } from "yup";
 
 export default function page() {
   const pathname = usePathname();
@@ -240,7 +239,8 @@ export default function page() {
         </div>
         <div className="p-12 grid gap-4 auto-rows-[350px] md:auto-rows-[500px] md:grid-cols-4">
           {listRealisation.map((el, index) => (
-            <Link href={`/realisation/${index}`} key={index} title={el.name}>
+            // <Link href={`/realisation/${index}`} key={index} title={el.name}>
+            <div key={index}>
               <Image
                 src={el.listIllustration[0].url}
                 alt={el.description}
@@ -249,7 +249,8 @@ export default function page() {
                 height={1080}
               />
               <p className="italic text-md">{el.name}</p>
-            </Link>
+            </div>
+            // </Link>
           ))}
         </div>
         {/* <div className="p-12 grid gap-4 auto-rows-[350px] md:auto-rows-[500px] md:grid-cols-4">
