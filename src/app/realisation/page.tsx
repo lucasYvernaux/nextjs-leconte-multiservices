@@ -1,16 +1,16 @@
 "use client";
 
-import { createClient } from "@/lib/supabase/client";
+// import { createClient } from "@/lib/supabase/client";
 import { Realisation } from "@/lib/type";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
-export default function page() {
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+
+export default function Page() {
   const pathname = usePathname();
-  const [resultData, setResultData] = useState<any[]>();
+  // const [resultData, setResultData] = useState<any[]>();
   useEffect(() => {
     const header = document.querySelector("header");
     const main = document.querySelector("main.absolute");
@@ -33,16 +33,16 @@ export default function page() {
       }
     }
 
-    async function fetchData() {
-      const supabase = await createClient();
-      const { data: realisations } = await supabase
-        .from("realisation")
-        .select();
-      const res = JSON.stringify(realisations);
-      if (realisations) setResultData(realisations);
-      return res;
-    }
-    fetchData();
+    // async function fetchData() {
+    //   const supabase = await createClient();
+    //   const { data: realisations } = await supabase
+    //     .from("realisation")
+    //     .select();
+    //   const res = JSON.stringify(realisations);
+    //   if (realisations) setResultData(realisations);
+    //   return res;
+    // }
+    // fetchData();
 
     if (pathname.endsWith("/realisation")) {
       window.addEventListener("scroll", checkScroll);
@@ -127,7 +127,7 @@ export default function page() {
   //   }
   // );
 
-  const listRealisation: Array<Realisation> = new Array(
+  const listRealisation: Array<Realisation> = new Array<Realisation>(
     {
       name: "rénovation mezzanine",
       description: "pose parquet + peinture",
