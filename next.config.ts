@@ -8,6 +8,15 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.darty.com",
       },
+      {
+        protocol: "https",
+        hostname: "qouclhpwqhhparcklfac.supabase.co",
+        port: "",
+        pathname: "/storage/**",
+      },
+      // new URL(
+      //   "https://qouclhpwqhhparcklfac.supabase.co/storage/v1/render/image/public/**"
+      // ),
     ],
   },
 };
