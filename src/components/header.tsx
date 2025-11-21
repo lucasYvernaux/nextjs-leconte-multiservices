@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Collapsible,
   CollapsibleTrigger,
@@ -18,7 +18,11 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 h-28 w-full z-10 px-4 py-4 bg-leconte-primary">
+    <header
+      className={`sticky top-0 h-28 w-full z-10 px-4 py-4 bg-leconte-primary ${
+        pathname === "/realisation" ? "bg-transparent" : ""
+      }`}
+    >
       <nav className="flex w-full h-full items-center">
         <div className="nav-logo flex-1 h-full">
           <Link
@@ -122,6 +126,18 @@ export function Header() {
                         <CollapsibleTrigger asChild>
                           <Link
                             className={`p-4 text-base font-semibold
+                            ${pathname.includes("/realisation") ? "active" : ""}
+                            hover:bg-blue-50 hover:text-blue-600"`}
+                            href="/realisation"
+                          >
+                            Nos Réalisations
+                          </Link>
+                        </CollapsibleTrigger>
+                      </li>
+                      <li className="mb-1">
+                        <CollapsibleTrigger asChild>
+                          <Link
+                            className={`p-4 text-base font-semibold
                             ${pathname == "/about" ? "active" : ""}
                             hover:bg-blue-50 hover:text-blue-600"`}
                             href="/about"
@@ -179,6 +195,17 @@ export function Header() {
                 href="/renovation"
               >
                 Rénovation
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className={` ${
+                  pathname.includes("/realisation") ? "active" : ""
+                } hover:text-leconte-gray`}
+                href="/realisation"
+              >
+                Nos réalisation
               </Link>
             </li>
 
