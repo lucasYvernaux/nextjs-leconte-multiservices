@@ -67,6 +67,7 @@ export default function Page() {
         )
         .catch((err) => {
           console.error("Erreur lors du fecth");
+          console.error(err);
           toast.error("L'email n'a pas été envoyé", {
             description:
               "Une erreur est survenue, avant l'envoie des données, Désolé de la gêne occasionnée. ",
