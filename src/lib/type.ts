@@ -27,3 +27,11 @@ export interface ContactFormState {
   subject: string;
   message: string;
 }
+
+export interface propsInput {
+  label: string;
+  id: string;
+  name: string;
+  type: string;
+  value: string;
+}

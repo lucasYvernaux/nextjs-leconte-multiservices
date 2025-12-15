@@ -1,5 +1,6 @@
 import { Section } from "@/components/section";
 import { Metadata } from "next";
+import { MetadataPage } from "@/lib/utils";
 import Link from "next/link";
 
 import Image from "next/image";
@@ -8,19 +9,9 @@ import urlImageRenovParis from "../../../public/images/video-serge-renov-comble-
 import urlImageRenovSdb from "../../../public/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif";
 import urlImageRenovCuisine from "../../../public/images/video-cuisine-avant-apres.gif";
 
-export const metadata: Metadata = {
-  title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
-  description:
-    "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
-  openGraph: {
-    title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
-    description:
-      "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
-    url: "https://leconte-multiservices.fr/renovation",
-  },
-};
+export const metadata: Metadata = MetadataPage.Renovation;
 
-export default function page() {
+export default function RenovationPage() {
   return (
     <main className="relative">
       <section className="section-renov flex flex-col min-h-screen p-12 md:w-3/4 m-auto">

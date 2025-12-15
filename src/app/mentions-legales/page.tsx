@@ -1,20 +1,11 @@
+import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Leconte Multiservices - Mentions Légales",
-  description:
-    "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
-  openGraph: {
-    title: "Leconte Multiservices - Mentions Légales",
-    description:
-      "Découvrer les mentions légales du site internet Leconte Multiservices, dépannage d&apos;urgence plomberie, électricité, électroménager et rénovation sur Paris et l&apos;Ile de France",
-    url: "https://leconte-multiservices.fr/mentions-legales",
-  },
-};
+export const metadata: Metadata = MetadataPage.PrivacyPolicy;
 
-export default async function page() {
+export default async function PrivacyPolicyPage() {
   const myHost = process.env.HOST ?? "example.leconte-multiservices.fr";
   const cookielength = (await cookies()).size;
 
