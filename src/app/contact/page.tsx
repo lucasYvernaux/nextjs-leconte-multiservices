@@ -10,16 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
 import { useFormStatus } from "react-dom";
-
-interface ContactFormState {
-  [key: string]: unknown;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  subject: string;
-  message: string;
-}
+import { ContactFormState } from "@/lib/type";
 
 export default function Page() {
   const phoneRegex = RegExp("^0[0-9]{8}[0-9]$");
@@ -73,7 +64,14 @@ export default function Page() {
                 "Une erreur est survenue, Désolé de la gêne occasionnée. ",
             });
           }
-        );
+        )
+        .catch((err) => {
+          console.error("Erreur lors du fecth");
+          toast.error("L'email n'a pas été envoyé", {
+            description:
+              "Une erreur est survenue, avant l'envoie des données, Désolé de la gêne occasionnée. ",
+          });
+        });
     } catch (e) {
       console.error("Erreur EmailJS: " + e);
       toast.error("L'email n'a pas été envoyé", {
@@ -188,37 +186,6 @@ const TextInputLiveFeedback = (propsInput: {
   const handleFocus = () => setDidFocus(true);
   const showFeedback = meta.touched;
 
-  // function formatPhoneText(value: string) {
-  //   value = value.trim().replaceAll(" ", "");
-
-  //   if (value.length > 2 && value.length <= 4)
-  //     value = value.slice(0, 2) + " " + value.slice(2);
-  //   else if (value.length > 4 && value.length <= 6)
-  //     value =
-  //       value.slice(0, 2) + " " + value.slice(2, 4) + " " + value.slice(4);
-  //   else if (value.length > 6 && value.length <= 8)
-  //     value =
-  //       value.slice(0, 2) +
-  //       " " +
-  //       value.slice(2, 4) +
-  //       " " +
-  //       value.slice(4, 6) +
-  //       " " +
-  //       value.slice(6);
-  //   else if (value.length > 8 && value.length <= 10)
-  //     value =
-  //       value.slice(0, 2) +
-  //       " " +
-  //       value.slice(2, 4) +
-  //       " " +
-  //       value.slice(4, 6) +
-  //       " " +
-  //       value.slice(6, 8) +
-  //       " " +
-  //       value.slice(8);
-  //   return value;
-  // }
-
   return (
     <>
       <div>
@@ -233,7 +200,7 @@ const TextInputLiveFeedback = (propsInput: {
                     rows={10}
                     onFocus={handleFocus}
                     aria-describedby={`${propsInput.id}-feedback ${propsInput.id}-help`}
-                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 ${
+                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border ${
                       showFeedback &&
                       !meta.error &&
                       "border-green-600 focus:border-green-600"
@@ -253,7 +220,7 @@ const TextInputLiveFeedback = (propsInput: {
                     {...field}
                     onFocus={handleFocus}
                     aria-describedby={`${propsInput.id}-feedback ${propsInput.id}-help`}
-                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 ${
+                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border ${
                       showFeedback &&
                       !meta.error &&
                       "border-green-600 focus:border-green-600"
@@ -273,7 +240,7 @@ const TextInputLiveFeedback = (propsInput: {
               showFeedback && !meta.error && "text-green-600"
             } ${
               showFeedback && meta.error && "text-red-600"
-            } duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto`}
+            } duration-300 transform -translate-y-4 scale-75 top-4 origin-left start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto`}
           >
             {propsInput.label}
           </Label>
