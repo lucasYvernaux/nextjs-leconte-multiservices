@@ -6,8 +6,13 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+
 import Link from "next/link";
+
+import Image from "next/image";
+import urlImgElectro from "../../public/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg";
+import urlImgTravaux from "../../public/images/travaux.jpg";
+import urlImgSerge from "../../public/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg";
 
 export default function Home() {
   return (
@@ -60,7 +65,7 @@ export default function Home() {
                   Dépannage Électroménager
                 </CardTitle>
                 <p className="text-justify md:pb-8 md:leading-9">
-                  Qu’il s’agisse de votre machine à laver, de votre
+                  Qu&apos;il s&apos;agisse de votre machine à laver, de votre
                   lave-vaisselle, de votre frigo en passant par votre
                   congélateur ou même votre four à micro-ondes, nous savons que
                   la moindre panne est capable de bouleverser votre quotidien.
@@ -73,10 +78,9 @@ export default function Home() {
               <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
-                  src="/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg"
-                  alt="photo d'un homme réparant un aspirateur"
-                  width={1920}
-                  height={1080}
+                  src={urlImgElectro}
+                  alt="photo d'appareils électroménager"
+                  title="photo d'appareils électroménager"
                 />
               </CardDescription>
             </Card>
@@ -98,10 +102,9 @@ export default function Home() {
               <CardDescription className="md:h-1/2">
                 <Image
                   className="h-full"
-                  src="/images/travaux.jpg"
+                  src={urlImgTravaux}
                   alt="photo d'un appartement en travaux"
-                  width={1920}
-                  height={1080}
+                  title="photo d'un appartement en travaux"
                 />
               </CardDescription>
             </Card>
@@ -135,11 +138,10 @@ export default function Home() {
           <div className="content-image flex flex-1 items-center">
             <Image
               className="rounded-4xl w-full m-auto"
-              src="/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg"
-              alt="gif d'un appartement sous les combles travaux fini"
+              src={urlImgSerge}
+              alt="photo de Serge Leconte réparant un lave-vaisselle"
+              title="photo de Serge Leconte réparant un lave-vaisselle"
               style={{ maxHeight: 600, width: 500 }}
-              width={1920}
-              height={1080}
             />
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import urlLogo from "../../public/images/logo/LECONTE_MULTISERVICES_small_logo.png";
 import Link from "next/link";
 
 import { useState } from "react";
@@ -12,8 +13,6 @@ import {
 import { usePathname } from "next/navigation";
 
 export function Header() {
-  const urlLogo = "/images/logo/LECONTE_MULTISERVICES_small_logo.png";
-
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -32,9 +31,8 @@ export function Header() {
           >
             <Image
               src={urlLogo}
-              alt="logo"
-              width={1920}
-              height={1080}
+              alt="logo Leconte Multiservices"
+              title="logo Leconte Multiservices"
               className="h-full w-auto aspect-square"
             />
             <span>Leconte Multiservices</span>
@@ -66,9 +64,8 @@ export function Header() {
                       >
                         <Image
                           src={urlLogo}
-                          alt="logo"
-                          width={50}
-                          height={50}
+                          alt="logo Leconte Multiservices"
+                          className="w-13"
                         />
                         <span>Leconte Multiservices</span>
                       </Link>
@@ -130,7 +127,7 @@ export function Header() {
                             hover:bg-blue-50 hover:text-blue-600"`}
                             href="/realisation"
                           >
-                            Nos Réalisations
+                            Réalisations
                           </Link>
                         </CollapsibleTrigger>
                       </li>
@@ -205,7 +202,7 @@ export function Header() {
                 } hover:text-leconte-gray`}
                 href="/realisation"
               >
-                Nos réalisation
+                Réalisation
               </Link>
             </li>
 

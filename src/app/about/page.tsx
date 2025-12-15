@@ -1,8 +1,11 @@
 import { Map } from "@/components/Map";
 import { Section } from "@/components/section";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+
+import Image from "next/image";
+import urlImageFamille from "../../../public/images/photo-famille-leconte.jpg";
+import urlImage from "../../../public/images/travaux-mezzanine.jpg";
 
 export const metadata: Metadata = {
   title:
@@ -24,7 +27,7 @@ export default function page() {
       <section className="section-about flex flex-col p-12">
         <div className="content flex gap-16 flex-col md:flex-row">
           <div className="content-text text-start text-2xl fade-in flex-1">
-            <h2 className="text-4xl my-12 font-bold text-leconte-primary">
+            <h2 className="text-4xl mb-12 font-bold text-leconte-primary">
               Notre histoire
             </h2>
             <p className="leading-10">
@@ -39,10 +42,8 @@ export default function page() {
           <div className="content-image flex-1 flex items-center justify-center">
             <Image
               className="w-full aspect-square rounded-full md:w-1/2"
-              src="/images/photo-famille-leconte.jpg"
-              alt="photo d'une personne réparant un aspirateur"
-              width={1920}
-              height={1080}
+              src={urlImageFamille}
+              alt="photo de Serge Leconte avec son père et son frère"
             />
           </div>
         </div>
@@ -54,7 +55,7 @@ export default function page() {
         image={{
           alt: "photo d'un appartement en travaux",
           position: "left",
-          src: "/images/travaux-mezzanine.jpg",
+          url: urlImage,
         }}
       >
         <p>

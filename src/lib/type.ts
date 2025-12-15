@@ -1,8 +1,8 @@
+import { StaticImageData } from "next/image";
+
 export type ImageReal = {
-  url: string;
-  description: string;
+  url: StaticImageData;
   type: "image" | "video" | "gif";
-  title: string;
 };
 
 export type Realisation = {

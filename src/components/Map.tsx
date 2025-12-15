@@ -7,7 +7,7 @@ export function Map(props: { idPage: string }) {
       name="map"
       title="Nous Contacter"
       image={{
-        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674391.7854364198!2d1.843325109378848!3d48.6798081501672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e1c403a68c17%3A0x10b82c3688b2570!2s%C3%8Ele-de-France!5e0!3m2!1sfr!2sfr!4v1741796767722!5m2!1sfr!2sfr",
+        url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674391.7854364198!2d1.843325109378848!3d48.6798081501672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e1c403a68c17%3A0x10b82c3688b2570!2s%C3%8Ele-de-France!5e0!3m2!1sfr!2sfr!4v1741796767722!5m2!1sfr!2sfr",
         position: "right",
         alt: "localisation Leconte Multiservices",
         type: true,

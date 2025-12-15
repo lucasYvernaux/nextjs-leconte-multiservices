@@ -5,6 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section } from "@/components/section";
 import Link from "next/link";
 
+import urlImageElectro from "../../../public/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg";
+import urlImageElec from "../../../public/images/Electricité.jpeg";
+import urlImagePlomb from "../../../public/images/shutterstock.jpg";
+
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
   description:
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <section className="section-services flex bg-gradient-to-r from-leconte-primary to-leconte-secondary p-12 md:p-0 md:h-screen">
+      <section className="section-services flex bg-linear-to-r from-leconte-primary to-leconte-secondary p-12 md:p-0 md:h-screen">
         <div className="content flex flex-col gap-12 items-center justify-center max-w-full w-full">
           <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
             Dépannage à domicile rapide et professionnel
@@ -83,7 +87,7 @@ export default function page() {
         image={{
           alt: "photo de quelques petit électroménager dans une cuisine",
           position: "right",
-          src: "/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg",
+          url: urlImageElectro,
         }}
         title="Dépannage en Électroménager"
       >
@@ -109,7 +113,7 @@ export default function page() {
         image={{
           alt: "photo d&apos;une personne réparant un aspirateur",
           position: "left",
-          src: "/images/Electricité.jpeg",
+          url: urlImageElec,
         }}
         title="Dépannage en Électricité"
       >
@@ -135,7 +139,7 @@ export default function page() {
         image={{
           alt: "photo d'une personne réparant un aspirateur",
           position: "right",
-          src: "/images/shutterstock.jpg",
+          url: urlImagePlomb,
         }}
         title="Dépannage en Plomberie"
       >
