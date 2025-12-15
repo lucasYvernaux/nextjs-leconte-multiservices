@@ -1,5 +1,5 @@
 import { AvisGoogle } from "@/components/avisGoogle";
-import { Map } from "@/components/Map";
+import { MapSection } from "@/components/Map";
 import {
   Card,
   CardContent,
@@ -137,11 +137,10 @@ export default function Home() {
           </div>
           <div className="content-image flex flex-1 items-center">
             <Image
-              className="rounded-4xl w-full m-auto"
+              className="rounded-4xl w-lg m-auto max-w-xl"
               src={urlImgSerge}
               alt="photo de Serge Leconte réparant un lave-vaisselle"
               title="photo de Serge Leconte réparant un lave-vaisselle"
-              style={{ maxHeight: 600, width: 500 }}
             />
           </div>
         </div>
@@ -150,7 +149,7 @@ export default function Home() {
       <section id="Avis" className=" flex items-center p-8 md:h-screen">
         <AvisGoogle />
       </section>
-      <Map idPage="home" />
+      <MapSection idPage="home" />
     </>
   );
 }

@@ -8,20 +8,11 @@ import Link from "next/link";
 import urlImageElectro from "../../../public/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg";
 import urlImageElec from "../../../public/images/Electricité.jpeg";
 import urlImagePlomb from "../../../public/images/shutterstock.jpg";
+import { MetadataPage } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
-  description:
-    "Dépanneur d&apos;électricité, de plomberie et installateur d&apos;électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
-  openGraph: {
-    title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
-    description:
-      "Services de dépannage électricité, plomberie et électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
-    url: "https://leconte-multiservices.fr/depannage",
-  },
-};
+export const metadata: Metadata = MetadataPage.Depannage;
 
-export default function page() {
+export default function DepannagePage() {
   return (
     <>
       <section className="section-services flex bg-linear-to-r from-leconte-primary to-leconte-secondary p-12 md:p-0 md:h-screen">
@@ -93,9 +84,9 @@ export default function page() {
       >
         <p className="mb-4">
           Votre appareil électroménager est tombé en panne ? Ne le jetez pas, il
-          suffit parfois de remplacer une pièce pour qu’il continue à vivre plus
-          longtemps. Vous pouvez faire confiance à mon expertise, avec mes 34
-          ans d&apos;expérience chez Darty. Et mon partenariat avec{" "}
+          suffit parfois de remplacer une pièce pour qu&apos;il continue à vivre
+          plus longtemps. Vous pouvez faire confiance à mon expertise, avec mes
+          34 ans d&apos;expérience chez Darty. Et mon partenariat avec{" "}
           <Link
             href={"https://www.proxiconfort.fr"}
             className="underline"
@@ -121,15 +112,9 @@ export default function page() {
           Votre sécurité est ma priorité. Je propose des solutions adaptées pour
           tous vos besoins électriques : pannes de courant, remplacements de
           tableaux électriques, ajout de prises ou encore installation
-          d’éclairage. Je vous garantis une intervention rapide et efficace.
-          Notamment la vente, l&apos;installation et le dépannage de chauffe-eau
-          électrique toutes marques.
-          {/* Je
-          propose des solutions adaptées pour tous vos besoins électriques :
-          pannes de courant, remplacements de tableaux électriques, ajout de
-          prises ou encore installation d’éclairage
-
-          Paraphraser cette section*/}
+          d&apos;éclairage. Je vous garantis une intervention rapide et
+          efficace. Notamment la vente, l&apos;installation et le dépannage de
+          chauffe-eau électrique toutes marques.
         </p>
       </Section>
 

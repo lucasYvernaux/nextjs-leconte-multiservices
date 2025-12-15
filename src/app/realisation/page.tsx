@@ -14,7 +14,7 @@ import urlImage6 from "../../../public/images/WhatsAppVido2025-04-24_fb825763-ez
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-export default function Page() {
+export default function RealisationPage() {
   const pathname = usePathname();
   // const [resultData, setResultData] = useState<any[]>();
 

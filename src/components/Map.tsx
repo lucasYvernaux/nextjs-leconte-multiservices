@@ -1,6 +1,6 @@
 import { Section } from "./section";
 
-export function Map(props: { idPage: string }) {
+export function MapSection(props: { idPage: string }) {
   return (
     <Section
       idPage={props.idPage}
