@@ -1,21 +1,20 @@
 "use client";
-import { useState } from "react";
 
-import { Formik, useField } from "formik";
+import { Formik } from "formik";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 
 import { toast, Toaster } from "sonner";
-import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
 import { useFormStatus } from "react-dom";
 import { ContactFormState } from "@/lib/type";
+import { TextInputLiveFeedback } from "@/components/textInput";
 
-export default function Page() {
+export default function ContactPage() {
   const phoneRegex = RegExp("^0[0-9]{8}[0-9]$");
   const { pending } = useFormStatus();
-
+  const DURATION = 5000;
   const initialValues: ContactFormState = {
     firstName: "",
     lastName: "",
@@ -81,7 +80,12 @@ export default function Page() {
 
   return (
     <>
-      <Toaster richColors position="top-center" duration={5000} closeButton />
+      <Toaster
+        richColors
+        position="top-center"
+        duration={DURATION}
+        closeButton
+      />
       <Section name="form" idPage="contact" title="Contactez-nous" first>
         <Formik
           validationSchema={schema}
@@ -167,92 +171,3 @@ export default function Page() {
     </>
   );
 }
-
-const TextInputLiveFeedback = (propsInput: {
-  label: string;
-  id: string;
-  name: string;
-  type: string;
-  value: string;
-}) => {
-  const [field, meta] = useField(propsInput);
-
-  // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
-  const [didFocus, setDidFocus] = useState(false);
-  const handleFocus = () => setDidFocus(true);
-  const showFeedback = meta.touched;
-
-  return (
-    <>
-      <div>
-        <div className="relative">
-          {(() => {
-            switch (propsInput.type) {
-              case "textarea":
-                return (
-                  <textarea
-                    aria-checked={didFocus}
-                    {...field}
-                    rows={10}
-                    onFocus={handleFocus}
-                    aria-describedby={`${propsInput.id}-feedback ${propsInput.id}-help`}
-                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border ${
-                      showFeedback &&
-                      !meta.error &&
-                      "border-green-600 focus:border-green-600"
-                    } ${
-                      showFeedback &&
-                      meta.error &&
-                      "border-red-600 focus:border-red-600"
-                    } appearance-none focus:outline-none focus:ring-0 focus:border-leconte-primary peer`}
-                    placeholder=" "
-                  ></textarea>
-                );
-              default:
-                return (
-                  <input
-                    aria-checked={didFocus}
-                    {...propsInput}
-                    {...field}
-                    onFocus={handleFocus}
-                    aria-describedby={`${propsInput.id}-feedback ${propsInput.id}-help`}
-                    className={`block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border ${
-                      showFeedback &&
-                      !meta.error &&
-                      "border-green-600 focus:border-green-600"
-                    } ${
-                      showFeedback &&
-                      meta.error &&
-                      "border-red-600 focus:border-red-600"
-                    } appearance-none focus:outline-none focus:ring-0 focus:border-leconte-primary peer`}
-                    placeholder=" "
-                  />
-                );
-            }
-          })()}
-          <Label
-            htmlFor={propsInput.id}
-            className={`absolute text-sm text-gray-500 ${
-              showFeedback && !meta.error && "text-green-600"
-            } ${
-              showFeedback && meta.error && "text-red-600"
-            } duration-300 transform -translate-y-4 scale-75 top-4 origin-left start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto`}
-          >
-            {propsInput.label}
-          </Label>
-        </div>
-
-        <p
-          id={`${propsInput.id}_error_help`}
-          className={`mt-2 text-base text-red-600 ${
-            showFeedback ? "block" : "hidden"
-          }`}
-        >
-          {meta.error}
-        </p>
-      </div>
-    </>
-  );
-};

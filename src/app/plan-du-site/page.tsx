@@ -1,20 +1,11 @@
 import { Section } from "@/components/section";
+import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Leconte Multiservices - Plan du Site",
-  description:
-    "Découvrez le plan du site Leconte Multiservices afin de découvrir toutes les pages et toutes les prestation proposé par l'entreprise",
-  openGraph: {
-    title: "Leconte Multiservices - Mentions Légales",
-    description:
-      "Découvrez le plan du site Leconte Multiservices afin de découvrir toutes les pages et toutes les prestation proposé par l'entreprise",
-    url: "https://leconte-multiservices.fr/plan-du-site",
-  },
-};
+export const metadata: Metadata = MetadataPage.Sitemap;
 
-export default function page() {
+export default function PlanPage() {
   return (
     <>
       <Section
@@ -24,7 +15,7 @@ export default function page() {
         class="h-screen"
       >
         <h2 className="mb-4">Pages</h2>
-        <ul className="list-disc list-inside text-lg block flex flex-col gap-4">
+        <ul className="list-disc list-inside text-lg flex flex-col gap-4">
           <li>
             <Link
               href={"/"}

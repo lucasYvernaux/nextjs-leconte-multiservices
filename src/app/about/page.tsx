@@ -1,4 +1,4 @@
-import { Map } from "@/components/Map";
+import { MapSection } from "@/components/Map";
 import { Section } from "@/components/section";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -6,22 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import urlImageFamille from "../../../public/images/photo-famille-leconte.jpg";
 import urlImage from "../../../public/images/travaux-mezzanine.jpg";
+import { MetadataPage } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title:
-    "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
-  description:
-    "Découvrez Leconte Multiservices : entreprise familiale spécialisée en rénovation et dépannage à Paris. 36 ans d'expérience, artisans certifiés, engagements qualité et satisfaction client.",
-  openGraph: {
-    title:
-      "Leconte Multiservices -  À Propos - Expert en Rénovation et Dépannage à Paris & Île-de-France",
-    description:
-      "Entreprise rénovation Paris, histoire Leconte Multiservices, équipe artisans Île-de-France, valeurs entreprise dépannage, expertise rénovation 75, certifications professionnelles, engagement qualité",
-    url: "https://leconte-multiservices.fr/about",
-  },
-};
+export const metadata: Metadata = MetadataPage.About;
 
-export default function page() {
+export default function AboutPage() {
   return (
     <>
       <section className="section-about flex flex-col p-12">
@@ -78,7 +67,7 @@ export default function page() {
           </Link>
         </div>
       </Section>
-      <Map idPage="about" />
+      <MapSection idPage="about" />
     </>
   );
 }

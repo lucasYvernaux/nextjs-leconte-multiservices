@@ -7,15 +7,14 @@ import {
   CollapsibleTrigger,
 } from "./ui/collapsible";
 import { Card, CardContent } from "./ui/card";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
 import { Button } from "./ui/button";
 import { toast, Toaster } from "sonner";
 import { Phone } from "lucide-react";
 
-import { Form, Formik, useField } from "formik";
+import { Form, Formik } from "formik";
 import * as yup from "yup";
 import Image from "next/image";
+import { TextInputLiveFeedback } from "./textInput";
 
 export function CTACall() {
   const [open, setOpen] = useState(false);
@@ -43,7 +42,7 @@ export function CTACall() {
   return (
     <>
       <Collapsible
-        className="fixed top-1/5 end-[2rem] z-10 flex md:end-1"
+        className="fixed top-1/5 end-8 z-10 flex md:end-1"
         open={open}
         onOpenChange={setOpen}
       >
@@ -140,51 +139,3 @@ export function CTACall() {
     </>
   );
 }
-
-const TextInputLiveFeedback = (propsPedr: {
-  label: string;
-  id: string;
-  name: string;
-  type: string;
-  value: string;
-}) => {
-  const [field, meta] = useField(propsPedr);
-
-  // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
-  const [didFocus, setDidFocus] = useState(false);
-  const handleFocus = () => setDidFocus(true);
-  const showFeedback = meta.touched;
-
-  return (
-    <>
-      <div className="flex">
-        <Label className="wrap-break-word w-1/5" htmlFor={propsPedr.id}>
-          {propsPedr.label}
-        </Label>
-        <Input
-          aria-checked={didFocus}
-          {...propsPedr}
-          {...field}
-          onFocus={handleFocus}
-          aria-describedby={`${propsPedr.id}-feedback ${propsPedr.id}-help`}
-        />
-
-        <span className="text-green-500 text-sm ps-2 pt-2">
-          {" "}
-          {showFeedback && !meta.error && "✓"}
-        </span>
-      </div>
-      {showFeedback && (
-        <div
-          id={`${propsPedr.id}-feedback`}
-          aria-live="polite"
-          className="feedback text-sm ms-12 sm:ms-16 -mt-2 text-red-500"
-        >
-          {meta.error}
-        </div>
-      )}
-    </>
-  );
-};
