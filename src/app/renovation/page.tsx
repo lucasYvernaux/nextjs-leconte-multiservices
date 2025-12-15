@@ -1,7 +1,12 @@
 import { Section } from "@/components/section";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+
+import Image from "next/image";
+import urlImageRenov from "../../../public/images/travaux.jpg";
+import urlImageRenovParis from "../../../public/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp";
+import urlImageRenovSdb from "../../../public/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif";
+import urlImageRenovCuisine from "../../../public/images/video-cuisine-avant-apres.gif";
 
 export const metadata: Metadata = {
   title: "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
@@ -61,10 +66,9 @@ export default function page() {
           <div className="content-img">
             <Image
               className="rounded-4xl"
-              src="/images/services-travaux.jpg"
+              src={urlImageRenov}
               alt="photo d'un appartement en travaux"
-              width={1920}
-              height={1080}
+              title="photo d'un appartement en travaux"
             />
           </div>
         </div>
@@ -76,7 +80,7 @@ export default function page() {
         image={{
           alt: "gif d'un appartement sous les combles, travaux fini",
           position: "right",
-          src: "/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp",
+          url: urlImageRenovParis,
           top: true,
         }}
         title="Rénovation appartement à Paris"
@@ -99,7 +103,7 @@ export default function page() {
         image={{
           alt: "gif d'une salle de bain apres travaux",
           position: "left",
-          src: "/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif",
+          url: urlImageRenovSdb,
           top: true,
         }}
         title="Rénovation salle de bain"
@@ -124,7 +128,7 @@ export default function page() {
         image={{
           alt: "gif d'une cuisine rénové avant / après",
           position: "right",
-          src: "/images/video-cuisine-avant-apres.gif",
+          url: urlImageRenovCuisine,
           top: true,
         }}
         title="Rénovation cuisine à Paris"
@@ -143,7 +147,9 @@ export default function page() {
           projet, avec un suivi personnalisé et pofessionnelle :
         </p>
         <ul className="list-disc list-inside m-auto w-3/4 text-start">
-          <li>Prise de mesures précises pour optimiser l&apos;espace disponible.</li>
+          <li>
+            Prise de mesures précises pour optimiser l&apos;espace disponible.
+          </li>
           <li>
             Conception sur mesure ou montage de meubles en kit selon vos
             préférences.

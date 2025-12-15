@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import urlLogo from "../../public/images/logo/LECONTE_MULTISERVICES_small_logo.png";
+
 import Link from "next/link";
 
 export function Footer() {
-  const urlLogo = "/images/logo/LECONTE_MULTISERVICES_small_logo.png";
   return (
     <footer className="bg-leconte-primary p-8 w-full flex flex-col gap-6 md:pd-12">
       <div className="flex gap-8 size-full flex-10 flex-col md:flex-row">
@@ -13,8 +14,6 @@ export function Footer() {
               src={urlLogo}
               alt="logo Leconte Multiservices"
               className="h-40 w-fit object-contain"
-              width={1920}
-              height={1080}
             />
           </Link>
         </div>

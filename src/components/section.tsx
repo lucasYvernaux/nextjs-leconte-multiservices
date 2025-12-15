@@ -1,6 +1,6 @@
 "use client";
 import useIsMobile from "@/lib/useIsMobile";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export function Section(props: {
@@ -10,7 +10,7 @@ export function Section(props: {
   class?: string;
   image?: {
     position: string;
-    src: string;
+    url: StaticImageData | string;
     alt: string;
     type?: boolean;
     top?: boolean;
@@ -53,16 +53,17 @@ export function Section(props: {
                 {!props.image?.type ? (
                   <Image
                     className="rounded-4xl max-h-screen h-full m-auto"
-                    src={props.image.src}
+                    src={props.image.url}
                     alt={props.image.alt}
+                    title={props.image.alt}
                     style={{ maxHeight: 600 }}
                     loading="lazy"
-                    width={1920}
-                    height={1080}
                   />
                 ) : (
                   <iframe
-                    src={props.image.src}
+                    src={
+                      typeof props.image.url == "string" ? props.image.url : ""
+                    }
                     className="rounded-4xl size-full min-h-[50vh]"
                     loading="lazy"
                     title={props.image.alt}
@@ -90,15 +91,16 @@ export function Section(props: {
                 {!props.image?.type ? (
                   <Image
                     className="rounded-4xl max-h-screen h-full m-auto"
-                    src={props.image.src}
+                    src={props.image.url}
                     alt={props.image.alt}
+                    title={props.image.alt}
                     loading="lazy"
-                    width={1920}
-                    height={1080}
                   />
                 ) : (
                   <iframe
-                    src={props.image.src}
+                    src={
+                      typeof props.image.url == "string" ? props.image.url : ""
+                    }
                     className="rounded-4xl size-full min-h-[50vh]"
                     loading="lazy"
                     title={props.image.alt}
@@ -130,16 +132,17 @@ export function Section(props: {
                 {!props.image?.type ? (
                   <Image
                     className="rounded-4xl max-h-screen h-full m-auto"
-                    src={props.image.src}
+                    src={props.image.url}
                     alt={props.image.alt}
+                    title={props.image.alt}
                     style={{ maxHeight: 600 }}
                     loading="lazy"
-                    width={1920}
-                    height={1080}
                   />
                 ) : (
                   <iframe
-                    src={props.image.src}
+                    src={
+                      typeof props.image.url == "string" ? props.image.url : ""
+                    }
                     className="rounded-4xl size-full min-h-[50vh]"
                     loading="lazy"
                     title={props.image.alt}
