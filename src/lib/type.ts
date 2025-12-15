@@ -17,3 +17,13 @@ export type RealisationSupabase = {
   name: string;
   description: string;
 };
+
+export interface ContactFormState {
+  [key: string]: unknown;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
