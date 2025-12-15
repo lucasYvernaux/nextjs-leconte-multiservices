@@ -4,6 +4,12 @@
 import { Realisation } from "@/lib/type";
 
 import Image from "next/image";
+import urlImage1 from "../../../public/images/travaux-mezzanine.jpg";
+import urlImage2 from "../../../public/images/travaux.jpg";
+import urlImage3 from "../../../public/images/video-cuisine-avant-apres.gif";
+import urlImage4 from "../../../public/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp";
+import urlImage5 from "../../../public/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg";
+import urlImage6 from "../../../public/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif";
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
@@ -11,6 +17,7 @@ import { useEffect } from "react";
 export default function Page() {
   const pathname = usePathname();
   // const [resultData, setResultData] = useState<any[]>();
+
   useEffect(() => {
     const header = document.querySelector("header");
     const main = document.querySelector("main.absolute");
@@ -50,92 +57,13 @@ export default function Page() {
     }
   }, []);
 
-  // const placeholderImage: ImageReal = {
-  //   url: "/images/travaux.jpg",
-  //   description: "test",
-  //   type: "image",
-  //   title: "placeholder titre",
-  // };
-
-  // const placeholderRealisation: Realisation = {
-  //   name: "rénovation paris 13",
-  //   description: "pose parquet + peinture",
-  //   listIllustration: [
-  //     {
-  //       url: "/images/logo/LECONTE-MULTISERVICES-v2-removebg-preview.png",
-  //       description: "travaux rénovation",
-  //       title: "travaux rénovation",
-  //       type: "image",
-  //     },
-  //   ],
-  // };
-
-  // const listplaceholderRealisation: Array<Realisation> = Array.from(
-  //   { length: 5 },
-  //   () => placeholderRealisation
-  // );
-
-  // const list: Array<ImageReal> = new Array(
-  //   {
-  //     url: "/images/services-travaux.jpg",
-  //     description: "travaux rénovation",
-  //     title: "travaux rénovation",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/travaux-mezzanine.jpg",
-  //     description: "rénovation mezzanine",
-  //     title: "rénovation mezzanine",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/travaux.jpg",
-  //     description: "",
-  //     title: "travaux",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/video-cuisine-avant-apres.gif",
-  //     description: "rénovation cuisine paris 13",
-  //     title: "rénovation cuisine paris 13",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp",
-
-  //     description: "rénovation comble",
-  //     title: "rénovation comble",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg",
-  //     description: "",
-  //     title: "réparation lave-vaisselle",
-  //     type: "image",
-  //   },
-
-  //   {
-  //     url: "/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif",
-  //     description: "",
-  //     title: "rénovation salle de bain seine et marne",
-  //     type: "image",
-  //   }
-  // );
-
   const listRealisation: Array<Realisation> = new Array<Realisation>(
     {
       name: "rénovation mezzanine",
-      description: "pose parquet + peinture",
+      description: "rénovation mezzanine",
       listIllustration: [
         {
-          url: "/images/travaux-mezzanine.jpg",
-          description: "rénovation mezzanine",
-          title: "rénovation mezzanine",
+          url: urlImage1,
           type: "image",
         },
       ],
@@ -145,58 +73,48 @@ export default function Page() {
       description: "pose parquet + peinture",
       listIllustration: [
         {
-          url: "/images/travaux.jpg",
-          description: "",
-          title: "travaux",
+          url: urlImage2,
           type: "image",
         },
       ],
     },
     {
       name: "rénovation cuisine paris 13",
-      description: "pose parquet + peinture",
+      description: "rénovation cuisine paris 13",
       listIllustration: [
         {
-          url: "/images/video-cuisine-avant-apres.gif",
-          description: "rénovation cuisine paris 13",
-          title: "rénovation cuisine paris 13",
+          url: urlImage3,
           type: "image",
         },
       ],
     },
     {
       name: "rénovation comble",
-      description: "pose parquet + peinture",
+      description: "rénovation comble",
       listIllustration: [
         {
-          url: "/images/video-serge-renov-comble-ezgif.com-video-to-webp-converter.webp",
-
-          description: "rénovation comble",
-          title: "rénovation comble",
+          url: urlImage4,
           type: "image",
         },
       ],
     },
     {
       name: "réparation lave-vaisselle",
-      description: "pose parquet + peinture",
+      description: "réparation lave-vaisselle",
       listIllustration: [
         {
-          url: "/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg",
-          description: "",
-          title: "réparation lave-vaisselle",
+          url: urlImage5,
           type: "image",
         },
       ],
     },
     {
       name: "rénovation salle de bain",
-      description: "pose parquet + peinture",
+      description: "rénovation salle de bain seine et marne",
       listIllustration: [
         {
-          url: "/images/WhatsAppVido2025-04-24_fb825763-ezgif.com-5fps-0.5speed-after.gif",
-          description: "",
-          title: "rénovation salle de bain seine et marne",
+          url: urlImage6,
+
           type: "image",
         },
       ],
@@ -244,29 +162,14 @@ export default function Page() {
               <Image
                 src={el.listIllustration[0].url}
                 alt={el.description}
+                title={el.description}
                 className="h-9/10"
-                width={1920}
-                height={1080}
               />
               <p className="italic text-md">{el.name}</p>
             </div>
             // </Link>
           ))}
         </div>
-        {/* <div className="p-12 grid gap-4 auto-rows-[350px] md:auto-rows-[500px] md:grid-cols-4">
-          {resultData?.map((el, index) => (
-            <Link href={`/realisation/${index}`} key={index} title={el.name}>
-              <Image
-                src="https://qouclhpwqhhparcklfac.supabase.co/storage/v1/object/public/realisation/tee-shirt-leconte-multisertvices.jpg"
-                alt={el.description}
-                className="h-9/10"
-                width={1920}
-                height={1080}
-              />
-              <p className="italic text-md">{el.name}</p>
-            </Link>
-          ))}
-        </div> */}
       </section>
     </main>
   );
