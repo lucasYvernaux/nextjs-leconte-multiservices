@@ -30,6 +30,17 @@ export const MetadataPage = {
       url: "https://leconte-multiservices.fr/depannage",
     },
   },
+  DepannageParis : {
+    title: "Dépanneur Électroménager Paris | Expert ex-Darty (34 ans d'exp)",
+    description:
+      "Panne d'appareil ? Profitez de 34 ans d'expertise pour votre dépannage électroménager à Paris. Réparation rapide : lave-linge, lave-vaisselle, four. Devis clair !",
+      openGraph: {
+        title: "Dépanneur Électroménager Paris | Expert ex-Darty (34 ans d'exp)",
+        description:
+        "Panne d'appareil ? Profitez de 34 ans d'expertise pour votre dépannage électroménager à Paris. Réparation rapide : lave-linge, lave-vaisselle, four. Devis clair !",
+        url: "https://leconte-multiservices.fr/depannage-electromenager-paris",
+    },
+  },
   PrivacyPolicy: {
     title: "Leconte Multiservices - Mentions Légales",
     description:
