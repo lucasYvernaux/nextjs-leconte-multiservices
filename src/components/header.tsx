@@ -18,7 +18,7 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 h-28 w-full z-10 px-4 py-4 bg-leconte-primary ${
+      className={`sticky top-0 h-28 w-full z-10 animate-scroll animate-move-fade-bg px-4 py-4 bg-leconte-primary ${
         pathname === "/realisation" ? "bg-transparent" : ""
       }`}
     >
