@@ -4,6 +4,8 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
+  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
@@ -18,24 +20,27 @@ export default function Home() {
   return (
     <>
       <section className="section-home bg-no-repeat text-white flex py-8 px-4 relative md:h-screen md:p-12">
-        <div className="content flex flex-col gap-16 z-2 items-center justify-center max-w-full w-full">
-          <h1 className="text-4xl font-bold uppercase md: md:text-5xl">
-            Dépannage Electroménager, électricité et plomberie
+        <div className="content flex flex-col gap-16 z-2 max-w-full w-full">
+          <h1 className="text-4xl font-bold uppercase sm:text-center md:text-5xl">
+            <p className="hidden sm:block">
+              Dépannage Electroménager, électricité et plomberie
+            </p>
+            <div className="block : sm:hidden">
+              Dépannage{" "}
+              <ul className="text-2xl mt-4 list-disc list-inside">
+                <li>Electroménager</li>
+                <li>électricité</li>
+                <li>plomberie</li>
+              </ul>
+            </div>
           </h1>
-          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
-            Vente, livraison, installation électroménager
-          </h1>
-          <h1 className="text-4xl font-bold uppercase text-start fadein-left md:text-5xl">
-            Rénovation tous corps d&apos;état
-          </h1>
-          <h1 className="text-4xl font-bold uppercase fadein-left md:text-5xl">
-            Paris - Île de France
-          </h1>
-          <p className="fadein-left text-3xl md:text-4xl">
-            De la rénovation complète aux urgences, artisan qualifié intervient
-            rapidement pour tous vos projets.
-          </p>
-          <div className="fadein-left">
+          <h2 className="text-4xl font-bold uppercase md:text-center md:text-5xl">
+            Rénovation
+            <ul className="text-2xl mt-4 list-disc list-inside">
+              <li>Tout corps d'état</li>
+            </ul>
+          </h2>
+          <div className="fadein-left flex items-center justify-center">
             <Link
               className="text-2xl text-white rounded-full px-12 py-2 bg-leconte-primary"
               type="button"
@@ -44,6 +49,70 @@ export default function Home() {
               data-page-id="Home"
             >
               Contactez-moi
+            </Link>
+          </div>
+          <div className="content-card flex flex-col gap-4 md:flex-row md:px-12">
+            <Link href={""} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6  rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    électroménager
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-40">
+                  Optez pour une réparation professionnelle, économique et
+                  écologique.
+                </CardContent>
+                <CardFooter className="text-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
+            <Link href={""} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    électricité
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-40">
+                  Services d&apos;électricité pour vos besoins domestiques
+                  urgents.
+                </CardContent>
+                <CardFooter className="text-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
+            <Link href={""} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    plomberie
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-40">
+                  Interventions rapides pour tous vos problèmes de plomberie.
+                </CardContent>
+                <CardFooter className="text-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
+            <Link href={"/renovation"} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    Rénovation
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-40">
+                  Laissez-nous gérer pour vous petits et gros travaux.
+                </CardContent>
+                <CardFooter className="text-center mt-4 text-xl font-bold">
+                  <p>En savoir plus &rarr;</p>
+                </CardFooter>
+              </Card>
             </Link>
           </div>
         </div>

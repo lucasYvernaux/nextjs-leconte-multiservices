@@ -1,0 +1,10 @@
+page seche-linge
+page plaque de cuisson (elec, gaz,induction, halogene)
+page frigoriste
+page hote
+page micro-onde
+
+Voir page par arrondissement. ?
+
+
+page Elec ajouter installation prise elec voiture + borne
