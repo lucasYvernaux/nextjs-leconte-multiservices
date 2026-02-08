@@ -1,6 +1,12 @@
 import { Metadata } from "next";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 import { Section } from "@/components/section";
 import Link from "next/link";
@@ -36,38 +42,56 @@ export default function DepannagePage() {
             </Link>
           </div>
           <div className="content-card flex flex-col gap-4 md:flex-row md:px-12">
-            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
-              <CardHeader>
-                <CardTitle className="text-center capitalize text-[28px] font-medium">
-                  électroménager
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-2xl">
-                Optez pour une réparation professionnelle, économique et
-                écologique.
-              </CardContent>
-            </Card>
-            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
-              <CardHeader>
-                <CardTitle className="text-center capitalize text-[28px] font-medium">
-                  électricité
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-2xl">
-                Services d&apos;électricité pour vos besoins domestiques
-                urgents.
-              </CardContent>
-            </Card>
-            <Card className="bg-leconte-secondary rounded-4xl py-12 flex-1">
-              <CardHeader>
-                <CardTitle className="text-center capitalize text-[28px] font-medium">
-                  plomberie
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-2xl">
-                Interventions rapides pour tous vos problèmes de plomberie.
-              </CardContent>
-            </Card>
+            <Link
+              href={"/depannage/depannage-electromenager-paris"}
+              className="flex-1"
+            >
+              <Card className="bg-leconte-primary/90 p-6  rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    électroménager
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-20">
+                  Optez pour une réparation professionnelle, économique et
+                  écologique.
+                </CardContent>
+                <CardFooter className="items-center justify-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
+            <Link href={""} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    électricité
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-20">
+                  Services d&apos;électricité pour vos besoins domestiques
+                  urgents.
+                </CardContent>
+                <CardFooter className="items-center justify-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
+            <Link href={""} className="flex-1">
+              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
+                <CardHeader className="p-0">
+                  <CardTitle className="text-center capitalize text-[28px] font-medium">
+                    plomberie
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 text-2xl md:h-20">
+                  Interventions rapides pour tous vos problèmes de plomberie.
+                </CardContent>
+                <CardFooter className="items-center justify-center mt-4 text-xl font-bold">
+                  En savoir plus &rarr;
+                </CardFooter>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

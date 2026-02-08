@@ -1,3 +1,4 @@
+import SectionBesoin from "@/components/sectionBesoin";
 import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -9,7 +10,50 @@ export default function DepanElectroParis() {
     <>
       <section className="section-services flex bg-leconte-primary py-16 px-6 h-screen md:h-full">
         <div className="content flex flex-col gap-12 items-start justify-start max-w-6xl mx-auto">
-          <h1 className="text-4xl mx-auto font-bold uppercase fadein-left">
+          <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+            <a
+              className="hover:text-black flex items-center gap-1"
+              href="/depannage"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-house w-4 h-4"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+              Accueil
+            </a>
+            <div className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-chevron-right w-4 h-4"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+              <span className="text-gray-900 font-medium">
+                Dépannage Électroménager
+              </span>
+            </div>
+          </nav>
+
+          <h1 className="text-4xl font-bold uppercase fadein-left">
             Réparation et Dépannage Électroménager à Paris : L'Expertise à votre
             Service
           </h1>
@@ -71,7 +115,7 @@ export default function DepanElectroParis() {
                 <path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2" />
               </svg>
 
-              <span>Devis gratuit</span>
+              <span>Devis détaillé</span>
             </div>
           </div>
           <Link
@@ -167,10 +211,10 @@ export default function DepanElectroParis() {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-award w-8 h-8 text-leconte-primary"
+                    className="lucide lucide-clock w-8 h-8 text-leconte-primary"
                   >
-                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
-                    <circle cx={12} cy={8} r={6} />
+                    <circle cx={12} cy={12} r={10} />
+                    <polyline points="12 6 12 12 16 14" />
                   </svg>
                 </div>
                 <h3 className="font-bold text-lg mb-2">Intervention rapide</h3>
@@ -192,10 +236,9 @@ export default function DepanElectroParis() {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-award w-8 h-8 text-leconte-primary"
+                    className="lucide lucide-shield w-8 h-8 text-leconte-primary"
                   >
-                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
-                    <circle cx={12} cy={8} r={6} />
+                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
                   </svg>
                 </div>
                 <h3 className="font-bold text-lg mb-2">Garantie qualité</h3>
@@ -218,10 +261,10 @@ export default function DepanElectroParis() {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-award w-8 h-8 text-leconte-primary"
+                    className="lucide lucide-circle-check-big w-8 h-8 text-leconte-primary"
                   >
-                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
-                    <circle cx={12} cy={8} r={6} />
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                    <path d="m9 11 3 3L22 4" />
                   </svg>
                 </div>
                 <h3 className="font-bold text-lg mb-2">Toutes marques</h3>
@@ -238,7 +281,7 @@ export default function DepanElectroParis() {
           </h2>
           <div className="flex gap-6 flex-col md:flex-row">
             <Link
-              href={""}
+              href={"reparation-lave-linge-paris"}
               className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
             >
               <div className="p-6 text-center">
@@ -250,20 +293,18 @@ export default function DepanElectroParis() {
               </div>
             </Link>
             <Link
-              href={""}
+              href={"reparation-refrigerateur-paris"}
               className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
             >
               <div className="p-6 text-center">
                 <div className="text-5xl mb-4">❄️</div>
                 <h3 className="font-bold text-lg mb-2">Réfrigérateur</h3>
-                <p className="text-leconte-primary text-sm">
-                  en savoir plus &rarr;
-                </p>
+                <p className="text-leconte-primary text-sm">en savoir plus</p>
               </div>
             </Link>
 
             <Link
-              href={""}
+              href={"reparation-lave-vaisselle-paris"}
               className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
             >
               <div className="p-6 text-center">
@@ -405,77 +446,7 @@ export default function DepanElectroParis() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="bg-linear-to-r from-leconte-primary to-leconte-secondary  py-12 px-6 rounded-lg shadow-xl">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">
-                Besoin d'un dépannage urgent ?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Intervention rapide à Paris et en Île-de-France - Devis gratuit
-              </p>
-              <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
-                <a href="tel:0640141937">
-                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-10 rounded-md bg-white text-leconte-primary hover:bg-gray-100 text-lg px-8 py-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-phone w-5 h-5 mr-2"
-                    >
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                    06 40 14 19 37
-                  </button>
-                </a>
-                <a href="mailto:leconte.multiservices.idf@gmail.com">
-                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-background shadow-sm hover:text-accent-foreground h-10 rounded-md border-white hover:bg-white/10 text-lg px-8 py-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-mail w-5 h-5 mr-2"
-                    >
-                      <rect width={20} height={16} x={2} y={4} rx={2} />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    Demander un devis
-                  </button>
-                </a>
-              </div>
-              <div className="flex items-center justify-center gap-2 text-sm opacity-90">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-clock w-4 h-4"
-                >
-                  <circle cx={12} cy={12} r={10} />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                <span>Lundi - Samedi : 8h - 20h</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SectionBesoin />
         <section>
           <div className="my-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
