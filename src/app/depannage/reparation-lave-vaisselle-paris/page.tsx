@@ -67,7 +67,7 @@ export default function RepaLaveVaisselle() {
                 <path d="m9 18 6-6-6-6" />
               </svg>
               <span className="text-gray-900 font-medium">
-                Réparation Lave-Vaisselle
+                Réparation Lave-Vaisselle Paris
               </span>
             </div>
           </nav>
