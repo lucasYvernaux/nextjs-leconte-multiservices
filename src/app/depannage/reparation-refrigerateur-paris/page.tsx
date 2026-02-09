@@ -8,7 +8,7 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 export default function RepaFrigo() {
   return (
     <main className="bg-[#FAFAFA]">
-      <section className="flex bg-linear-to-r from-cyan-600 to-leconte-primary text-white py-16 px-6 h-screen md:h-full">
+      <section className="flex bg-linear-to-r from-cyan-600 to-leconte-primary text-white py-16 px-6 ">
         <div className="content flex flex-col gap-8 items-start justify-start max-w-6xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
             <a className="hover:text-black flex items-center gap-1" href="/">
@@ -71,14 +71,17 @@ export default function RepaFrigo() {
               </span>
             </div>
           </nav>
-
-          <h1 className="text-5xl font-bold  fadein-left">
+          <h1 className="text-5xl font-bold fadein-left sm:hidden">
+            Frigoriste à Paris <br />
+            Réparation Réfrigérateur & Congélateur
+          </h1>
+          <h1 className="text-5xl font-bold fadein-left hidden sm:block">
             Frigoriste à Paris | Réparation Réfrigérateur & Congélateur
           </h1>
           <p className="content-text fadein-left text-2xl">
             Expert du froid depuis 34 ans - Intervention urgente sous 24h
           </p>
-          <div className="content-btn fadein-left flex gap-4">
+          <div className="content-btn fadein-left flex flex-col gap-4 sm:flex-row">
             <div className="btn-avis inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow bg-leconte-primary text-base py-2 px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +120,7 @@ export default function RepaFrigo() {
             </div>
           </div>
           <Link
-            className="text-xl rounded-lg inline-block bg-white text-leconte-primary px-8 py-4 font-bold  hover:bg-leconte-gray hover:text-white transition-all shadow-lg"
+            className="text-xl rounded-lg inline-flex items-center bg-white text-leconte-primary px-8 py-4 font-bold  hover:bg-leconte-gray hover:text-white transition-all shadow-lg"
             type="button"
             rel=""
             href="tel:0640141937"
@@ -137,7 +140,7 @@ export default function RepaFrigo() {
             >
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
-            Appel d'urgence : 06 40 14 19 37
+            Appel d'urgence :<br className="sm:hidden" /> 06 40 14 19 37
           </Link>
         </div>
       </section>
@@ -168,7 +171,7 @@ export default function RepaFrigo() {
 
         <section>
           <div className="bg-linear-to-r from-cyan-50 to-blue-50 rounded-2xl p-8 mb-12 border-2 border-leconte-primary">
-            <div className="flex items-start gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-6">
               <div className="bg-cyan-600 p-3 rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +212,7 @@ export default function RepaFrigo() {
               marques et tous les modèles. Mon expertise de frigoriste me permet
               de <strong>diagnostiquer précisément</strong> l'origine de la
               panne et d'intervenir rapidement pour éviter que vos aliments ne
-              se gâtent.
+              se gâchent.
             </p>
           </div>
         </section>

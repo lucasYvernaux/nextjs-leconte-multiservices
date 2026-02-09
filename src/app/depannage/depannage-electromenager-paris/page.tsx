@@ -8,9 +8,9 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 export default function DepanElectroParis() {
   return (
     <>
-      <section className="section-services flex bg-leconte-primary py-16 px-6 h-screen md:h-full">
-        <div className="content flex flex-col gap-12 items-start justify-start max-w-6xl mx-auto">
-          <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+      <section className="section-depan-electro flex text-white bg-linear-to-b sm:bg-linear-to-r to-leconte-primary from-[#2a9dd6] py-16 px-6 h-full">
+        <div className="content space-y-6 w-full sm:max-w-6xl sm:mx-auto">
+          <nav className="flex items-center gap-2 text-sm text-leconte-gray">
             <a
               className="hover:text-black flex items-center gap-1"
               href="/depannage"
@@ -47,49 +47,44 @@ export default function DepanElectroParis() {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-              <span className="text-gray-900 font-medium">
-                Dépannage Électroménager
-              </span>
+              <span className=" font-medium">Dépannage Électroménager</span>
             </div>
           </nav>
 
           <h1 className="text-4xl font-bold uppercase fadein-left">
-            Réparation et Dépannage Électroménager à Paris : L'Expertise à votre
-            Service
+            Dépanneur Électroménager à Paris
           </h1>
-          <p className="content-text fadein-left text-3xl">
+          <p className="content-text fadein-left text-2xl mb-6">
             Intervention rapide sous 24h - 34 ans d'expérience chez Darty
           </p>
-          <div className="content-btn fadein-left flex gap-4">
-            <div className="btn-avis inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-white text-base py-2 px-4">
+          <div className="content-btn fadein-left flex flex-wrap gap-4 text-leconte-primary">
+            <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-star w-4 h-4 mr-2"
               >
                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
               </svg>
               <span>5/5 avis sur Google (50 avis)</span>
             </div>{" "}
-            <div className="btn-avis inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-white text-base py-2 px-4">
+            <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-clock w-4 h-4 mr-2"
               >
                 <circle cx={12} cy={12} r={10} />
                 <polyline points="12 6 12 12 16 14" />
@@ -97,29 +92,26 @@ export default function DepanElectroParis() {
 
               <span>Disponible 7j/7</span>
             </div>{" "}
-            <div className="btn-avis inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-white text-base py-2 px-4">
+            <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-euro w-4 h-4 mr-2"
               >
-                <path d="M4 10h12" />
-                <path d="M4 14h9" />
-                <path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2" />
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
               </svg>
 
-              <span>Devis détaillé</span>
+              <span>34 ans d'expérience</span>
             </div>
           </div>
           <Link
-            className="text-2xl rounded-lg inline-block bg-white  px-8 py-4 font-bold  hover:bg-leconte-gray/80 hover:text-white transition-all shadow-lg"
+            className="inline-flex gap-2 items-center rounded-md font-bold transition-colors shadow text-leconte-primary hover:bg-primary/80 bg-white text-xl py-4 px-8"
             type="button"
             rel=""
             href="tel:0640141937"
@@ -145,8 +137,8 @@ export default function DepanElectroParis() {
       </section>
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         <section className="max-w-none">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Votre dépanneur électroménager à Paris et Île-deFrance
+          <h2 className="text-3xl font-bold  mb-6">
+            Votre dépanneur électroménager à Paris et Île-de-France
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             <b>Leconte Multiservices</b> est votre spécialiste du{" "}
@@ -169,7 +161,7 @@ export default function DepanElectroParis() {
           </p>
         </section>
         <section>
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+          <h2 className="text-3xl font-bold sm:text-center mb-10 ">
             Pourquoi choisir Leconte Multiservices ?
           </h2>
           <div className="flex gap-6 flex-col md:flex-row">
@@ -276,7 +268,7 @@ export default function DepanElectroParis() {
           </div>
         </section>
         <section>
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+          <h2 className="text-3xl font-bold sm:text-center mb-10 ">
             Réparation de tous types d'appareils
           </h2>
           <div className="flex gap-6 flex-col md:flex-row">
@@ -317,7 +309,7 @@ export default function DepanElectroParis() {
             </Link>
 
             <Link
-              href={""}
+              href={"reparation-four-paris"}
               className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
             >
               <div className="p-6 text-center">
@@ -332,7 +324,7 @@ export default function DepanElectroParis() {
         </section>
         <section>
           <div className="my-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl font-bold  mb-8">
               Nos prestations de dépannage électroménager
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -404,7 +396,7 @@ export default function DepanElectroParis() {
         </section>
         <section>
           <div className="my-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl font-bold mb-8">
               Pourquoi faire appel à un dépanneur professionnel ?
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700">
@@ -449,9 +441,7 @@ export default function DepanElectroParis() {
         <SectionBesoin />
         <section>
           <div className="my-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Questions fréquentes
-            </h2>
+            <h2 className="text-3xl font-bold  mb-8">Questions fréquentes</h2>
             <div className="space-y-4">
               <div className="rounded-xl border bg-card text-card-foreground shadow">
                 <div className="flex flex-col space-y-1.5 p-6">
@@ -477,9 +467,9 @@ export default function DepanElectroParis() {
                 <div className="p-6 pt-0">
                   <p className="text-gray-700">
                     Le tarif dépend de la panne et de l'appareil. Je fournis
-                    systématiquement un devis gratuit et transparent avant toute
-                    intervention. En moyenne, comptez entre 80€ et 200€ selon la
-                    complexité.
+                    systématiquement un devis détaillé et transparent avant
+                    toute intervention. En moyenne, comptez entre 80€ et 150€
+                    selon la complexité.
                   </p>
                 </div>
               </div>
