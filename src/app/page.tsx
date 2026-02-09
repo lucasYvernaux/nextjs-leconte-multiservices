@@ -19,11 +19,11 @@ import urlImgSerge from "../../public/images/WhatsApp-sergio-reparation-lave-vai
 export default function Home() {
   return (
     <>
-      <section className="section-home bg-no-repeat text-white flex py-8 px-4 relative md:h-screen md:p-12">
+      <section className="section-home bg-no-repeat text-white flex py-8 px-4 relative md:min-h-screen md:p-12">
         <div className="content flex flex-col gap-16 z-2 max-w-full w-full">
           <h1 className="text-4xl font-bold uppercase sm:text-center md:text-5xl">
             <p className="hidden sm:block">
-              Dépannage Electroménager, électricité et plomberie
+              Dépannage Électroménager, électricité et plomberie
             </p>
             <div className="block : sm:hidden">
               Dépannage{" "}
@@ -52,65 +52,75 @@ export default function Home() {
             </Link>
           </div>
           <div className="content-card flex flex-col gap-4 md:flex-row md:px-12">
-            <Link href={""} className="flex-1">
-              <Card className="bg-leconte-primary/90 p-6  rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
-                <CardHeader className="p-0">
-                  <CardTitle className="text-center capitalize text-[28px] font-medium">
-                    électroménager
-                  </CardTitle>
+            <Link
+              href={"/depannage/depannage-electromenager-paris"}
+              className="flex-1"
+            >
+              <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-5xl">🔧</CardTitle>
                 </CardHeader>
-                <CardContent className="p-0 text-2xl md:h-40">
-                  Optez pour une réparation professionnelle, économique et
-                  écologique.
+                <CardContent className="text-lg font-bold ">
+                  Électroménager
                 </CardContent>
-                <CardFooter className="text-center mt-4 text-xl font-bold">
-                  En savoir plus &rarr;
+                <CardFooter>
+                  <p className="text-center w-full text-leconte-primary text-sm font-medium">
+                    En savoir plus &rarr;
+                  </p>
                 </CardFooter>
               </Card>
             </Link>
-            <Link href={""} className="flex-1">
-              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
-                <CardHeader className="p-0">
-                  <CardTitle className="text-center capitalize text-[28px] font-medium">
-                    électricité
-                  </CardTitle>
+            <Link
+              href={"/depannage/depannage-electromenager-paris"}
+              className="flex-1"
+            >
+              <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-5xl">🔌</CardTitle>
                 </CardHeader>
-                <CardContent className="p-0 text-2xl md:h-40">
-                  Services d&apos;électricité pour vos besoins domestiques
-                  urgents.
+                <CardContent className="text-lg font-bold ">
+                  Électricité
                 </CardContent>
-                <CardFooter className="text-center mt-4 text-xl font-bold">
-                  En savoir plus &rarr;
+                <CardFooter>
+                  <p className="text-center w-full text-leconte-primary text-sm font-medium">
+                    En savoir plus &rarr;
+                  </p>
                 </CardFooter>
               </Card>
             </Link>
-            <Link href={""} className="flex-1">
-              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
-                <CardHeader className="p-0">
-                  <CardTitle className="text-center capitalize text-[28px] font-medium">
-                    plomberie
-                  </CardTitle>
+            <Link
+              href={"/depannage/depannage-electromenager-paris"}
+              className="flex-1"
+            >
+              <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-5xl">💦</CardTitle>
                 </CardHeader>
-                <CardContent className="p-0 text-2xl md:h-40">
-                  Interventions rapides pour tous vos problèmes de plomberie.
+                <CardContent className="text-lg font-bold ">
+                  Plomberie
                 </CardContent>
-                <CardFooter className="text-center mt-4 text-xl font-bold">
-                  En savoir plus &rarr;
+                <CardFooter>
+                  <p className="text-center w-full text-leconte-primary text-sm font-medium">
+                    En savoir plus &rarr;
+                  </p>
                 </CardFooter>
               </Card>
             </Link>
-            <Link href={"/renovation"} className="flex-1">
-              <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
-                <CardHeader className="p-0">
-                  <CardTitle className="text-center capitalize text-[28px] font-medium">
-                    Rénovation
-                  </CardTitle>
+            <Link
+              href={"/depannage/depannage-electromenager-paris"}
+              className="flex-1"
+            >
+              <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-5xl">🏚️</CardTitle>
                 </CardHeader>
-                <CardContent className="p-0 text-2xl md:h-40">
-                  Laissez-nous gérer pour vous petits et gros travaux.
+                <CardContent className="text-lg font-bold ">
+                  Rénovation
                 </CardContent>
-                <CardFooter className="text-center mt-4 text-xl font-bold">
-                  <p>En savoir plus &rarr;</p>
+                <CardFooter>
+                  <p className="text-center w-full text-leconte-primary text-sm font-medium">
+                    En savoir plus &rarr;
+                  </p>
                 </CardFooter>
               </Card>
             </Link>
@@ -146,7 +156,7 @@ export default function Home() {
               </CardContent>
               <CardDescription className="md:h-1/2">
                 <Image
-                  className="h-full"
+                  className="size-full"
                   src={urlImgElectro}
                   alt="photo d'appareils électroménager"
                   title="photo d'appareils électroménager"
@@ -170,7 +180,7 @@ export default function Home() {
               </CardContent>
               <CardDescription className="md:h-1/2">
                 <Image
-                  className="h-full"
+                  className="size-full"
                   src={urlImgTravaux}
                   alt="photo d'un appartement en travaux"
                   title="photo d'un appartement en travaux"

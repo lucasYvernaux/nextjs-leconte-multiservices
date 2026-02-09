@@ -8,7 +8,7 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 export default function RepaLaveVaisselle() {
   return (
     <main className="bg-[#FAFAFA]">
-      <section className="flex bg-linear-to-r from-cyan-600 to-leconte-primary text-white py-16 px-6 h-screen md:h-full">
+      <section className="flex bg-linear-to-r from-cyan-600 to-leconte-primary text-white py-16 px-6">
         <div className="content flex flex-col gap-8 items-start justify-start max-w-6xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
             <a className="hover:text-black flex items-center gap-1" href="/">

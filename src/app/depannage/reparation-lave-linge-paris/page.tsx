@@ -6,9 +6,9 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 
 export default function RepaLaveLinge() {
   return (
-    <main className="bg-[#FAFAFA]">
-      <section className="section-services flex bg-leconte-primary py-16 px-6 h-screen md:h-full">
-        <div className="content flex flex-col gap-8 items-start justify-start max-w-6xl mx-auto">
+    <main className="bg-gray-50">
+      <section className="section-services flex bg-leconte-primary py-16 px-6 h-full">
+        <div className="content w-full space-y-4 max-w-6xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
             <a className="hover:text-black flex items-center gap-1" href="/">
               <svg
@@ -78,7 +78,7 @@ export default function RepaLaveLinge() {
             Dépannage rapide de votre machine à laver - Intervention sous 24h
           </p>
           <Link
-            className="text-2xl rounded-lg inline-block bg-white px-8 py-4 font-bold  hover:bg-leconte-gray hover:text-white transition-all shadow-lg"
+            className="text-2xl rounded-lg inline-block bg-white px-8 py-4 font-bold text-leconte-gray hover:bg-leconte-gray hover:text-white transition-all shadow-lg"
             type="button"
             rel=""
             href="tel:0640141937"
@@ -103,6 +103,28 @@ export default function RepaLaveLinge() {
         </div>
       </section>
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
+        <section className="flex gap-4 items-center p-4 mb-8 rounded-lg border border-red-500 bg-red-50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-triangle-alert h-5 w-5 text-red-600"
+          >
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+            <path d="M12 9v4" />
+            <path d="M12 17h.01" />
+          </svg>
+          <p className="text-sm text-red-800">
+            <b>Votre lave-linge est en panne ?</b> Ne jetez pas votre appareil !
+            Dans 85% des cas, une simple réparation suffit.
+          </p>
+        </section>
         <section className="max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Spécialiste de la réparation de lave-linge à Paris
