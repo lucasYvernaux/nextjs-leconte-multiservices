@@ -1,3 +1,4 @@
+import SectionTypeAppareil from "@/components/section-type-appareil";
 import SectionBesoin from "@/components/sectionBesoin";
 import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
@@ -267,61 +268,7 @@ export default function DepanElectroParis() {
             </div>
           </div>
         </section>
-        <section>
-          <h2 className="text-3xl font-bold sm:text-center mb-10 ">
-            Réparation de tous types d'appareils
-          </h2>
-          <div className="flex gap-6 flex-col md:flex-row">
-            <Link
-              href={"reparation-lave-linge-paris"}
-              className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
-            >
-              <div className="p-6 text-center">
-                <div className="text-5xl mb-4">🧺</div>
-                <h3 className="font-bold text-lg mb-2">Lave-linge</h3>
-                <p className="text-leconte-primary text-sm">
-                  en savoir plus &rarr;
-                </p>
-              </div>
-            </Link>
-            <Link
-              href={"reparation-refrigerateur-paris"}
-              className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
-            >
-              <div className="p-6 text-center">
-                <div className="text-5xl mb-4">❄️</div>
-                <h3 className="font-bold text-lg mb-2">Réfrigérateur</h3>
-                <p className="text-leconte-primary text-sm">en savoir plus</p>
-              </div>
-            </Link>
-
-            <Link
-              href={"reparation-lave-vaisselle-paris"}
-              className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
-            >
-              <div className="p-6 text-center">
-                <div className="text-5xl mb-4">🍽️</div>
-                <h3 className="font-bold text-lg mb-2">Lave-vaisselle</h3>
-                <p className="text-leconte-primary text-sm">
-                  en savoir plus &rarr;
-                </p>
-              </div>
-            </Link>
-
-            <Link
-              href={"reparation-four-paris"}
-              className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
-            >
-              <div className="p-6 text-center">
-                <div className="text-5xl mb-4">🔥</div>
-                <h3 className="font-bold text-lg mb-2">Four</h3>
-                <p className="text-leconte-primary text-sm">
-                  en savoir plus &rarr;
-                </p>
-              </div>
-            </Link>
-          </div>
-        </section>
+        <SectionTypeAppareil title="Répa de tous type d'app" center />
         <section>
           <div className="my-16">
             <h2 className="text-3xl font-bold  mb-8">
@@ -394,6 +341,51 @@ export default function DepanElectroParis() {
             </div>
           </div>
         </section>
+
+        <section className="section-arrondissement bg-white rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold mb-6">
+            Intervention dans tous les arrondissement de Paris
+          </h2>
+          <div className="content grid md:grid-cols-3 gap-4">
+            <Link
+              href={"depannage-electromenager-paris15"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 15
+            </Link>
+            <Link
+              href={"depannage-electromenager-paris16"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 16
+            </Link>{" "}
+            <Link
+              href={"depannage-electromenager-paris17"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 17
+            </Link>{" "}
+            <Link
+              href={"depannage-electromenager-paris18"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 18
+            </Link>{" "}
+            <Link
+              href={"depannage-electromenager-paris19"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 19
+            </Link>{" "}
+            <Link
+              href={"depannage-electromenager-paris20"}
+              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+            >
+              &rarr; Dépannage Paris 20
+            </Link>
+          </div>
+        </section>
+
         <section>
           <div className="my-16">
             <h2 className="text-3xl font-bold mb-8">

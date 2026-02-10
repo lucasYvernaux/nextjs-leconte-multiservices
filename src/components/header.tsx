@@ -176,7 +176,7 @@ export function Header() {
             <li>
               <Link
                 className={` ${
-                  pathname == "/depannage" ? "active" : ""
+                  pathname.includes("/depannage") ? "active" : ""
                 } hover:text-leconte-gray`}
                 href="/depannage"
               >

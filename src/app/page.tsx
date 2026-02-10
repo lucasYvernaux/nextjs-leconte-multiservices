@@ -211,7 +211,12 @@ export default function Home() {
               Votre appareil électroménager est tombé en panne ? Ne le jetez
               pas, il suffit parfois de remplacer une pièce pour qu&apos;il
               continue à vivre plus longtemps. Vous pouvez faire confiance à mon
-              expertise, avec mes 34 ans d&apos;expérience chez Darty.
+              expertise, avec mes 34 ans d&apos;expérience chez Darty. Je vous
+              garantis une intervention professionnelle et rapide pour tous vos
+              appareils électroménagers. Mon objectif :{" "}
+              <b>réparer plutôt que remplacer</b>. Dans 80% des cas, un simple
+              remplacement de pièce permet de prolonger la durée de vie de votre
+              appareil et vous fait économiser des centaines d'euros.
             </p>
           </div>
           <div className="content-image flex flex-1 items-center">

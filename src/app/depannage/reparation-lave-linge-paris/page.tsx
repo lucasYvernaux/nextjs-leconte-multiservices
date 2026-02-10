@@ -1,3 +1,4 @@
+import SectionReparation from "@/components/section-reparation";
 import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -365,47 +366,7 @@ export default function RepaLaveLinge() {
             </div>
           </div>
         </section>
-        <section>
-          <h2 className="text-3xl font-bold mb-10 text-gray-900">
-            Comment se déroule la réparation ?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="rounded-xl border bg-card text-card-foreground shadow text-center">
-              <div className="p-6 pt-6">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  1
-                </div>
-                <h3 className="font-bold text-xl mb-2">Diagnostic</h3>
-                <p className="text-gray-600">
-                  J'identifie précisément la panne et vous fournis un devis
-                  transparent
-                </p>
-              </div>
-            </div>
-            <div className="rounded-xl border bg-card text-card-foreground shadow text-center">
-              <div className="p-6 pt-6">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  2
-                </div>
-                <h3 className="font-bold text-xl mb-2">Réparation</h3>
-                <p className="text-gray-600">
-                  J'effectue la réparation sur place avec des pièces d'origine
-                </p>
-              </div>
-            </div>
-            <div className="rounded-xl border bg-card text-card-foreground shadow text-center">
-              <div className="p-6 pt-6">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="font-bold text-xl mb-2">Test &amp; Garantie</h3>
-                <p className="text-gray-600">
-                  Je teste le bon fonctionnement et garantis mon intervention
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SectionReparation title="Comment se déroule la réparation ?" />
 
         <section>
           <div className="bg-linear-to-r from-leconte-primary to-leconte-secondary  py-12 px-6 rounded-lg shadow-xl">
