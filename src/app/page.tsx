@@ -40,11 +40,9 @@ export default function Home() {
               <li>Tout corps d'état</li>
             </ul>
           </h2>
-          <div className="fadein-left flex items-center justify-center">
+          <div className="fadein-left flex justify-center">
             <Link
-              className="text-2xl text-white rounded-full px-12 py-2 bg-leconte-primary"
-              type="button"
-              rel=""
+              className="text-2xl text-white h-13 flex items-center rounded-full px-8 py-2 bg-leconte-primary"
               href="tel:0640141937"
               data-page-id="Home"
             >

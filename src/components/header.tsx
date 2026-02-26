@@ -14,12 +14,18 @@ import { usePathname } from "next/navigation";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
+import { ChevronDown } from "lucide-react";
 
 interface PropsLinkCustom {
   href: string;
@@ -52,27 +58,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  function ListItem({
-    title,
-    children,
-    href,
-    ...props
-  }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
-    return (
-      <li {...props}>
-        <NavigationMenuLink asChild>
-          <Link href={href}>
-            <div className="flex flex-col gap-1 text-sm">
-              <div className="leading-none font-medium">{title}</div>
-              <div className="text-muted-foreground line-clamp-2">
-                {children}
-              </div>
-            </div>
-          </Link>
-        </NavigationMenuLink>
-      </li>
-    );
-  }
+  const [openDropdown, setOpenDropdown] = useState(false);
 
   return (
     <header
@@ -227,7 +213,7 @@ export function Header() {
                 </LinkCustom>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger
+                {/* <NavigationMenuTrigger
                   className="text-lg font-medium bg-transparent focus:bg-transparent hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
                   data-page-active={usePathname().includes("depannage")}
                 >
@@ -237,20 +223,80 @@ export function Header() {
                   <ul>
                     <ListItem href="/depannage" title="Depannage"></ListItem>
                     <ListItem
-                      href="/depannage/depannage-electromenager-paris"
+                      href="/depannage/depannage/depannage-electromenager-paris"
                       title="Électroménager"
                     />
                     <ListItem
-                      href="/depannage/depannage-electricite-paris"
+                      href="/depannage/depannage/depannage-electricite-paris"
                       title="Electricité"
                     />
                     <ListItem
-                      href="/depannage/depannage-plomberie-paris"
+                      href="/depannage/depannage/depannage-plomberie-paris"
                       title="Plomberie"
                     />
-                    <ListItem href="/depannage/depannage-faq" title="FAQ" />
+                    <ListItem href="/depannage/depannage/depannage-faq" title="FAQ" />
                   </ul>
-                </NavigationMenuContent>
+                </NavigationMenuContent> */}
+                <DropdownMenu
+                  open={openDropdown}
+                  onOpenChange={setOpenDropdown}
+                >
+                  {/* Le déclencheur (Trigger) */}
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      className="text-lg hover:bg-transparent"
+                      data-page-active={usePathname().includes("depannage")}
+                    >
+                      Dépannage <ChevronDown className="size-5" />
+                    </Button>
+                  </DropdownMenuTrigger>
+
+                  {/* Le contenu (Content) - Toujours centré ou aligné sur le bouton */}
+                  <DropdownMenuContent align="center">
+                    <DropdownMenuItem>
+                      <Link
+                        onClick={() => setOpenDropdown(false)}
+                        href={"/depannage"}
+                      >
+                        Dépannage
+                      </Link>
+                    </DropdownMenuItem>
+
+                    <DropdownMenuItem>
+                      <Link
+                        onClick={() => setOpenDropdown(false)}
+                        href={"/depannage/depannage-electromenager-paris"}
+                      >
+                        Électroménager
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        onClick={() => setOpenDropdown(false)}
+                        href={"/depannage/depannage-electricite-paris"}
+                      >
+                        Électricité
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        onClick={() => setOpenDropdown(false)}
+                        href={"/depannage/depannage-plomberie-paris"}
+                      >
+                        Plomberie
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        onClick={() => setOpenDropdown(false)}
+                        href={"/depannage/depannage-electromenager-paris"}
+                      >
+                        FAQ
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <LinkCustom href="/renovation" title="Page Rénovation">
