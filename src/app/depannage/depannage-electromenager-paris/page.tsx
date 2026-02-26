@@ -500,6 +500,16 @@ export default function DepanElectroParis() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center">
+            <Link
+              className="text-xl rounded-full text-white px-8 py-2 border bg-leconte-primary w-fit hover:bg-leconte-secondary
+              "
+              href="/depannage/depannage-faq"
+              title="Aller à la page dépannage électricité"
+            >
+              Voir d'autre question &rarr;
+            </Link>
+          </div>
         </section>
       </div>
     </>

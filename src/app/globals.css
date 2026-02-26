@@ -213,6 +213,12 @@ header nav li a.active {
   text-underline-offset: 1rem;
 }
 
+header nav li [data-page-active="true"] {
+  text-decoration: underline solid white;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  color: white;
+}
 section.section-home {
   background-size: 150% 100%;
   background-image: url(/images/pexels-cuisine33512922.jpg);

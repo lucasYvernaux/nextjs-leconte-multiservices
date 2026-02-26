@@ -21,22 +21,22 @@ export default function Home() {
     <>
       <section className="section-home bg-no-repeat text-white flex py-8 px-4 relative md:min-h-screen md:p-12">
         <div className="content flex flex-col gap-16 z-2 max-w-full w-full">
-          <h1 className="text-4xl font-bold uppercase sm:text-center md:text-5xl">
+          <h1 className="text-5xl font-bold uppercase sm:text-center md:text-6xl">
             <p className="hidden sm:block">
               Dépannage Électroménager, électricité et plomberie
             </p>
             <div className="block : sm:hidden">
               Dépannage{" "}
-              <ul className="text-2xl mt-4 list-disc list-inside">
+              <ul className="text-3xl mt-4 list-disc list-inside">
                 <li>Electroménager</li>
                 <li>électricité</li>
                 <li>plomberie</li>
               </ul>
             </div>
           </h1>
-          <h2 className="text-4xl font-bold uppercase md:text-center md:text-5xl">
+          <h2 className="text-5xl font-bold uppercase md:text-center md:text-6xl">
             Rénovation
-            <ul className="text-2xl mt-4 list-disc list-inside">
+            <ul className="text-3xl mt-4 list-disc list-inside md:text-4xl md:list-none">
               <li>Tout corps d'état</li>
             </ul>
           </h2>
@@ -218,7 +218,7 @@ export default function Home() {
           </div>
           <div className="content-image flex flex-1 items-center">
             <Image
-              className="rounded-4xl w-lg m-auto max-w-xl"
+              className="rounded-4xl w-full m-auto"
               src={urlImgSerge}
               alt="photo de Serge Leconte réparant un lave-vaisselle"
               title="photo de Serge Leconte réparant un lave-vaisselle"
