@@ -207,13 +207,14 @@
 }
 
 /* component */
-header nav li a.active {
+header nav#nav-mobile li a.active,
+header nav#nav-mobile li [data-page-active="true"] {
   text-decoration: underline solid black;
   text-decoration-thickness: 3px;
   text-underline-offset: 1rem;
 }
 
-header nav li [data-page-active="true"] {
+header nav#nav-desktop li [data-page-active="true"] {
   text-decoration: underline solid white;
   text-decoration-thickness: 3px;
   text-underline-offset: 8px;

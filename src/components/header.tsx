@@ -59,6 +59,7 @@ export function Header() {
   const pathname = usePathname();
 
   const [openDropdown, setOpenDropdown] = useState(false);
+  const [openDropdownMobile, setOpenDropdownMobile] = useState(false);
 
   return (
     <header
@@ -100,7 +101,10 @@ export function Header() {
                   <CollapsibleTrigger>
                     <div className="nav-overlay fixed inset-0 bg-gray-800 opacity-80"></div>
                   </CollapsibleTrigger>
-                  <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                  <nav
+                    id="nav-mobile"
+                    className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+                  >
                     <div className="flex items-center mb-8">
                       <Link
                         className="text-lg flex flex-1 items-center gap-4 font-bold leading-none"
@@ -140,16 +144,82 @@ export function Header() {
                         </CollapsibleTrigger>
                       </li>
                       <li className="mb-1">
-                        <CollapsibleTrigger asChild>
-                          <Link
-                            className={`p-4 text-base font-semibold
-                            ${pathname == "/depannage" ? "active" : ""}
-                            hover:bg-blue-50 hover:text-blue-600"`}
-                            href="/depannage"
-                          >
-                            Dépannage
-                          </Link>
-                        </CollapsibleTrigger>
+                        <DropdownMenu
+                          open={openDropdownMobile}
+                          onOpenChange={setOpenDropdownMobile}
+                        >
+                          {/* Le déclencheur (Trigger) */}
+                          <DropdownMenuTrigger asChild>
+                            <Button
+                              variant="ghost"
+                              className="text-base hover:bg-transparent"
+                              data-page-active={usePathname().includes(
+                                "depannage",
+                              )}
+                            >
+                              Dépannage <ChevronDown className="size-5" />
+                            </Button>
+                          </DropdownMenuTrigger>
+
+                          {/* Le contenu (Content) - Toujours centré ou aligné sur le bouton */}
+                          <DropdownMenuContent align="center">
+                            <DropdownMenuItem>
+                              <CollapsibleTrigger asChild>
+                                <Link
+                                  onClick={() => setOpenDropdownMobile(false)}
+                                  href={"/depannage"}
+                                >
+                                  Dépannage
+                                </Link>
+                              </CollapsibleTrigger>
+                            </DropdownMenuItem>
+
+                            <DropdownMenuItem>
+                              <CollapsibleTrigger asChild>
+                                <Link
+                                  onClick={() => setOpenDropdownMobile(false)}
+                                  href={
+                                    "/depannage/depannage-electromenager-paris"
+                                  }
+                                >
+                                  Électroménager
+                                </Link>
+                              </CollapsibleTrigger>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                              <CollapsibleTrigger asChild>
+                                <Link
+                                  onClick={() => setOpenDropdownMobile(false)}
+                                  href={
+                                    "/depannage/depannage-electricite-paris"
+                                  }
+                                >
+                                  Électricité
+                                </Link>
+                              </CollapsibleTrigger>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                              <CollapsibleTrigger asChild>
+                                <Link
+                                  onClick={() => setOpenDropdownMobile(false)}
+                                  href={"/depannage/depannage-plomberie-paris"}
+                                >
+                                  Plomberie
+                                </Link>
+                              </CollapsibleTrigger>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                              <CollapsibleTrigger asChild>
+                                <Link
+                                  onClick={() => setOpenDropdownMobile(false)}
+                                  href={"/depannage/depannage-faq"}
+                                >
+                                  FAQ
+                                </Link>
+                              </CollapsibleTrigger>
+                            </DropdownMenuItem>
+                          </DropdownMenuContent>
+                        </DropdownMenu>
                       </li>
                       <li className="mb-1">
                         <CollapsibleTrigger asChild>

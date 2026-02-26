@@ -15,7 +15,7 @@ export default function FAQDepan() {
     <>
       <section className="section-depan-electro flex text-white bg-linear-to-b sm:bg-linear-to-r to-leconte-primary from-[#2a9dd6] py-16 px-6 h-full">
         <div className="content space-y-6 w-full sm:max-w-6xl sm:mx-auto">
-          <nav className="flex items-center gap-2 text-sm text-leconte-gray">
+          <nav className="flex flex-col md:flex-row items-start gap-2 text-smtext-leconte-gray">
             <a className="hover:text-black flex items-center gap-1" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,10 @@ export default function FAQDepan() {
             <CardContent>
               <Collapsible className="data-open:bg-muted rounded-md">
                 <CollapsibleTrigger asChild>
-                  <Button variant="ghost" className="w-full text-base h-auto">
+                  <Button
+                    variant="ghost"
+                    className="w-full text-start text-base h-auto"
+                  >
                     <span className="text-wrap">
                       Combien coûte un dépannage électroménager à Paris ?
                     </span>
@@ -141,7 +144,10 @@ export default function FAQDepan() {
               <Separator className="my-4" />
               <Collapsible className="data-open:bg-muted rounded-md">
                 <CollapsibleTrigger asChild>
-                  <Button variant="ghost" className="w-full text-base h-auto">
+                  <Button
+                    variant="ghost"
+                    className="w-full text-start text-base h-auto"
+                  >
                     <span className="text-wrap">
                       Y a-t-il des frais de déplacement ?
                     </span>
@@ -158,7 +164,10 @@ export default function FAQDepan() {
               <Separator className="my-4" />
               <Collapsible className="data-open:bg-muted rounded-md">
                 <CollapsibleTrigger asChild>
-                  <Button variant="ghost" className="w-full text-base h-auto">
+                  <Button
+                    variant="ghost"
+                    className="w-full text-start text-base h-auto"
+                  >
                     <span className="text-wrap">
                       Le devis est-il gratuit ? (A voir)
                     </span>
