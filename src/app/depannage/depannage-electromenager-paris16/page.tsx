@@ -21,7 +21,7 @@ export default function DepanElectroParis() {
     <>
       <section className="section-depan-electro flex text-white bg-linear-to-b sm:bg-linear-to-r to-leconte-primary from-[#2a9dd6] py-16 px-6 h-full">
         <div className="content space-y-6 w-full sm:max-w-6xl sm:mx-auto">
-          <nav className="flex items-center gap-2 text-sm text-leconte-gray">
+          <nav className="flex flex-col md:flex-row items-start gap-2 text-smtext-leconte-gray">
             <Link
               className="hover:text-black flex items-center gap-1"
               href="/depannage"

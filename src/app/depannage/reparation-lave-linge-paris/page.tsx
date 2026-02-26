@@ -10,7 +10,7 @@ export default function RepaLaveLinge() {
     <main className="bg-gray-50">
       <section className="section-services flex bg-leconte-primary py-16 px-6 h-full">
         <div className="content w-full space-y-4 max-w-6xl mx-auto">
-          <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+          <nav className="flex flex-col md:flex-row items-start gap-2 text-smtext-gray-600 mb-6">
             <a className="hover:text-black flex items-center gap-1" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

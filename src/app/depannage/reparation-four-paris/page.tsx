@@ -10,7 +10,7 @@ export default function RepaFour() {
     <main className="bg-[#FAFAFA]">
       <section className="flex bg-linear-to-r from-cyan-600 to-leconte-primary text-white py-16 px-6">
         <div className="content flex flex-col gap-8 items-start justify-start max-w-6xl mx-auto">
-          <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+          <nav className="flex flex-col md:flex-row items-start gap-2 text-smtext-gray-600 mb-6">
             <a className="hover:text-black flex items-center gap-1" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
