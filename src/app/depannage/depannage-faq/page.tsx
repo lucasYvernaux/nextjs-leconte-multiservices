@@ -133,7 +133,7 @@ export default function FAQDepan() {
                   <p>
                     Le tarif varie selon la panne et l'appareil. En moyenne,
                     comptez entre 80€ et 150€ tout compris (déplacement + main
-                    d'œuvre + pièces). Je fournis toujours un devis détaillé et
+                    d'œuvre). Je fournis toujours un devis détaillé et
                     transparent avant toute intrvention, sans engagement
                   </p>
                 </CollapsibleContent>
@@ -151,9 +151,7 @@ export default function FAQDepan() {
                 <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 pt-0 text-sm">
                   <p>
                     Les frais de déplacement sont inclus dans le tarif de
-                    l'intervention pour Paris intra-muros. Pourla petite et
-                    grande couronne, des frais de déplacement peuvent
-                    s'appliquer selon la distance (entre 10€ et 30€)
+                    l'intervention pour Paris intra-muros et l'Île-de-France.
                   </p>
                 </CollapsibleContent>
               </Collapsible>
