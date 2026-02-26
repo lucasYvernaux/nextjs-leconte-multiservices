@@ -87,7 +87,7 @@ export default function DepanElectroParis15() {
             Dépannage Électroménager Paris 15
           </h1>
           <p className="content-text fadein-left text-2xl mb-6">
-            Intervention rapide dans tous le 15ème arrondissement
+            Intervention rapide à domicile dans tous le 15ème arrondissement
           </p>
           <div className="content-btn fadein-left flex flex-wrap gap-4 text-leconte-primary">
             <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
@@ -175,19 +175,18 @@ export default function DepanElectroParis15() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Interventions régulières dans le <b>15ème arrondissement</b> je suis
             votre expert local pour tous vos{" "}
-            <b>dépannage d'électroménager à Paris 15</b>. Que vous habitiez à
-            Grenelle, Vaugirard, Javel ou près de la Convvention, j'interviens
-            rapidement chez vous.
+            <b>dépannage d'électroménager à Paris 15</b>. J'interviens de la{" "}
+            <b>Porte de Versailles</b> au quartier <b>Beaugrenelle</b>, en
+            passant par <b>Vaugirard</b> et <b>Javel</b>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Avec <b>34 ans d'expérience</b> dans la réparation d'électroménager
-            chez Darty, je connais parfaitement le 15ème et ses quartiers.Mon
-            expertise me permet de <b>diagnostiquer et réparer</b> vos appareils
-            place dans la plupart des cas.
+            Connaissant parfaitement les difficultés de stationnement autour de
+            la <b>Mairi du 15e</b>, j'ai optimisé mon trajet pour garantir une
+            ponctualité totale.
           </p>
         </section>
 
-        <SectionTypeAppareil title="Appareils réparés dans le Paris 16" />
+        <SectionTypeAppareil title="Appareils réparés dans le Paris 15" />
 
         <SectionArrandissement num={15} listQuartier={listQuartier} />
 

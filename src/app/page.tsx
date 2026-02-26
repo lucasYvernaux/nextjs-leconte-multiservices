@@ -71,7 +71,7 @@ export default function Home() {
               </Card>
             </Link>
             <Link
-              href={"/depannage/depannage-electromenager-paris"}
+              href={"/depannage/depannage-electricite-paris"}
               className="flex-1"
             >
               <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
@@ -89,7 +89,7 @@ export default function Home() {
               </Card>
             </Link>
             <Link
-              href={"/depannage/depannage-electromenager-paris"}
+              href={"/depannage/depannage-plomberie-paris"}
               className="flex-1"
             >
               <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
@@ -106,10 +106,7 @@ export default function Home() {
                 </CardFooter>
               </Card>
             </Link>
-            <Link
-              href={"/depannage/depannage-electromenager-paris"}
-              className="flex-1"
-            >
+            <Link href={"/renovation"} className="flex-1">
               <Card className="bg-white/90 p-6 rounded-xl text-center text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-3 border-leconte-secondary hover:border-leconte-primary cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-5xl">🏚️</CardTitle>

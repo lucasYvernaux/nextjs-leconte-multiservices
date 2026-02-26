@@ -9,13 +9,13 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 
 export default function DepanElectroParis() {
   const listQuartier = [
-    "Passy",
-    "auteuil",
-    "Avenue Foch",
-    "Muette",
-    "Chaillot",
-    "Trocadéro",
-    "Porte Dauphine",
+    "Montmartre",
+    "goutte-d'Or",
+    "La chapelle",
+    "clignancourt",
+    "grandes-carrières",
+    "moulin rouge",
+    "sacré-cœur",
   ];
   return (
     <>
@@ -191,7 +191,7 @@ export default function DepanElectroParis() {
 
         <SectionTypeAppareil title="Appareils réparés dans le Paris 18" />
 
-        <SectionArrandissement num={16} listQuartier={listQuartier} />
+        <SectionArrandissement num={18} listQuartier={listQuartier} />
 
         <section>
           <div className="flex gap-6 flex-col md:flex-row">

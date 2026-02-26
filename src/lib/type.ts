@@ -44,6 +44,8 @@ export type ListStepRepa = {
 export interface SectionReparationProps {
   title: string;
   listRepa?: ListStepRepa[];
+  hover?: boolean;
+  colorHover?: string;
 }
 
 export type ListTypeApp = {

@@ -118,7 +118,7 @@ export default function RealisationPage() {
           type: "image",
         },
       ],
-    }
+    },
   );
 
   return (
@@ -151,7 +151,7 @@ export default function RealisationPage() {
       <section className="flex flex-col mt-8">
         <div className="w-full flex justify-center">
           <h2 className="text-4xl text-center w-1/2">
-            Découvrez quelques une de nos réalisations et projets mise en oeuvre
+            Découvrez quelques une de nos réalisations et projets mise en œuvre
             pour nos clients
           </h2>
         </div>

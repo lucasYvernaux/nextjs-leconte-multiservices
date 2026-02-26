@@ -61,7 +61,10 @@ export default function DepannagePage() {
                 </CardFooter>
               </Card>
             </Link>
-            <Link href={""} className="flex-1">
+            <Link
+              href={"/depannage/depannage-electricite-paris"}
+              className="flex-1"
+            >
               <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
                 <CardHeader className="p-0">
                   <CardTitle className="text-center capitalize text-[28px] font-medium">
@@ -77,7 +80,10 @@ export default function DepannagePage() {
                 </CardFooter>
               </Card>
             </Link>
-            <Link href={""} className="flex-1">
+            <Link
+              href={"/depannage/depannage-plomberie-paris"}
+              className="flex-1"
+            >
               <Card className="bg-leconte-primary/90 p-6 rounded-xl text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-black cursor-pointer h-full">
                 <CardHeader className="p-0">
                   <CardTitle className="text-center capitalize text-[28px] font-medium">
