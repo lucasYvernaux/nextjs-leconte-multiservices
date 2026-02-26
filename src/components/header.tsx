@@ -12,13 +12,44 @@ import {
 } from "./ui/collapsible";
 import { usePathname } from "next/navigation";
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  function ListItem({
+    title,
+    children,
+    href,
+    ...props
+  }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+    return (
+      <li {...props}>
+        <NavigationMenuLink asChild>
+          <Link href={href}>
+            <div className="flex flex-col gap-1 text-sm">
+              <div className="leading-none font-medium">{title}</div>
+              <div className="text-muted-foreground line-clamp-2">
+                {children}
+              </div>
+            </div>
+          </Link>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+
   return (
     <header
-      className={`sticky top-0 h-28 w-full z-10 animate-scroll animate-move-fade-bg px-4 py-4 bg-leconte-primary ${
+      className={`sticky top-0 h-28 w-full z-10 animate-scroll px-4 py-4 bg-leconte-primary ${
         pathname === "/realisation" ? "bg-transparent" : ""
       }`}
     >
@@ -38,8 +69,8 @@ export function Header() {
             <span>Leconte Multiservices</span>
           </Link>
         </div>
-        <div className="me-4 flex-1">
-          <div className="lg:hidden">
+        <div className="me-4 flex-1 flex justify-end">
+          <div className="sm:hidden">
             <Collapsible open={isOpen} onOpenChange={setIsOpen}>
               <CollapsibleTrigger className="float-right cursor-pointer p-3">
                 <svg
@@ -161,73 +192,67 @@ export function Header() {
               </CollapsibleContent>
             </Collapsible>
           </div>
-          <ul className="hidden text-lg font-medium justify-end lg:flex items-center space-x-6">
-            <li>
-              <Link
-                className={` ${
-                  pathname == "/" ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/"
-              >
-                Accueil
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={` ${
-                  pathname.includes("/depannage") ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/depannage"
-              >
-                Dépannage
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={` ${
-                  pathname == "/renovation" ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/renovation"
-              >
-                Rénovation
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={` ${
-                  pathname.includes("/realisation") ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/realisation"
-              >
-                Réalisation
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={` ${
-                  pathname == "/about" ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/about"
-              >
-                A Propos
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={` ${
-                  pathname == "/contact" ? "active" : ""
-                } hover:text-leconte-gray`}
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <NavigationMenu className="hidden sm:block">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  // className={navigationMenuTriggerStyle()}
+                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                >
+                  <Link href="/">Accueil</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="left-5">
+                    <ListItem href="/docs" title="Introduction"></ListItem>
+                    <ListItem
+                      href="/docs/installation"
+                      title="Installation"
+                    ></ListItem>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  // className={navigationMenuTriggerStyle()}
+                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                >
+                  <Link href="/renovation">Rénovation</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>{" "}
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  // className={navigationMenuTriggerStyle()}
+                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                >
+                  <Link href="/realisation">Galerie</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>{" "}
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  // className={navigationMenuTriggerStyle()}
+                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                >
+                  <Link href="/about">A Propos</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>{" "}
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  asChild
+                  // className={navigationMenuTriggerStyle()}
+                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                >
+                  <Link href="/contact">Contact</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
       </nav>
     </header>

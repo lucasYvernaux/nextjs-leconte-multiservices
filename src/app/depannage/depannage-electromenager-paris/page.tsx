@@ -91,7 +91,7 @@ export default function DepanElectroParis() {
                 <polyline points="12 6 12 12 16 14" />
               </svg>
 
-              <span>Disponible 7j/7</span>
+              <span>Disponible 6j/7</span>
             </div>{" "}
             <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
               <svg
@@ -268,7 +268,10 @@ export default function DepanElectroParis() {
             </div>
           </div>
         </section>
-        <SectionTypeAppareil title="Répa de tous type d'app" center />
+        <SectionTypeAppareil
+          title="Réparation de tous type d'appareils"
+          center
+        />
         <section>
           <div className="my-16">
             <h2 className="text-3xl font-bold  mb-8">

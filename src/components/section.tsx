@@ -121,7 +121,7 @@ export function Section(props: {
               >
                 {props.title}
               </h2>
-              <div className="leading-10 md:text-justify">{props.children}</div>
+              <div className="leading-10">{props.children}</div>
             </div>
             {props.image?.position == "right" && (
               <div

@@ -41,12 +41,12 @@ export default function SectionTypeAppareil({
       >
         {title}
       </h2>
-      <div className="flex gap-6 flex-col md:flex-row">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 flex-col md:flex-row">
         {listApp.map((app, index) => (
           <Link
             key={index}
             href={app.url}
-            className="flex-1 rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
+            className="rounded-xl bg-card text-card-foreground shadow hover:shadow-xl transition-all hover:-translate-y-1 border-2 hover:border-leconte-primary cursor-pointer h-full"
           >
             <div className="p-6 text-center">
               <div className="text-5xl mb-4">

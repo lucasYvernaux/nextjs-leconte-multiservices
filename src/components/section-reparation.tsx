@@ -17,6 +17,8 @@ const placeholderList: ListStepRepa[] = [
 export default function SectionReparation({
   title,
   listRepa = placeholderList,
+  hover = false,
+  colorHover,
 }: SectionReparationProps) {
   return (
     <>
@@ -26,7 +28,7 @@ export default function SectionReparation({
           {listRepa.map((step, index) => (
             <div
               key={`step-${index + 1}`}
-              className="flex-1 rounded-xl border bg-card text-card-foreground shadow text-center"
+              className={`flex-1 rounded-xl border-2 bg-card text-card-foreground shadow text-center ${hover && `hover:border-${colorHover}`}`}
             >
               <div className="p-6 pt-6">
                 <div className="size-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">

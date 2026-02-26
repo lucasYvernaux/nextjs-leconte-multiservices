@@ -106,7 +106,7 @@ export default function RepaFour() {
         <section>
           <div className="prose prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Spécialiste de reparation de four à Paris
+              Spécialiste de la reparation de four à Paris
             </h2>
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
