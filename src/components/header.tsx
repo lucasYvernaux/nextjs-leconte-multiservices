@@ -4,7 +4,7 @@ import Image from "next/image";
 import urlLogo from "../../public/images/logo/LECONTE_MULTISERVICES_small_logo.png";
 import Link from "next/link";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import {
   Collapsible,
   CollapsibleTrigger,
@@ -21,7 +21,34 @@ import {
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
 
+interface PropsLinkCustom {
+  href: string;
+  title: string;
+  children: ReactNode;
+}
+
 export function Header() {
+  function LinkCustom({ href, title, children }: PropsLinkCustom) {
+    const pathname = usePathname();
+    const isActive = href === pathname;
+
+    return (
+      <NavigationMenuLink
+        asChild
+        active={isActive}
+        data-page-active={isActive}
+        className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3 "
+      >
+        <Link
+          href={href}
+          className="NavigationMenuLink focus:bg-transparent"
+          title={title}
+        >
+          {children}
+        </Link>
+      </NavigationMenuLink>
+    );
+  }
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -122,7 +149,7 @@ export function Header() {
                             hover:bg-blue-50 hover:text-blue-600"`}
                             href="/"
                           >
-                            Accueil
+                            Accueil re
                           </Link>
                         </CollapsibleTrigger>
                       </li>
@@ -195,61 +222,55 @@ export function Header() {
           <NavigationMenu className="hidden sm:block">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  // className={navigationMenuTriggerStyle()}
-                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
-                >
-                  <Link href="/">Accueil</Link>
-                </NavigationMenuLink>
+                <LinkCustom href="/" title="Accueil">
+                  Accueil
+                </LinkCustom>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                <NavigationMenuTrigger
+                  className="text-lg font-medium bg-transparent focus:bg-transparent hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
+                  data-page-active={usePathname().includes("depannage")}
+                >
+                  Depannage
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="left-5">
-                    <ListItem href="/docs" title="Introduction"></ListItem>
+                  <ul>
+                    <ListItem href="/depannage" title="Depannage"></ListItem>
                     <ListItem
-                      href="/docs/installation"
-                      title="Installation"
-                    ></ListItem>
+                      href="/depannage/depannage-electromenager-paris"
+                      title="Électroménager"
+                    />
+                    <ListItem
+                      href="/depannage/depannage-electricite-paris"
+                      title="Electricité"
+                    />
+                    <ListItem
+                      href="/depannage/depannage-plomberie-paris"
+                      title="Plomberie"
+                    />
+                    <ListItem href="/depannage/depannage-faq" title="FAQ" />
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  // className={navigationMenuTriggerStyle()}
-                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
-                >
-                  <Link href="/renovation">Rénovation</Link>
-                </NavigationMenuLink>
+                <LinkCustom href="/renovation" title="Page Rénovation">
+                  Rénovation
+                </LinkCustom>
               </NavigationMenuItem>{" "}
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  // className={navigationMenuTriggerStyle()}
-                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
-                >
-                  <Link href="/realisation">Galerie</Link>
-                </NavigationMenuLink>
+                <LinkCustom href="/realisation" title="Galerie">
+                  Galerie
+                </LinkCustom>
               </NavigationMenuItem>{" "}
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  // className={navigationMenuTriggerStyle()}
-                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
-                >
-                  <Link href="/about">A Propos</Link>
-                </NavigationMenuLink>
+                <LinkCustom href="/about" title="Page A propos">
+                  A Propos
+                </LinkCustom>
               </NavigationMenuItem>{" "}
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  // className={navigationMenuTriggerStyle()}
-                  className="text-lg font-medium hover:bg-transparent hover:text-white hover:underline hover:underline-offset-4 hover:decoration-3"
-                >
-                  <Link href="/contact">Contact</Link>
-                </NavigationMenuLink>
+                <LinkCustom href="/contact" title="Page Contact">
+                  Contact
+                </LinkCustom>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
