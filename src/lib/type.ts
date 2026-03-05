@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { ImageProps, StaticImageData } from "next/image";
 
 export type ImageReal = {
   url: StaticImageData;
@@ -34,4 +34,33 @@ export interface propsInput {
   name: string;
   type: string;
   value: string;
+}
+
+export type ListStepRepa = {
+  title: string;
+  description: string;
+};
+
+export interface SectionReparationProps {
+  title: string;
+  listRepa?: ListStepRepa[];
+  hover?: boolean;
+  colorHover?: string;
+}
+
+export type ListTypeApp = {
+  title: string;
+  picto: string | ImageProps;
+  url: string;
+};
+
+export interface SectionTypeAppProps {
+  title: string;
+  center?: boolean;
+  listApp?: ListTypeApp[];
+}
+
+export interface SectionArrondissementProps {
+  num: number;
+  listQuartier: string[];
 }
