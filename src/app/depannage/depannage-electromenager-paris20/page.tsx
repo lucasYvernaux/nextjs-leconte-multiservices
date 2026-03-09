@@ -5,17 +5,20 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis20;
 
 export default function DepanElectroParis() {
   const listQuartier = [
-    "Passy",
-    "auteuil",
-    "Avenue Foch",
-    "Muette",
-    "Chaillot",
-    "Trocadéro",
-    "Porte Dauphine",
+    "Belleville",
+    "Ménilmontant",
+    "Saint-Blaise",
+    "Père-Lachaise",
+    "Gambetta",
+    "Saint-Fargeau",
+    "Charonne",
+    "Bagnolet",
+    "Réunion",
+    "Alexandre Dumas",
   ];
   return (
     <>
@@ -78,15 +81,15 @@ export default function DepanElectroParis() {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-              <span className="text-gray-900 font-medium">Paris 16</span>
+              <span className="text-gray-900 font-medium">Paris 20</span>
             </div>
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-bold capitalize fadein-left">
-            Dépannage Électroménager Paris 16
+            Dépannage Électroménager Paris 20
           </h1>
           <p className="content-text fadein-left text-2xl mb-6">
-            Intervention rapide dans tous le 16ème arrondissement
+            Intervention rapide dans tous le 20ème arrondissement
           </p>
           <div className="content-btn fadein-left flex flex-wrap gap-4 text-leconte-primary">
             <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
@@ -169,29 +172,24 @@ export default function DepanElectroParis() {
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         <section className="max-w-none">
           <h2 className="text-3xl font-bold  mb-6">
-            Votre dépanneur électroménager dans le 16ème arrondissement
+            Votre dépanneur électroménager dans le 20ème arrondissement
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            J'interviens régulièrement dans le <b>16ème arrondissement</b> pour
+            J'interviens fréquement dans le <b>20ème arrondissement</b> pour
             tous vos <b>dépannage d'électroménager</b>. Que vous habitiez à
-            Passy, Auteuil, Trocadéro ou près de la Muette, je me déplace
-            rapidement chez vous.
+            Belleville, Ménilmontant, Père-Lachaise ou près de Gambetta, je me
+            déplace rapidement chez vous.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Avec <b>34 ans d'expérience</b> chez Darty et ma qualification de
             frigoriste, je répare tous vos appareils électroménagers sur place
             dans la majorité des cas.
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            Mon objectif : <b>réparer plutôt que remplacer</b>. Dans 80% des
-            cas, un simple remplacement de pièce permet de prolonger la durée de
-            vie de votre appareil et vous fait économiser des centaines d'euros.
-          </p>
         </section>
 
         <SectionTypeAppareil title="Appareils réparés dans le Paris 16" />
 
-        <SectionArrandissement num={16} listQuartier={listQuartier} />
+        <SectionArrandissement num={20} listQuartier={listQuartier} />
 
         <section>
           <div className="flex gap-6 flex-col md:flex-row">
