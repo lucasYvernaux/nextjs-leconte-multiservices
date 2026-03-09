@@ -7,8 +7,12 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Separator } from "@/components/ui/separator";
+import { MetadataPage } from "@/lib/utils";
 import { ChevronDownIcon } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = MetadataPage.DepannageFAQParis;
 
 export default function FAQDepan() {
   return (
