@@ -5,17 +5,17 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis19;
 
 export default function DepanElectroParis() {
   const listQuartier = [
-    "Passy",
-    "auteuil",
-    "Avenue Foch",
-    "Muette",
-    "Chaillot",
-    "Trocadéro",
-    "Porte Dauphine",
+    "Vilette",
+    "buttes-chaumont",
+    "Pont-de-Flandre",
+    "Amerique",
+    "Parc de la Vilette",
+    "Belleville",
+    "Jourdain",
   ];
   return (
     <>
@@ -78,15 +78,15 @@ export default function DepanElectroParis() {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-              <span className="text-gray-900 font-medium">Paris 16</span>
+              <span className="text-gray-900 font-medium">Paris 19</span>
             </div>
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-bold capitalize fadein-left">
-            Dépannage Électroménager Paris 16
+            Dépannage Électroménager Paris 19
           </h1>
           <p className="content-text fadein-left text-2xl mb-6">
-            Intervention rapide dans tous le 16ème arrondissement
+            Intervention rapide dans tous le 19ème arrondissement
           </p>
           <div className="content-btn fadein-left flex flex-wrap gap-4 text-leconte-primary">
             <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
@@ -169,19 +169,15 @@ export default function DepanElectroParis() {
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         <section className="max-w-none">
           <h2 className="text-3xl font-bold  mb-6">
-            Votre dépanneur électroménager dans le 16ème arrondissement
+            Votre dépanneur électroménager dans le 19ème arrondissement
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            J'interviens régulièrement dans le <b>16ème arrondissement</b> pour
-            tous vos <b>dépannage d'électroménager</b>. Que vous habitiez à
-            Passy, Auteuil, Trocadéro ou près de la Muette, je me déplace
-            rapidement chez vous.
+            J'interviens régulièrement dans le <b>19ème arrondissement</b> pour
+            tous vos <b>dépannage d'électroménager</b>. Que vous soyze situé à
+            la Villette, aux Buttes-Chaumont ou près du Pont-de-Flandre, je me
+            déplace rapidement chez vous.
           </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Avec <b>34 ans d'expérience</b> chez Darty et ma qualification de
-            frigoriste, je répare tous vos appareils électroménagers sur place
-            dans la majorité des cas.
-          </p>
+
           <p className="text-gray-700 leading-relaxed">
             Mon objectif : <b>réparer plutôt que remplacer</b>. Dans 80% des
             cas, un simple remplacement de pièce permet de prolonger la durée de
@@ -189,37 +185,12 @@ export default function DepanElectroParis() {
           </p>
         </section>
 
-        <SectionTypeAppareil title="Appareils réparés dans le Paris 16" />
+        <SectionTypeAppareil title="Appareils réparés dans le Paris 19" />
 
-        <SectionArrandissement num={16} listQuartier={listQuartier} />
+        <SectionArrandissement num={19} listQuartier={listQuartier} />
 
         <section>
           <div className="flex gap-6 flex-col md:flex-row">
-            <div className="flex-1 rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-all hover:shadow-lg">
-              <div className="p-6 text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-award w-8 h-8 text-leconte-primary"
-                  >
-                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
-                    <circle cx={12} cy={8} r={6} />
-                  </svg>
-                </div>
-                <h3 className="font-bold text-lg mb-2">34 ans d'expérience</h3>
-                <p className="text-gray-600 text-sm">
-                  Ancien technicien Darty, expertise reconnue
-                </p>
-              </div>
-            </div>
             <div className="flex-1 rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-all hover:shadow-lg">
               <div className="p-6 text-center">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -241,11 +212,10 @@ export default function DepanElectroParis() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Proximité</h3>
                 <p className="text-gray-600 text-sm">
-                  Intervention rapide dans tout le 16éme
+                  Intervention rapide dans tout le 19éme
                 </p>
               </div>
             </div>
-
             <div className="flex-1 rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-all hover:shadow-lg">
               <div className="p-6 text-center">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -268,6 +238,31 @@ export default function DepanElectroParis() {
                 <h3 className="font-bold text-lg mb-2">Toutes marques</h3>
                 <p className="text-gray-600 text-sm">
                   Réparation de tous les appareils
+                </p>
+              </div>
+            </div>
+            <div className="flex-1 rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-all hover:shadow-lg">
+              <div className="p-6 text-center">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-award w-8 h-8 text-leconte-primary"
+                  >
+                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                    <circle cx={12} cy={8} r={6} />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-lg mb-2">34 ans d'expérience</h3>
+                <p className="text-gray-600 text-sm">
+                  Ancien technicien Darty, expertise reconnue
                 </p>
               </div>
             </div>

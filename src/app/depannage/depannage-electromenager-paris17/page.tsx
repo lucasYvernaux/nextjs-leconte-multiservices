@@ -5,7 +5,7 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis17;
 
 export default function DepanElectroParis17() {
   const listQuartier = [

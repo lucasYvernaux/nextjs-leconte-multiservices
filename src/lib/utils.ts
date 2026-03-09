@@ -27,7 +27,7 @@ export const MetadataPage = {
       title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
       description:
         "Services de dépannage électricité, plomberie et électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
-      url: "https://leconte-multiservices.fr/depannage",
+      url: "https://leconte-multiservices.fr/",
     },
   },
   DepannageParis: {
@@ -38,7 +38,7 @@ export const MetadataPage = {
       title: "Dépanneur Électroménager Paris | Expert ex-Darty (34 ans d'exp)",
       description:
         "Panne d'appareil ? Profitez de 34 ans d'expertise pour votre dépannage électroménager à Paris. Réparation rapide : lave-linge, lave-vaisselle, four. Devis clair !",
-      url: "https://leconte-multiservices.fr/depannage-electromenager-paris",
+      url: "https://leconte-multiservices.fr/depannage",
     },
   },
   DepannageElectroParis: {
@@ -51,7 +51,73 @@ export const MetadataPage = {
         "Dépanneur Électroménager Paris | Réparation Express à Domicile - 34 ans d'expertise",
       description:
         "Dépanneur électroménager à Paris. Intervention rapide sous 24h. Ancien technicien Darty, 34 ans d'expérience. Lave-linge,frigo,lave-vaisselle - 06 40 14 19 37",
-      url: "https://leconte-multiservices.fr/depannage-electromenager-paris",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris",
+    },
+  },
+  DepannageElectroParis15: {
+    title: "Dépannage Électroménager Paris 15 | Intervention Rapide 15ème",
+    description:
+      "Dépanneur électroménager Paris 15ème. Intervention rapide à Grenelle, Vaugirard, Javel. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 15 | Intervention Rapide 15ème",
+      description:
+        "Dépanneur électroménager Paris 15ème. Intervention rapide à Grenelle, Vaugirard, Javel. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris15",
+    },
+  },
+  DepannageElectroParis16: {
+    title: "Dépannage Électroménager Paris 16 | Intervention Rapide 16ème",
+    description:
+      "Dépanneur électroménager Paris 16ème. Intervention rapide à Passy, Auteuil, Trocadéro. Réparation lave-linge, frigo, lave-vaisselle, four, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 16 | Intervention Rapide 16ème",
+      description:
+        "Dépanneur électroménager Paris 16ème. Intervention rapide à Passy, Auteuil, Trocadéro. Réparation lave-linge, frigo, lave-vaisselle, four, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris16",
+    },
+  },
+  DepannageElectroParis17: {
+    title: "Dépannage Électroménager Paris 17 | Intervention Rapide 17ème",
+    description:
+      "Dépanneur électroménager Paris 17ème. Intervention rapide aux Batignolles, Ternes, Épinettes. Réparation sèche-linge, frigo, four, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 17 | Intervention Rapide 17ème",
+      description:
+        "Dépanneur électroménager Paris 16ème. Intervention rapide aux Batignolles, Ternes, Épinettes. Réparation sèche-linge, frigo, four, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris17",
+    },
+  },
+  DepannageElectroParis18: {
+    title: "Dépannage Électroménager Paris 18 | Intervention Rapide 18ème",
+    description:
+      "Dépanneur électroménager Paris 18ème. Intervention rapide à MontMartre, Abesses, Clignancourt. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 18 | Intervention Rapide 18ème",
+      description:
+        "Dépanneur électroménager Paris 16ème. Intervention rapide à Passy, Auteuil, Trocadéro. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris18",
+    },
+  },
+  DepannageElectroParis19: {
+    title: "Dépannage Électroménager Paris 19 | Intervention Rapide 19ème",
+    description:
+      "Dépanneur électroménager Paris 19ème. Intervention rapide à Buttes-Chaumont, Villette, Belleville. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 19 | Intervention Rapide 19ème",
+      description:
+        "Dépanneur électroménager Paris 16ème. Intervention rapide Buttes-Chaumont, Villette, Belleville. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris19",
+    },
+  },
+  DepannageElectroParis20: {
+    title: "Dépannage Électroménager Paris 20 | Intervention Rapide 20ème",
+    description:
+      "Dépanneur électroménager Paris 19ème. Intervention rapide à Ménilmontant, Belleville, Gambetta. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 20 | Intervention Rapide 20ème",
+      description:
+        "Dépanneur électroménager Paris 16ème. Intervention rapide Ménilmontant, Belleville, Gambetta. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris20",
     },
   },
   DepannageElecParis: {
@@ -64,7 +130,7 @@ export const MetadataPage = {
         "Dépannage Électricité Paris | Installation Borne Recharge VE - 06 40 14 19 37",
       description:
         "Électricien à Paris : dépannage électrique, installation prises et bornes de recharge pour voitures électriques. Intervention rapide - 06 40 14 19 37",
-      url: "https://leconte-multiservices.fr/depannage-electricite-paris",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electricite-paris",
     },
   },
   DepannagePlombParis: {
@@ -75,7 +141,7 @@ export const MetadataPage = {
       title: "Dépannage Plomberie Paris | Intervention Rapide - 06 40 14 19 37",
       description:
         "Plombier à Paris : dépannage fuites, canalisation bouchées, chauffe-eau, robinetterie. Intervention rapide - 06 40 14 19 37",
-      url: "https://leconte-multiservices.fr/depannage-plomberie-paris",
+      url: "https://leconte-multiservices.fr/depannage/depannage-plomberie-paris",
     },
   },
   DepannageFAQParis: {
@@ -121,6 +187,35 @@ export const MetadataPage = {
       description:
         "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
       url: "https://leconte-multiservices.fr/renovation",
+    },
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    },
+  },
+  Galerie: {
+    title:
+      "Leconte Multiservices - Galerie réalisation à Paris & Île-de-France",
+    description:
+      "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
+    openGraph: {
+      title:
+        "Leconte Multiservices - Expert Rénovation à Paris & Île-de-France",
+      description:
+        "Entreprise spécialisée en rénovation à Paris et en Île-de-France. De la rénovation complète à la rénovation d'appartement, nos experts vous accompagnent pour tous vos projets.",
+      url: "https://leconte-multiservices.fr/renovation",
+    },
+    robots: {
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
     },
   },
 };

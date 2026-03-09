@@ -24,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://leconte-multiservices.fr/depannage/depannage-electricite-paris",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1,
+      priority: 0.5,
     },
     {
       url: "https://leconte-multiservices.fr/depannage/depannage-plomberie-paris",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1,
+      priority: 0.5,
     },
     {
       url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-faq",
@@ -63,6 +63,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris15",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris16",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris17",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris18",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris19",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris20",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
       url: "https://leconte-multiservices.fr/renovation",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -72,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://leconte-multiservices.fr/realisation",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.1,
     },
     {
       url: "https://leconte-multiservices.fr/about",
@@ -84,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://leconte-multiservices.fr/contact",
       lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 1,
+      priority: 0.5,
     },
     {
       url: "https://leconte-multiservices.fr/mentions-legales",

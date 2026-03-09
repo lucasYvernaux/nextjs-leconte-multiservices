@@ -12,7 +12,7 @@ export default function PlanPage() {
         idPage="plan-site"
         name="pages"
         title="Plan du Site"
-        class="h-screen"
+        class="min-h-screen"
       >
         <h2 className="mb-4">Pages</h2>
         <ul className="list-disc list-inside text-lg flex flex-col gap-4">
@@ -52,6 +52,138 @@ export default function PlanPage() {
               Dépannage
             </Link>
           </li>
+          <ul className="list-disc list-inside text-lg flex flex-col gap-4 ml-8 mt-4">
+            <li>
+              <Link
+                href={"/depannage/depannage-electricite-paris"}
+                title="Dépannage Électricité Paris"
+                className="text-leconte-gray italic hover:text-leconte-primary"
+              >
+                Dépannage Électricité
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/depannage/depannage-electromenager-paris"}
+                title="Dépannage Électroménager Paris"
+                className="text-leconte-gray italic hover:text-leconte-primary"
+              >
+                Dépannage Électroménager
+              </Link>
+              <ul className="list-disc list-inside text-lg flex flex-col gap-4 ml-8 mt-4">
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris15"}
+                    title="Dépannage Électroménager Paris 15"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 15
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris16"}
+                    title="Dépannage Électroménager Paris 16"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 16
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris17"}
+                    title="Dépannage Électroménager Paris 17"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 17
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris18"}
+                    title="Dépannage Électroménager Paris 18"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 18
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris19"}
+                    title="Dépannage Électroménager Paris 19"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 19
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-paris20"}
+                    title="Dépannage Électroménager Paris 20"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Dépannage Électroménager Paris 20
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/depannage-electromenager-faq"}
+                    title="FAQ Dépannage Électroménager"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    FAQ Dépannage Électroménager
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/reparation-four-paris"}
+                    title="Réparation Four"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Réparation Four
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/reparation-lave-linge-paris"}
+                    title="Réparation Lave-Linge"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Réparation Lave-Linge
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/reparation-lave-vaisselle-paris"}
+                    title="Réparation Lave-Vaisselle"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Réparation Lave-Vaisselle
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"/depannage/reparation-refrigerateur-paris"}
+                    title="Réparation Réfrigérateur"
+                    className="text-leconte-gray italic hover:text-leconte-primary"
+                  >
+                    Réparation Réfrigérateur
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <Link
+                href={"/depannage/depannage-plomberie-paris"}
+                title="Dépannage Plomberie"
+                className="text-leconte-gray italic hover:text-leconte-primary"
+              >
+                Dépannage Plomberie
+              </Link>
+            </li>
+          </ul>
+
           <li>
             <Link
               href={"/mentions-legales"}
