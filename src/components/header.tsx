@@ -212,7 +212,9 @@ export function Header() {
                               <CollapsibleTrigger asChild>
                                 <Link
                                   onClick={() => setOpenDropdownMobile(false)}
-                                  href={"/depannage/depannage-faq"}
+                                  href={
+                                    "/depannage/depannage-electromenager-faq"
+                                  }
                                 >
                                   FAQ
                                 </Link>
@@ -275,7 +277,7 @@ export function Header() {
               </CollapsibleContent>
             </Collapsible>
           </div>
-          <NavigationMenu className="hidden sm:block">
+          <NavigationMenu id="nav-desktop" className="hidden sm:block">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <LinkCustom href="/" title="Accueil">
@@ -304,7 +306,7 @@ export function Header() {
                       href="/depannage/depannage/depannage-plomberie-paris"
                       title="Plomberie"
                     />
-                    <ListItem href="/depannage/depannage/depannage-faq" title="FAQ" />
+                    <ListItem href="/depannage/depannage/depannage-electromenager-faq" title="FAQ" />
                   </ul>
                 </NavigationMenuContent> */}
                 <DropdownMenu
@@ -360,7 +362,7 @@ export function Header() {
                     <DropdownMenuItem>
                       <Link
                         onClick={() => setOpenDropdown(false)}
-                        href={"/depannage/depannage-electromenager-paris"}
+                        href={"/depannage/depannage-electromenager-faq"}
                       >
                         FAQ
                       </Link>

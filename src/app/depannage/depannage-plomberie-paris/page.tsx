@@ -4,7 +4,11 @@ import urlImagePlomb from "../../../../public/images/shutterstock.jpg";
 import SectionReparation from "@/components/section-reparation";
 import { ListStepRepa } from "@/lib/type";
 import SectionBesoin from "@/components/sectionBesoin";
+import { Metadata } from "next";
+import { MetadataPage } from "@/lib/utils";
 // import urlImageElec from "../../../public/images/Electricité.jpeg";
+
+export const metadata: Metadata = MetadataPage.DepannagePlombParis;
 
 export default function DepanPlombParis() {
   const listDreoulement: ListStepRepa[] = [

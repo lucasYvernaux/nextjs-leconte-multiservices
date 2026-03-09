@@ -4,7 +4,11 @@ import urlImageElec from "../../../../public/images/Electricité.jpeg";
 import SectionReparation from "@/components/section-reparation";
 import { ListStepRepa } from "@/lib/type";
 import SectionBesoin from "@/components/sectionBesoin";
+import { Metadata } from "next";
+import { MetadataPage } from "@/lib/utils";
 // import urlImageElec from "../../../public/images/Electricité.jpeg";
+
+export const metadata: Metadata = MetadataPage.DepannageElecParis;
 
 export default function DepanElecParis() {
   const listDreoulement: ListStepRepa[] = [
@@ -409,10 +413,10 @@ export default function DepanElecParis() {
           </div>
         </section>
         <Section
-          idPage="depannage"
+          idPage="depannage-elec"
           name="elec"
           image={{
-            alt: "photo d&apos;une personne réparant un aspirateur",
+            alt: "photo d&apos;une personne réparant un tableau électrique",
             position: "left",
             url: urlImageElec,
           }}
@@ -444,7 +448,7 @@ export default function DepanElecParis() {
             <div className="rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-colors p-6">
               <div className="flex gap-3 items-center">
                 <div className="text-3xl">🔌</div>
-                <h3 className="font-bold">Disjoncteur qui saute</h3>
+                <h3 className="font-bold">Changement de ballon électrique</h3>
               </div>
             </div>{" "}
             <div className="rounded-xl bg-card text-card-foreground shadow border-2 hover:border-leconte-primary transition-colors p-6">
@@ -582,10 +586,43 @@ export default function DepanElecParis() {
                 </div>
                 <div>
                   <ul className="space-y-2 ml-8 list-disc list-inside">
-                    <li>Borne Wallbox, Scheindeir 7.4 kW ou 22 kW</li>
-                    <li>Prise renforcée Green'Up 3.7kW</li>
+                    <li>Borne de recharge allant de 7.4 kW jusqu'à 22 kW</li>
+                    <li>Prise renforcée allant jusqu'à 3.7kW</li>
                     <li>Étude de faisabilité</li>
                     <li>Installation certifiée IRVE</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="text-card-foreground">
+                <div className="content-title flex gap-4 items-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-6 text-green-600"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                    <path d="m9 11 3 3L22 4" />
+                  </svg>
+
+                  <h3 className="font-bold mb-2">
+                    Ballon d'eau chaude électrique
+                  </h3>
+                </div>
+                <div>
+                  <ul className="space-y-2 ml-8 list-disc list-inside">
+                    <li>Installation Ballon 200 / 300 litres</li>
+                    <li>
+                      Réparation ballon électrique (résistance, thermostat)
+                    </li>
+                    <li>Remplacement ballon d'eau chaude</li>
+                    <li>Mise aux normes et raccordement électrique</li>
                   </ul>
                 </div>
               </div>
