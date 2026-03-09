@@ -16,7 +16,7 @@ import urlImageElec from "../../../public/images/Electricité.jpeg";
 import urlImagePlomb from "../../../public/images/shutterstock.jpg";
 import { MetadataPage } from "@/lib/utils";
 
-export const metadata: Metadata = MetadataPage.Depannage;
+export const metadata: Metadata = MetadataPage.DepannageParis;
 
 export default function DepannagePage() {
   return (

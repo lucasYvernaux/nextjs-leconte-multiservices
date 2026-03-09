@@ -15,6 +15,10 @@ import Image from "next/image";
 import urlImgElectro from "../../public/images/Lelectromenager-poursuit-sa-croissance-dans-plusieurs-categories-selon-GFK-pointsdevente.jpg";
 import urlImgTravaux from "../../public/images/travaux.jpg";
 import urlImgSerge from "../../public/images/WhatsApp-sergio-reparation-lave-vaisselle.jpg";
+import { Metadata } from "next";
+import { MetadataPage } from "@/lib/utils";
+
+export const metadata: Metadata = MetadataPage.Depannage;
 
 export default function Home() {
   return (
@@ -28,7 +32,7 @@ export default function Home() {
             <div className="block : sm:hidden">
               Dépannage{" "}
               <ul className="text-3xl mt-4 list-disc list-inside">
-                <li>Electroménager</li>
+                <li>électroménager</li>
                 <li>électricité</li>
                 <li>plomberie</li>
               </ul>
