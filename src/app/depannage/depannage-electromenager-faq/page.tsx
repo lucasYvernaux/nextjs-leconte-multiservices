@@ -71,7 +71,29 @@ export default function FAQDepan() {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-              <span className=" font-medium">FAQ Dépannage</span>
+              <a
+                className="hover:text-black flex items-center gap-1"
+                href="/depannage/depannage-electromenager-paris"
+              >
+                Dépannage Électroménager
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-chevron-right w-4 h-4"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+              <span className=" font-medium">FAQ </span>
             </div>
           </nav>
 
@@ -161,7 +183,7 @@ export default function FAQDepan() {
                   </p>
                 </CollapsibleContent>
               </Collapsible>
-              <Separator className="my-4" />
+              {/* <Separator className="my-4" />
               <Collapsible className="data-open:bg-muted rounded-md">
                 <CollapsibleTrigger asChild>
                   <Button
@@ -182,8 +204,7 @@ export default function FAQDepan() {
                     d'accepter ou de refuser.
                   </p>
                 </CollapsibleContent>
-              </Collapsible>
-              {/* <Separator className="mt-4" /> */}
+              </Collapsible> */}
             </CardContent>
           </Card>
           <Card className="mx-auto w-full max-w-6xl p-6">
@@ -203,16 +224,16 @@ export default function FAQDepan() {
                 <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 pt-0 text-sm">
                   <p>
                     J'interviens généralement sous 24h à 48h à Paris et en
-                    Île-de-France. Pour les urgences (fuite importante, panne de
+                    Île-de-France. Pour les urgences (fuite importante, panne
                     avec risque alimentaire), je peux intervenir le jour même
-                    selon mes disponibilités.{" "}
+                    selon mes disponibilités.
                     <Link
                       title="Appeler Leconte Multiservices"
                       href="tel:0640141937"
                       className="underline underline-offset-2 decoration-leconte-primary"
                     >
-                      Contactez-moi
-                    </Link>{" "}
+                      {"Contactez-moi "}
+                    </Link>
                     au plus vite.
                   </p>
                 </CollapsibleContent>
@@ -255,9 +276,8 @@ export default function FAQDepan() {
                   </p>
                 </CollapsibleContent>
               </Collapsible>
-              {/* <Separator className="my-4" /> */}
             </CardContent>
-          </Card>{" "}
+          </Card>
           <Card className="mx-auto w-full max-w-6xl p-6">
             <CardTitle className="pl-6 font-semibold tracking-tight text-2xl text-leconte-primary">
               Réparation
@@ -275,9 +295,9 @@ export default function FAQDepan() {
                 <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 pt-0 text-sm">
                   <p>
                     Oui je répare toutes les grandes marques: Bosch, Siemens,
-                    Samsung, Lg, Whirpool, Miele, Candy, Electrolux, Beko,
-                    Brandt, Listo, etc. Mon expérience de 34 ans chez Darty m'a
-                    permis de maîtriser tous les modèles.
+                    Samsung, LG, Whirpool, Miele, Indesit, Candy, Electrolux,
+                    Beko, Brandt, Listo, etc. Mon expérience de 34 ans chez
+                    Darty m'a permis de maîtriser tous les modèles.
                   </p>
                 </CollapsibleContent>
               </Collapsible>
@@ -313,7 +333,7 @@ export default function FAQDepan() {
                   <p>
                     C'est une question légitime. En règle générale, si le coût
                     de la réparation dépasse 60% du prix d'un appareil neuf
-                    équivalent, je vous conseille honnêtementle remplacement.
+                    équivalent, je vous conseille honnêtement le remplacement.
                     Dans la plupart des cas, la réparation est plus économique
                     et écologique.
                   </p>
@@ -324,7 +344,7 @@ export default function FAQDepan() {
                 <CollapsibleTrigger asChild>
                   <Button variant="ghost" className="w-full text-base h-auto">
                     <span className="text-wrap">
-                      Les réparations sont-elles garantie ? (a voir)
+                      Les réparations sont-elles garantie ?
                     </span>
                     <ChevronDownIcon className="ml-auto group-data-panel-open/button:rotate-180" />
                   </Button>
@@ -339,7 +359,7 @@ export default function FAQDepan() {
                 </CollapsibleContent>
               </Collapsible>
             </CardContent>
-          </Card>{" "}
+          </Card>
           <Card className="mx-auto w-full max-w-6xl p-6">
             <CardTitle className="pl-6 font-semibold tracking-tight text-2xl text-leconte-primary">
               Pannes courantes
@@ -357,8 +377,8 @@ export default function FAQDepan() {
                 <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 pt-0 text-sm">
                   <p>
                     Une fuite peut avoir plusieurs origines: joint de porte usé,
-                    durite percée, pompe défectueuse, problème de bac à produit
-                    .... Ce n'est généralement pas très grave et se répare
+                    durite percée, pompe défectueuse, problème de bac à produit,
+                    etc. Ce n'est généralement pas très grave et se répare
                     facilement. Arrêtez l'appareil et contactez-moi rapidement
                     pour éviter un dégât des eaux.
                   </p>

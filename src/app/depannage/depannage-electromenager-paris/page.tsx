@@ -4,7 +4,7 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis;
 
 export default function DepanElectroParis() {
   return (
@@ -12,10 +12,7 @@ export default function DepanElectroParis() {
       <section className="section-depan-electro flex text-white bg-linear-to-b sm:bg-linear-to-r to-leconte-primary from-[#2a9dd6] py-16 px-6 h-full">
         <div className="content space-y-6 w-full sm:max-w-6xl sm:mx-auto">
           <nav className="flex flex-col md:flex-row items-start gap-2 text-smtext-leconte-gray">
-            <a
-              className="hover:text-black flex items-center gap-1"
-              href="/depannage"
-            >
+            <a className="hover:text-black flex items-center gap-1" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -33,6 +30,28 @@ export default function DepanElectroParis() {
               </svg>
               Accueil
             </a>
+            <div className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-chevron-right w-4 h-4"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+              <a
+                className="hover:text-black flex items-center gap-1"
+                href="/depannage"
+              >
+                Dépannage
+              </a>
+            </div>
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -504,7 +523,7 @@ export default function DepanElectroParis() {
             <Link
               className="text-xl rounded-full text-white px-8 py-2 border bg-leconte-primary w-fit hover:bg-leconte-secondary
               "
-              href="/depannage/depannage-faq"
+              href="/depannage/depannage-electromenager-faq"
               title="Aller à la page dépannage électricité"
             >
               Voir d'autre question &rarr;
