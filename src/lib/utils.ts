@@ -20,22 +20,23 @@ export const MetadataPage = {
     },
   },
   Depannage: {
-    title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
+    title: "Leconte Multiservices - Dépannage électroménager à Paris",
     description:
       "Dépanneur d&apos;électricité, de plomberie et installateur d&apos;électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
     openGraph: {
-      title: "Leconte Multiservices - Dépannage à Paris et Île-de-France",
+      title:
+        "Leconte Multiservices - Dépannage électroménager à Paris et Île-de-France",
       description:
         "Services de dépannage électricité, plomberie et électroménager à Paris et en Île-de-France. Réponse immédiate, devis gratuit et intervention professionnelle",
       url: "https://leconte-multiservices.fr/",
     },
   },
   DepannageParis: {
-    title: "Dépanneur Électroménager Paris | Expert ex-Darty (34 ans d'exp)",
+    title: "Dépanneur Électroménager Paris | Intervention rapide",
     description:
       "Panne d'appareil ? Profitez de 34 ans d'expertise pour votre dépannage électroménager à Paris. Réparation rapide : lave-linge, lave-vaisselle, four. Devis clair !",
     openGraph: {
-      title: "Dépanneur Électroménager Paris | Expert ex-Darty (34 ans d'exp)",
+      title: "Dépanneur Électroménager Paris | Intervention rapide",
       description:
         "Panne d'appareil ? Profitez de 34 ans d'expertise pour votre dépannage électroménager à Paris. Réparation rapide : lave-linge, lave-vaisselle, four. Devis clair !",
       url: "https://leconte-multiservices.fr/depannage",
@@ -43,12 +44,12 @@ export const MetadataPage = {
   },
   DepannageElectroParis: {
     title:
-      "Dépanneur Électroménager Paris | Réparation Express à Domicile - 34 ans d'expertise",
+      "Dépanneur Électroménager Paris | Intervention rapide à Domicile - 34 ans d'expertise",
     description:
       "Dépanneur électroménager à Paris. Intervention rapide sous 24h. Ancien technicien Darty, 34 ans d'expérience. Lave-linge,frigo,lave-vaisselle - 06 40 14 19 37",
     openGraph: {
       title:
-        "Dépanneur Électroménager Paris | Réparation Express à Domicile - 34 ans d'expertise",
+        "Dépanneur Électroménager Paris | Intervention rapide à Domicile - 34 ans d'expertise",
       description:
         "Dépanneur électroménager à Paris. Intervention rapide sous 24h. Ancien technicien Darty, 34 ans d'expérience. Lave-linge,frigo,lave-vaisselle - 06 40 14 19 37",
       url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris",

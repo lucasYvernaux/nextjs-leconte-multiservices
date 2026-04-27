@@ -7,6 +7,89 @@ import Link from "next/link";
 export const metadata: Metadata = MetadataPage.DepannageElectroParis;
 
 export default function DepanElectroParis() {
+  const listZoneInter = [
+    {
+      label: "Dépannage Paris 1",
+      href: "/depannage/depannage-electromenager-paris1",
+    },
+    {
+      label: "Dépannage Paris 2",
+      href: "/depannage/depannage-electromenager-paris2",
+    },
+    {
+      label: "Dépannage Paris 3",
+      href: "/depannage/depannage-electromenager-paris3",
+    },
+    {
+      label: "Dépannage Paris 4",
+      href: "/depannage/depannage-electromenager-paris4",
+    },
+    {
+      label: "Dépannage Paris 5",
+      href: "/depannage/depannage-electromenager-paris5",
+    },
+    {
+      label: "Dépannage Paris 6",
+      href: "/depannage/depannage-electromenager-paris6",
+    },
+    {
+      label: "Dépannage Paris 7",
+      href: "/depannage/depannage-electromenager-paris7",
+    },
+    {
+      label: "Dépannage Paris 8",
+      href: "/depannage/depannage-electromenager-paris8",
+    },
+    {
+      label: "Dépannage Paris 9",
+      href: "/depannage/depannage-electromenager-paris9",
+    },
+    {
+      label: "Dépannage Paris 10",
+      href: "/depannage/depannage-electromenager-paris10",
+    },
+    {
+      label: "Dépannage Paris 11",
+      href: "/depannage/depannage-electromenager-paris11",
+    },
+    {
+      label: "Dépannage Paris 12",
+      href: "/depannage/depannage-electromenager-paris12",
+    },
+    {
+      label: "Dépannage Paris 13",
+      href: "/depannage/depannage-electromenager-paris13",
+    },
+    {
+      label: "Dépannage Paris 14",
+      href: "/depannage/depannage-electromenager-paris14",
+    },
+    {
+      label: "Dépannage Paris 15",
+      href: "/depannage/depannage-electromenager-paris15",
+    },
+    {
+      label: "Dépannage Paris 16",
+      href: "/depannage/depannage-electromenager-paris16",
+    },
+    {
+      label: "Dépannage Paris 17",
+      href: "/depannage/depannage-electromenager-paris17",
+    },
+    {
+      label: "Dépannage Paris 18",
+      href: "/depannage/depannage-electromenager-paris18",
+    },
+    {
+      label: "Dépannage Paris 19",
+      href: "/depannage/depannage-electromenager-paris19",
+    },
+    {
+      label: "Dépannage Paris 20",
+      href: "/depannage/depannage-electromenager-paris20",
+    },
+  ];
+
   return (
     <>
       <section className="section-depan-electro flex text-white bg-linear-to-b sm:bg-linear-to-r to-leconte-primary from-[#2a9dd6] py-16 px-6 h-full">
@@ -369,42 +452,16 @@ export default function DepanElectroParis() {
             Intervention dans tous les arrondissement de Paris
           </h2>
           <div className="content grid md:grid-cols-3 gap-4">
-            <Link
-              href={"depannage-electromenager-paris15"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 15
-            </Link>
-            <Link
-              href={"depannage-electromenager-paris16"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 16
-            </Link>{" "}
-            <Link
-              href={"depannage-electromenager-paris17"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 17
-            </Link>{" "}
-            <Link
-              href={"depannage-electromenager-paris18"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 18
-            </Link>{" "}
-            <Link
-              href={"depannage-electromenager-paris19"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 19
-            </Link>{" "}
-            <Link
-              href={"depannage-electromenager-paris20"}
-              className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
-            >
-              &rarr; Dépannage Paris 20
-            </Link>
+            {listZoneInter.map((zone, index) => (
+              <Link
+                href={zone.href}
+                key={index}
+                title={`Aller à la page ${zone.label}`}
+                className="cursor-pointer transition-colors font-medium hover:text-leconte-primary"
+              >
+                &rarr; {zone.label}
+              </Link>
+            ))}
           </div>
         </section>
 

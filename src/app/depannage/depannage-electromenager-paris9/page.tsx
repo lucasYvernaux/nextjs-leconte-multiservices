@@ -9,14 +9,14 @@ export const metadata: Metadata = MetadataPage.DepannageParis;
 
 export default function DepanElectroParis15() {
   const listQuartier = [
-    "Grenelle",
-    "javel",
-    "champs-de-mars",
-    "convention",
-    "saint-lambert",
-    "necker",
-    "montparnasse",
-    "parc georges brassens",
+    "Opéra",
+    "anvers",
+    "faubourg-montmartre",
+    "nouvelle-athènes",
+    "saint-georges",
+    "rochechouart",
+    "montholon",
+    "pigalle",
   ];
   return (
     <>
@@ -79,15 +79,15 @@ export default function DepanElectroParis15() {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-              <span className="text-gray-900 font-medium">Paris 16</span>
+              <span className="text-gray-900 font-medium">Paris 9</span>
             </div>
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-bold capitalize fadein-left">
-            Dépannage Électroménager Paris 15
+            Dépannage Électroménager Paris 9
           </h1>
           <p className="content-text fadein-left text-2xl mb-6">
-            Intervention rapide dans tous le 15ème arrondissement
+            Intervention rapide dans tous le 9ème arrondissement
           </p>
           <div className="content-btn fadein-left flex flex-wrap gap-4 text-leconte-primary">
             <div className="btn-avis inline-flex gap-2 items-center rounded-md font-semibold transition-colors shadow cursor-default bg-white text-base py-2 px-4">
@@ -170,26 +170,25 @@ export default function DepanElectroParis15() {
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         <section className="max-w-none">
           <h2 className="text-3xl font-bold  mb-6">
-            Votre dépanneur électroménager dans le 15ème arrondissement
+            Votre dépanneur électroménager dans le 9ème arrondissement
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Interventions régulières dans le <b>15ème arrondissement</b> je suis
-            votre expert local pour tous vos{" "}
-            <b>dépannage d'électroménager à Paris 15</b>. Que vous habitiez à
-            Grenelle, Vaugirard, Javel ou près de la Convvention, j'interviens
-            rapidement chez vous.
+            Interventions régulières dans l'<b>arrondissement de l'Opéra</b> je
+            suis votre expert local pour tous vos{" "}
+            <b>dépannage d'électroménager à Paris 9</b>. Que vous résidiez à
+            Opéra, à Pigalle, ou près de Rochechouart, j'interviens rapidement.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Avec <b>34 ans d'expérience</b> dans la réparation d'électroménager
-            chez Darty, je connais parfaitement le 15ème et ses quartiers.Mon
+            chez Darty, je connais parfaitement le 9ème et ses quartiers.Mon
             expertise me permet de <b>diagnostiquer et réparer</b> vos appareils
-            place dans la plupart des cas.
+            sur place dans la plus grande majorité des cas.
           </p>
         </section>
 
-        <SectionTypeAppareil title="Appareils réparés dans le Paris 16" />
+        <SectionTypeAppareil title="Appareils réparés dans le 9ème arrondissement" />
 
-        <SectionArrandissement num={15} listQuartier={listQuartier} />
+        <SectionArrandissement num={9} listQuartier={listQuartier} />
 
         <section>
           <div className="flex gap-6 flex-col md:flex-row">
@@ -273,13 +272,13 @@ export default function DepanElectroParis15() {
         </section>
         <section className="section-why flex gap-8 flex-col rounded-2xl p-8 bg-linear-to-r from-red-50 to-orange-50">
           <h2 className="text-3xl font-bold">
-            Pourquoi me choisir dans le 15ème ?
+            Pourquoi me choisir dans le 9ème ?
           </h2>
           <div className="content">
             <ul className="space-y-4 list-image-[url(/images/circle-check-big.svg)] list-inside">
               <li className="">
                 <b className="text-leconte-primary">Intervention rapide : </b>Je
-                me déplace rapidement dans tout le 15ème arrondissement
+                me déplace rapidement dans tout le 9ème arrondissement
               </li>
               <li>
                 <b className="text-leconte-primary">Expertise reconnue : </b>34
