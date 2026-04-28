@@ -5,9 +5,9 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis11;
 
-export default function DepanElectroParis15() {
+export default function DepanElectroParis11() {
   const listQuartier = [
     "folie-méricourt",
     "la roquette",
@@ -175,14 +175,14 @@ export default function DepanElectroParis15() {
             Interventions régulières dans le <b>11ème arrondissement</b> je suis
             votre expert local pour tous vos{" "}
             <b>dépannage d'électroménager à Paris 11</b>. Que vous habitiez à
-            Grenelle, Vaugirard, Javel ou près de la Convvention, j'interviens
-            rapidement chez vous.
+            Voltaire, Folie-Méricourt, La Roquette ou vers Saint-Marguerite,
+            j'interviens rapidement chez vous.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Avec <b>34 ans d'expérience</b> dans la réparation d'électroménager
             chez Darty, je connais parfaitement le 11ème et ses quartiers.Mon
             expertise me permet de <b>diagnostiquer et réparer</b> vos appareils
-            place dans la plupart des cas.
+            sur place dans la plupart des cas.
           </p>
         </section>
 
@@ -238,7 +238,7 @@ export default function DepanElectroParis15() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Proximité</h3>
                 <p className="text-gray-600 text-sm">
-                  Intervention rapide dans tout le 16éme
+                  Intervention rapide dans tout le 11ème
                 </p>
               </div>
             </div>

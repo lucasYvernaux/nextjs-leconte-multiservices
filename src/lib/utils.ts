@@ -55,6 +55,162 @@ export const MetadataPage = {
       url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris",
     },
   },
+  DepannageElectroParis1: {
+    title: "Dépannage Électroménager Paris 1 | Intervention Rapide 1er",
+    description:
+      "Dépanneur électroménager Paris 1er. Intervention rapide à Place Vendôme, Tuilerie, Les Halles. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 1 | Intervention Rapide 1er",
+      description:
+        "Dépanneur électroménager Paris 1er. Intervention rapide à Place Vendôme, Tuilerie, Les Halles. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris1",
+    },
+  },
+  DepannageElectroParis2: {
+    title: "Dépannage Électroménager Paris 2 | Intervention Rapide 2ème",
+    description:
+      "Dépanneur électroménager Paris 2ème. Intervention rapide à Gaillon, Vivienne, Bonne-Nouvelle. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 2 | Intervention Rapide 2ème",
+      description:
+        "Dépanneur électroménager Paris 2ème. Intervention rapide à Gaillon, Vivienne, Bonne-Nouvelle. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris2",
+    },
+  },
+  DepannageElectroParis3: {
+    title:
+      "Dépannage Électroménager Paris | Intervention Rapide 3ème arrondissement",
+    description:
+      "Dépanneur électroménager Paris 3ème. Intervention rapide à Art-et-Métiers, Musée Picasso, centre Pompidou. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title:
+        "Dépannage Électroménager Paris | Intervention Rapide 3ème arrondissement",
+      description:
+        "Dépanneur électroménager Paris 3ème. Intervention rapide à Art-et-Métiers, Musée Picasso, centre Pompidou. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris3",
+    },
+  },
+  DepannageElectroParis4: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 4ème",
+    description:
+      "Dépanneur électroménager Paris 4ème. Intervention rapide à Hôtel-de-Ville, Notre-Dame, Saint-Gervais. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 4ème",
+      description:
+        "Dépanneur électroménager Paris 4ème. Intervention rapide à Hôtel-de-Ville, Notre-Dame, Saint-Gervais. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris4",
+    },
+  },
+  DepannageElectroParis5: {
+    title: "Dépannage Électroménager Paris 5 | Intervention Rapide 5ème",
+    description:
+      "Dépanneur électroménager Paris 5ème. Intervention rapide à Sorbonne, Val-de-Grâce, Saint-Victor. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 5 | Intervention Rapide 5ème",
+      description:
+        "Dépanneur électroménager Paris 5ème. Intervention rapide à Sorbonne, Val-de-Grâce, Saint-Victor. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris5",
+    },
+  },
+  DepannageElectroParis6: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 6ème",
+    description:
+      "Dépanneur électroménager Paris 6ème. Intervention rapide à Odéon, Notre-Dame-des-Champs, Monnaie. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 6ème",
+      description:
+        "Dépanneur électroménager Paris 6ème. Intervention rapide à Odéon, Notre-Dame-des-Champs, Monnaie. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris6",
+    },
+  },
+  DepannageElectroParis7: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 7ème",
+    description:
+      "Dépanneur électroménager Paris 7ème. Intervention rapide à Musée d'Orsay, Invalides, Saint-Thomas-d'Aquin. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 7ème",
+      description:
+        "Dépanneur électroménager Paris 7ème. Intervention rapide à Musée d'Orsay, Invalides, Saint-Thomas-d'Aquin. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris7",
+    },
+  },
+  DepannageElectroParis8: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 8ème",
+    description:
+      "Dépanneur électroménager Paris 8ème. Intervention rapide à Madeleine, Champs-Élysées, Arc-de-Triomphe. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 8ème",
+      description:
+        "Dépanneur électroménager Paris 8ème. Intervention rapide à Madeleine, Champs-Élysées, Arc-de-Triomphe. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris8",
+    },
+  },
+  DepannageElectroParis9: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 9ème",
+    description:
+      "Dépanneur électroménager Paris 9ème. Intervention rapide à Opéra, Pigalle, Rochechouart. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 9ème",
+      description:
+        "Dépanneur électroménager Paris 9ème. Intervention rapide à Opéra, Pigalle, Rochechouart. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris9",
+    },
+  },
+  DepannageElectroParis10: {
+    title: "Dépannage Électroménager Paris 10 | Intervention Rapide 10ème",
+    description:
+      "Dépanneur électroménager Paris 10ème. Intervention rapide à Gare du Nord, Porte Saint-Denis, Villemin. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris 10 | Intervention Rapide 10ème",
+      description:
+        "Dépanneur électroménager Paris 10ème. Intervention rapide à Gare du Nord, Porte Saint-Denis, Villemin. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris10",
+    },
+  },
+  DepannageElectroParis11: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 11ème",
+    description:
+      "Dépanneur électroménager Paris 11ème. Intervention rapide à Roquette, Charonne, Folie-Méricourt. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 11ème",
+      description:
+        "Dépanneur électroménager Paris 11ème. Intervention rapide à Roquette, Charonne, Folie-Méricourt. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris11",
+    },
+  },
+  DepannageElectroParis12: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 12ème",
+    description:
+      "Dépanneur électroménager Paris 12ème. Intervention rapide à Bel-Air, Quinze-Vingts, Bercy. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 12ème",
+      description:
+        "Dépanneur électroménager Paris 12ème. Intervention rapide à Bel-Air, Quinze-Vingts, Bercy. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris12",
+    },
+  },
+  DepannageElectroParis13: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 13ème",
+    description:
+      "Dépanneur électroménager Paris 13ème. Intervention rapide à Salpêtrière, Maison-Blanche, Gobelins. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 13ème",
+      description:
+        "Dépanneur électroménager Paris 13ème. Intervention rapide à Salpêtrière, Maison-Blanche, Gobelins. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris13",
+    },
+  },
+  DepannageElectroParis14: {
+    title: "Dépannage Électroménager Paris | Intervention Rapide 14ème",
+    description:
+      "Dépanneur électroménager Paris 14ème. Intervention rapide à Montparnass, Denfer-Rochereau, Cité Universitaire. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+    openGraph: {
+      title: "Dépannage Électroménager Paris | Intervention Rapide 14ème",
+      description:
+        "Dépanneur électroménager Paris 14ème. Intervention rapide à Montparnass, Denfer-Rochereau, Cité Universitaire. Réparation lave-linge, frigo, lave-vaisselle, etc - 06 40 14 19 37",
+      url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris14",
+    },
+  },
   DepannageElectroParis15: {
     title: "Dépannage Électroménager Paris 15 | Intervention Rapide 15ème",
     description:
