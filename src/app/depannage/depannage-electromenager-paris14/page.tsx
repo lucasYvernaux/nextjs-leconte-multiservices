@@ -5,9 +5,9 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis14;
 
-export default function DepanElectroParis15() {
+export default function DepanElectroParis14() {
   const listQuartier = [
     "petit-montrouge",
     "plaisance",
@@ -231,7 +231,7 @@ export default function DepanElectroParis15() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Proximité</h3>
                 <p className="text-gray-600 text-sm">
-                  Intervention rapide dans tout le 16éme
+                  Intervention rapide dans tout le 14ème
                 </p>
               </div>
             </div>

@@ -5,7 +5,7 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.DepannageElectroParis13;
 
 export default function DepanElectroParis13() {
   const listQuartier = [
@@ -188,7 +188,7 @@ export default function DepanElectroParis13() {
 
         <SectionTypeAppareil title="Appareils réparés dans Paris 13" />
 
-        <SectionArrandissement num={15} listQuartier={listQuartier} />
+        <SectionArrandissement num={13} listQuartier={listQuartier} />
 
         <section>
           <div className="flex gap-6 flex-col md:flex-row">
@@ -238,7 +238,7 @@ export default function DepanElectroParis13() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Proximité</h3>
                 <p className="text-gray-600 text-sm">
-                  Intervention rapide dans tout le 16éme
+                  Intervention rapide dans tout le 13ème
                 </p>
               </div>
             </div>
