@@ -15,6 +15,7 @@ import urlImageElectro from "../../../public/images/Lelectromenager-poursuit-sa-
 import urlImageElec from "../../../public/images/Electricité.jpeg";
 import urlImagePlomb from "../../../public/images/shutterstock.jpg";
 import { MetadataPage } from "@/lib/utils";
+import ReviewGoogle from "@/components/reviewGoogle";
 
 export const metadata: Metadata = MetadataPage.DepannageParis;
 
@@ -101,6 +102,7 @@ export default function DepannagePage() {
           </div>
         </div>
       </section>
+      <ReviewGoogle />
 
       <Section
         idPage="depannage"
