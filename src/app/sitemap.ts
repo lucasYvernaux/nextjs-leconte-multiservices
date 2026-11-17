@@ -62,6 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    // Paris 1er → 14e (absents du sitemap jusqu'ici)
+    ...Array.from({ length: 14 }, (_, i) => ({
+      url: `https://leconte-multiservices.fr/depannage/depannage-electromenager-paris${i + 1}`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
     {
       url: "https://leconte-multiservices.fr/depannage/depannage-electromenager-paris15",
       lastModified: new Date(),
@@ -99,12 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://leconte-multiservices.fr/renovation",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.1,
-    },
-    {
       url: "https://leconte-multiservices.fr/realisation",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -130,12 +131,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://leconte-multiservices.fr/plan-du-site",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.1,
-    },
-    {
-      url: "https://leconte-multiservices.fr/favicon.ico",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.1,
