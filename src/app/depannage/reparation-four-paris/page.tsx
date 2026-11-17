@@ -3,7 +3,7 @@ import { MetadataPage } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = MetadataPage.DepannageParis;
+export const metadata: Metadata = MetadataPage.ReparationFourParis;
 
 export default function RepaFour() {
   return (
@@ -45,7 +45,7 @@ export default function RepaFour() {
               </svg>
               <a
                 className="hover:text-black"
-                href="depannage-electromenager-paris"
+                href="/depannage/depannage-electromenager-paris"
               >
                 Dépannage Électroménager
               </a>

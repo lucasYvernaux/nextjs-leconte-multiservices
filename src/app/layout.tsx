@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://leconte-multiservices.fr"),
   title: "Leconte Multiservices - Dépannage & Rénov - Paris et Île-de-France",
   description:
     "Faites appel à Leconte Multiservices, professionnels du dépannage et de la rénovation pour tous travaux (éléctroménager, électricité, plomberie, salle de bain, cuisine) à Paris.",
